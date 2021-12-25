@@ -2283,7 +2283,8 @@ public class MinimalistPage implements Initializable {
         }
 
         public List<String> getWords(String text) {
-            List<String> words = new ArrayList<>();
+            System.out.println("change here");
+            List<String> wordList = new ArrayList<>();
             if (text != null && text.isEmpty() == false) {
                 BreakIterator breakIterator = BreakIterator.getWordInstance();
                 breakIterator.setText(text);
@@ -2292,11 +2293,11 @@ public class MinimalistPage implements Initializable {
                     int firstIndex = lastIndex;
                     lastIndex = breakIterator.next();
                     if (lastIndex != BreakIterator.DONE && Character.isLetterOrDigit(text.charAt(firstIndex))) {
-                        words.add(text.substring(firstIndex, lastIndex));
+                        wordList.add(text.substring(firstIndex, lastIndex));
                     }
                 }
             }
-            return words;
+            return wordList;
         }
 
         public List<String> getLineObjs(String absolutePath) {
