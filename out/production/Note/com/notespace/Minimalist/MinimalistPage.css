@@ -1,0 +1,580 @@
+*{
+    -fx-blueColor: rgba(37, 122, 219,1);
+    -fx-f2f2f7: #f2f2f7;
+    -fx-f2f2f9: #f2f2f9;
+    /*-fx-lightgray: lightgray;*/
+     -fx-lightgray: #F9F8FD;
+    -fx-white: white;
+    -fx-buttonBlue:  rgba(38, 117, 191,0.8);
+    -fx-buttonBlueBorder: rgba(38, 117, 191,0.1);
+    -fx-iconBlue: rgba(56, 159, 214,1);
+    -fx-whiteHover: rgba(247, 247, 247,1);
+    -fx-black: black;
+    -fx-gray: gray;
+    -fx-highlight-yellow: rgba(247, 238, 188,0.5);
+    -fx-yellow: #3F414F;
+    /*-fx-yellow2: rgba(248, 186, 3,1);*/
+    -fx-yellow2: #2679DB;
+
+    -fx-red: rgba(252, 232, 230,1);
+    -fx-red2: rgba(197, 34, 31,1);
+    -fx-green: rgba(230, 244, 234,1);
+    -fx-green2: rgba(19, 115, 51,1);
+    -fx-blueColor2: rgba(34, 141, 255);
+    -fx-dark: #343333;
+}
+
+
+.icon-fill{
+    -fx-font-family: 'Material Icons';
+
+}
+
+ /* ==== FontSize  */
+.font9{
+    -fx-font-size: 9;
+}
+.font10{
+    -fx-font-size: 10;
+}
+
+.font11{
+    -fx-font-size: 11;
+}
+.font12{
+    -fx-font-size: 12;
+}
+.font13{
+    -fx-font-size: 13;
+}
+.font14{
+    -fx-font-size: 14;
+}
+
+.font-15{
+    -fx-font-size: 15;
+}
+.font-16{
+    -fx-font-size: 16;
+}
+.font-17{
+    -fx-font-size: 17;
+}
+.font-20{
+    -fx-font-size: 20;
+}
+.font-25{
+    -fx-font-size: 25;
+}
+.font-30{
+    -fx-font-size: 30;
+}
+
+.fontPyidaungsu{
+    -fx-font-family: pyidaungsu;
+}
+.fontConsolas{
+    -fx-font-family: consolas;
+}
+
+
+.fontbold{
+    -fx-font-weight: bold;
+}
+
+ /* ==== FontSize  */
+
+ /* ==== Others  */
+ .mainBackgroundColor{
+    -fx-background-color: -fx-white;
+ }
+ /* ==== Others  */
+
+ /* ==== Radius  */
+ .radius5{
+    -fx-background-radius: 5;
+ }
+ .radius10{
+    -fx-background-radius: 10;
+ }
+ /* ==== Radius  */
+
+
+
+
+
+ /* ==== AnchorPane  */
+.topBorder{
+     -fx-border-color: -fx-lightgray ;
+     -fx-border-width: 1 0 0 0;
+}
+
+.topRightBottomLeftBorder{
+    -fx-border-color: -fx-lightgray ;
+    -fx-border-width: 1.2 1.2 1.2 1.2;
+}
+
+.topBottomBorder{
+     -fx-border-color: -fx-lightgray ;
+     -fx-border-width: 1 0 1 0;
+}
+
+.topLeftRightBorder{
+     -fx-border-color: -fx-lightgray ;
+     -fx-border-width: 1 1 0 1;
+}
+
+.bottomLeftRightBorder{
+     -fx-border-color: -fx-lightgray ;
+     -fx-border-width: 0 1 1 1;
+}
+
+.leftRightBorder{
+    -fx-border-color: -fx-lightgray;
+    -fx-border-width: 0 1 0 1;
+}
+
+.card{
+    -fx-border-color: -fx-lightgray ;
+    -fx-border-width: 1;
+
+}
+
+.cardClickEffect{
+      -fx-background-color: -fx-yellow;
+}
+
+.BgColor-f2f2f7{
+    -fx-background-color: #f2f2f7;
+}
+
+
+
+.vboxClickEffect{
+    -fx-background-color: -fx-f2f2f7;
+ /*   -fx-background-radius: 5;
+    -fx-border-radius: 5;*/
+}
+.vboxClickEffectRadius{
+     -fx-background-color: -fx-f2f2f7;
+     -fx-background-radius: 5;
+     -fx-border-radius: 5;
+}
+
+.yellowClickEffect{
+    -fx-background-color: -fx-yellow;
+}
+.yellow2ClickEffect{
+    -fx-background-color: -fx-yellow2;
+}
+
+
+.yellow2TextEffect{
+    -fx-text-fill: -fx-yellow2;
+}
+
+.yellowClickRadiusEffect{
+    -fx-background-color: -fx-yellow;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+}
+
+.highlightYellowClickEffect{
+    -fx-background-color:   #F9F8FD;
+}
+.highlightYellowTextEffect{
+    -fx-text-fill:  #A7B0F5;
+}
+.highlightYellowBorderEffect{
+    -fx-border-color:    #A7B0F5;
+    -fx-border-width: 0.2;
+}
+.highlightRedTextEffect{
+    -fx-text-fill:  #EA4C89;
+}
+
+.blueClickEffect{
+    -fx-background-color: -fx-blueColor;
+}
+
+.redClickEffect{
+    -fx-background-color: -fx-red;
+}
+.redTextEffect{
+    -fx-text-fill: -fx-red2;
+}
+.greenClickEffect{
+    -fx-background-color: -fx-green;
+}
+.greenTextEffect{
+    -fx-text-fill: -fx-green2;
+}
+
+.f2f2f9ClickEffect{
+    -fx-background-color: -fx-f2f2f7;
+}
+
+.whiteClickEffect{
+    -fx-background-color: -fx-white;
+}
+.whiteTextEffect{
+    -fx-text-fill: -fx-white;
+}
+
+.buttonBlueBorderBorderEffect{
+    -fx-border-color: -fx-buttonBlueBorder;
+}
+.buttonBlueBorderHover{
+}
+.buttonBlueBorderHover:hover{
+    -fx-background-color: -fx-buttonBlueBorder;
+}
+
+.buttonBlueClickEffect{
+    -fx-background-color: -fx-buttonBlue;
+}
+
+.underline:hover{
+    -fx-underline: true;
+    -fx-cursor: hand;
+}
+
+.opacityHover{
+    -fx-opacity: 0.5;
+}
+.opacityHover:hover{
+    -fx-opacity: 1;
+}
+
+
+.topRightBottomLeftHover:hover{
+    -fx-border-color: -fx-gray;
+}
+
+.f2f2f9Hover{
+
+}
+.f2f2f9Hover:hover{
+    -fx-background-color: -fx-f2f2f9;
+}
+.C5DFFCHover{
+
+}
+.C5DFFCHover:hover{
+    -fx-background-color: #C5DFFC;
+}
+
+
+.yellowHover{
+
+}
+.yellowHover:hover{
+   -fx-background-color: -fx-yellow;
+}
+.redHover{
+
+}
+.redHover:hover{
+     -fx-background-color: -fx-red;
+}
+
+.red2Hover{
+
+}
+.red2Hover:hover{
+     -fx-background-color: -fx-red2;
+}
+
+
+ /* ==== AnchorPane  */
+
+
+ /* ==== Label  */
+
+.cardLabel{
+    -fx-text-fill: -fx-gray;
+    -fx-font-family: pyidaungsu;
+    -fx-font-size: 18;
+
+}
+
+.cardDateLabel{
+    -fx-font-size: 14;
+    -fx-text-fill: -fx-gray;
+    -fx-font-family: sans-serif;
+}
+.cardModifiedDateLabel{
+    -fx-font-size: 14;
+    -fx-font-family: sans-serif;
+    -fx-text-fill: -fx-gray;
+}
+
+.filePathLabel{
+    -fx-text-fill: -fx-gray;
+}
+
+.searchIcon{
+    -fx-text-fill: -fx-gray;
+}
+
+.fileNameFlatBoxLabel{
+        -fx-text-fill: black;
+        -fx-font-family: pyidaungsu;
+        -fx-font-size: 11;
+}
+
+
+.noteContentLabel{
+    -fx-font-size: 12;
+    -fx-font-weight: bold;
+}
+
+.minimalistModeHeaderLabel{
+    -fx-font-size: 30px;
+
+    -fx-font-family: "sans serif";
+}
+
+ /* ==== Label  */
+
+
+ /* ==== ContextMenu  */
+.context-menu {
+  -fx-background-color:  #F9F8FD;
+  -fx-text-fill: white;
+  -fx-accent:  #A7B0F5;
+}
+
+.menu-item .label {
+  -fx-text-fill:  #A7B0F5;
+}
+
+.menu-item:focused .label {
+  -fx-text-fill: white;
+}
+ /* ==== ContextMenu  */
+
+
+
+
+ /* ==== textField  */
+
+.textfield{
+    -fx-accent: -fx-buttonBlue;
+    -fx-background-color: transparent;
+    -fx-text-fill: -fx-gray;
+    -fx-font-size: 14.5;
+    -fx-font-family: pyidaungsu;
+}
+.textfieldSmall{
+    -fx-accent: -fx-buttonBlue;
+    -fx-background-color: transparent;
+    -fx-text-fill: -fx-gray;
+    -fx-font-size: 13.5;
+    -fx-font-family: pyidaungsu;
+}
+
+.textField2{
+     -fx-accent: -fx-buttonBlue;
+        -fx-background-color: transparent;
+        -fx-text-fill: -fx-gray;
+        -fx-font-size: 9.5;
+        -fx-font-family: pyidaungsu;
+        -fx-border-color: lightgray;
+        -fx-border-radius: 7;
+}
+
+ /* ==== textField  */
+
+ /* ==== button  */
+
+
+.button{
+    -fx-background-color: -fx-white;
+    -fx-background-radius: 6;
+    -fx-border-radius: 6;
+    -fx-border-width: 2;
+}
+.button:hover{
+    -fx-background-color: -fx-whiteHover;
+}
+
+.button:focused{
+    /*-fx-background-color: -fx-buttonBlue;*/
+    -fx-background-color: #F9F8FD;
+    /*-fx-text-fill: -fx-white;*/
+    -fx-text-fill:  #A7B0F5;
+}
+
+
+ /* ==== button  */
+
+
+
+
+ /* ==== scrollPane  */
+
+.scroll-pane{
+    -fx-border-color: -fx-lightgray;
+    -fx-background-color: transparent;
+}
+
+ .scroll-pane .viewport {
+        -fx-background-color: transparent;
+ }
+ /* ==== scrollPane  */
+
+
+/* ==== scrollbar  */
+
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0em;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    /*-fx-background-color:   rgba(102, 104, 104,0.8);*/
+    -fx-background-color:  #A7B0F5 ;
+    -fx-background-radius: 0em;
+}
+/* ==== scrollbar  */
+
+/* ==== textarea  */
+.text-area {
+    -fx-text-fill: -fx-yellow;
+    -fx-accent:   #A7B0F5;
+    -fx-font-family: pyidaungsu;
+    -fx-background-color: transparent;
+    -fx-font-weight: normal;
+    -fx-font-size: 13px;
+}
+
+.text-area .scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.text-area .scroll-pane .viewport{
+    -fx-background-color: transparent;
+
+}
+
+
+.text-area .scroll-pane .content{
+    -fx-background-color: transparent;
+}
+
+/* ==== textarea  */
+
+/* ==== checkbox  */
+.check-box .box {
+
+-fx-background-color: white;
+-fx-border-color: -fx-gray;
+-fx-border-radius: 3px;
+-fx-background-insets: 0 0 0 0, 0, 0, 0;
+
+}
+
+.check-box:selected .mark {
+
+-fx-background-color: -fx-white;
+
+}
+
+.check-box:selected .box {
+-fx-background-color: -fx-yellow2;
+}
+/* ==== checkbox  */
+
+/* ==== radiobutton  */
+
+.radio-button .radio {
+    -fx-border-width: 1px;
+    -fx-border-color: -fx-yellow2;
+    -fx-background-color: white;
+    -fx-background-image: null;
+    -fx-border-radius: 10px;
+    -fx-padding: 5px;
+}
+.radio-button .radio:selected {
+    -fx-background-color: white;
+    -fx-background-image: null;
+}
+.radio-button -radio:armed {
+    -fx-background-color: white;
+    -fx-background-image: null;
+}
+.radio-button -radio:determinate {
+    -fx-background-color: white;
+    -fx-background-image: null;
+}
+.radio-button -radio:indeterminate {
+    -fx-background-color: white;
+    -fx-background-image: null;
+}
+.radio-button .dot {
+
+    -fx-background-radius: 5px;
+    -fx-padding: 5px;
+}
+/* ==== radiobutton  */‌‌‌
+
+
+.split-pane:horizontal > .split-pane-divider {
+   -fx-background-color:    #E6EBF0  ;
+   -fx-padding: 1;
+}
+.split-pane:vertical > .split-pane-divider {
+   -fx-background-color:    #E6EBF0  ;
+   -fx-padding: 1;
+}
+
+
+
+
+
+/* ==== progressbar  */‌‌‌
+
+ .progress-bar {
+
+     -fx-background-color:
+         transparent;
+     -fx-background-insets: 0, 1;
+     -fx-indeterminate-bar-length: 60;
+     -fx-indeterminate-bar-escape: true;
+     -fx-indeterminate-bar-flip: true;
+     -fx-indeterminate-bar-animation-time: 2;
+ }
+
+ .progress-bar .bar {
+     -fx-background-color:
+         #3980F4;
+     -fx-background-insets: 0, 1, 2;
+     -fx-padding: 0em;
+ }
+
+.progress-bar:indeterminate .bar{
+     -fx-background-color: #3980F4;
+ }
+
+ .progress-bar.track{
+      -fx-background-color:
+         transparent;
+     -fx-background-insets:  0, 1;
+ }
+
+ .progress-bar:disabled{
+     -fx-opacity: 1;
+ }
+
+
+/* ==== progressbar  */‌‌‌
+
+
+

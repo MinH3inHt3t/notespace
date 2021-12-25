@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox maxHeight="146.0" minHeight="118.0" prefHeight="136.0" prefWidth="351.0" style="-fx-background-color: #F9F8FD; -fx-border-color: #A7B0F5; -fx-border-width: 0.2;" stylesheets="@../MinimalistPage.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="94.0" prefWidth="351.0" spacing="10.0">
+         <children>
+            <Label fx:id="textDataLabel" prefHeight="79.0" prefWidth="256.0" text="Dec 11, 2021 11:09:18 AM javafx.fxml.FXMLLoader$ValueElement processValueWARNING: Loading FXML document with JavaFX API of version 11.0.1 by JavaFX runtime of version 8.0.131Dec 11, 2021 11:09:18 AM javafx.fxml.FXMLLoader$ValueElement processValueWARNING: Loading FXML document with JavaFX API of version 11.0.1 by JavaFX runtime of version 8.0.131Dec 11, 2021 11:09:18 AM javafx.fxml.FXMLLoader$ValueElement processValueWARNING: Loading FXML document with JavaFX API of version 11.0.1 by JavaFX runtime of version 8.0.131Dec 11, 2021 11:09:18 AM javafx.fxml.FXMLLoader$ValueElement processValueWARNING: Loading FXML document with JavaFX API of version 11.0.1 by JavaFX runtime of version 8.0.131Dec 11, 2021 11:09:18 AM javafx.fxml.FXMLLoader$ValueElement processValue" wrapText="true">
+               <styleClass>
+                  <String fx:value="fontPyidaungsu" />
+                  <String fx:value="font-16" />
+                  <String fx:value="fontbold" />
+               </styleClass>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="15.0" right="15.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="57.0" prefWidth="288.0">
+               <children>
+                  <Label fx:id="prettyTimeLabel" style="-fx-text-fill: #A7B0F5;" text="1 min ago">
+                     <styleClass>
+                        <String fx:value="font-15" />
+                        <String fx:value="fontbold" />
+                     </styleClass>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="57.0" prefWidth="172.0">
+               <children>
+                  <Label fx:id="viewLabel" style="-fx-background-color: #EA4C89; -fx-background-radius: 10; -fx-text-fill: white; -fx-font-weight: bold;" text="View">
+                     <padding>
+                        <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                     </padding>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+               </padding>
+            </HBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>

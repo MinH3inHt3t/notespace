@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox fx:id="fileNameFlatHBox" maxHeight="50.0" maxWidth="-Infinity" minHeight="50.0" minWidth="-Infinity" prefHeight="50.0" prefWidth="305.0" styleClass="topRightBottomLeftBorder" stylesheets="@../../MinimalistPage.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="fileNameLabel" prefHeight="48.0" prefWidth="155.0" styleClass="fileNameFlatBoxLabel" text="indexing..." />
+      <Label fx:id="modifiedDateLabel" alignment="CENTER_RIGHT" layoutX="21.0" layoutY="11.0" prefHeight="48.0" prefWidth="138.0" styleClass="fileNameFlatBoxLabel" text="indexing..." />
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</HBox>

@@ -1,0 +1,1487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="minimalistPageAnchorPane" prefHeight="752.0" prefWidth="1035.0" styleClass="mainBackgroundColor" stylesheets="@MinimalistPage.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <StackPane prefHeight="662.0" prefWidth="1035.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane fx:id="imageViewAnchorPane" visible="false">
+               <children>
+                  <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="857.0" pickOnBounds="true" visible="false" AnchorPane.bottomAnchor="512.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="97.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <BorderPane fx:id="outerBorderPane" prefWidth="1035.0">
+               <center>
+                  <BorderPane fx:id="innerBorderPane" prefHeight="476.0" prefWidth="1035.0">
+                     <center>
+                        <StackPane>
+                           <children>
+                              <AnchorPane fx:id="settingsAnchorPane" prefHeight="200.0" prefWidth="200.0" />
+                              <AnchorPane fx:id="fileNotExistAnchorPane" prefHeight="200.0" prefWidth="200.0" visible="false">
+                                 <children>
+                                    <BorderPane layoutX="546.0" layoutY="117.0" prefHeight="388.0" prefWidth="534.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="117.0">
+                                       <top>
+                                          <VBox alignment="CENTER" prefHeight="185.0" prefWidth="304.0" spacing="20.0" BorderPane.alignment="CENTER">
+                                             <children>
+                                                <ImageView fitHeight="150.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+                                                   <image>
+                                                      <Image url="@../../../Image/404.png" />
+                                                   </image>
+                                                </ImageView>
+                                                <HBox alignment="CENTER" prefHeight="72.0" prefWidth="255.0">
+                                                   <children>
+                                                      <Label prefHeight="17.0" prefWidth="172.0" text="Oops">
+                                                         <font>
+                                                            <Font name="Cooper Black" size="57.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="72.0" prefWidth="57.0" styleClass="vboxClickEffectRadius" text="!">
+                                                         <font>
+                                                            <Font name="Cooper Black" size="57.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="21.0" prefWidth="476.0" spacing="10.0">
+                                                   <children>
+                                                      <Label fx:id="currentFilePathLabel" alignment="CENTER" prefHeight="17.0" text="D://T1//text.txt">
+                                                         <styleClass>
+                                                            <String fx:value="fontbold" />
+                                                            <String fx:value="font-15" />
+                                                            <String fx:value="vboxClickEffectRadius" />
+                                                            <String fx:value="fontPyidaungsu" />
+                                                         </styleClass>
+                                                         <padding>
+                                                            <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                                                         </padding>
+                                                      </Label>
+                                                      <Label alignment="CENTER" prefHeight="41.0" styleClass="vboxClickEffectRadius" text="may be moved or deleted .">
+                                                         <font>
+                                                            <Font name="Consolas Bold" size="15.0" />
+                                                         </font>
+                                                         <padding>
+                                                            <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                                                         </padding>
+                                                      </Label>
+                                                   </children>
+                                                </HBox>
+                                                <Label fx:id="redirectHomePageLabel" alignment="CENTER" prefHeight="52.0" prefWidth="172.0" styleClass="underline" text="Redirect to Home Page">
+                                                   <font>
+                                                      <Font name="Calibri Light" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </top>
+                                       <bottom>
+                                          <HBox alignment="CENTER" prefHeight="19.0" prefWidth="534.0" spacing="10.0" BorderPane.alignment="CENTER">
+                                             <children>
+                                                <Label prefHeight="17.0" style="-fx-text-fill: #A7B0F5; -fx-background-color: #3C3F41; -fx-background-radius: 10;" text="\\(^Д^)/">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="20.0" />
+                                                   </font>
+                                                   <padding>
+                                                      <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                                                   </padding>
+                                                </Label>
+                                                <Label layoutX="180.0" layoutY="10.0" prefHeight="17.0" style="-fx-text-fill: #A7B0F5; -fx-background-color: #F9F8FD; -fx-background-radius: 10;" text="Reason : Not found">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="20.0" />
+                                                   </font>
+                                                   <padding>
+                                                      <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                                                   </padding>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                       </bottom>
+                                    </BorderPane>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="homeAnchorPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #F5F5F5;" visible="false">
+                                 <children>
+                                    <AnchorPane layoutY="14.0" prefHeight="43.0" prefWidth="996.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <Label fx:id="goHomeLabel" layoutX="23.0" layoutY="13.0" prefHeight="17.0" prefWidth="92.0" style="-fx-text-fill: white;" text="Home Page" AnchorPane.leftAnchor="22.0">
+                                             <styleClass>
+                                                <String fx:value="fontbold" />
+                                                <String fx:value="font12" />
+                                             </styleClass>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                       </children>
+                                       <styleClass>
+                                          <String fx:value="topRightBottomLeftBorder" />
+                                          <String fx:value="yellowClickEffect" />
+                                       </styleClass>
+                                    </AnchorPane>
+                                    <AnchorPane layoutY="43.0" prefHeight="43.0" prefWidth="996.0" style="-fx-background-color: white;" styleClass="topRightBottomLeftBorder" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="42.0">
+                                       <children>
+                                          <HBox alignment="CENTER_LEFT" layoutX="25.0" layoutY="3.0" prefHeight="39.0" prefWidth="690.0" spacing="25.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="321.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <Button fx:id="folderLocationBtn" mnemonicParsing="false" text="Folder Location" />
+                                                <Button fx:id="logsPaneBtn" mnemonicParsing="false" text="Logs" />
+                                                <Button fx:id="backupPaneBtn" layoutX="503.0" layoutY="18.0" mnemonicParsing="false" text="Backup" />
+                                             </children>
+                                          </HBox>
+                                          <HBox layoutX="600.0" layoutY="15.0" prefHeight="41.0" prefWidth="320.0" style="-fx-background-color: white;" styleClass="topLeftRightBorder" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="-1.0">
+                                             <children>
+                                                <Label fx:id="directoryChooseLabel" alignment="CENTER" prefHeight="49.0" prefWidth="44.0" style="-fx-text-fill: #6B83F4;" text="">
+                                                   <styleClass>
+                                                      <String fx:value="icon-fill" />
+                                                      <String fx:value="font-17" />
+                                                      <String fx:value="searchIcon" />
+                                                      <String fx:value="f2f2f9Hover" />
+                                                   </styleClass>
+                                                </Label>
+                                                <TextField fx:id="directoryNameTextField" editable="false" prefHeight="38.0" prefWidth="248.0" promptText="Location" text="Indexing....">
+                                                   <styleClass>
+                                                      <String fx:value="textfield" />
+                                                      <String fx:value="fontbold" />
+                                                   </styleClass>
+                                                </TextField>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </AnchorPane>
+                                    <StackPane layoutY="85.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="85.0">
+                                       <children>
+                                          <AnchorPane fx:id="homePageAnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="397.0" prefWidth="724.0" style="-fx-background-color: white;" visible="false">
+                                             <children>
+                                                <BorderPane fx:id="homePageBorderPane" layoutX="285.0" layoutY="66.0" prefHeight="406.0" prefWidth="1035.0" AnchorPane.bottomAnchor="81.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                   <center>
+                                                      <VBox alignment="CENTER" prefHeight="378.0" prefWidth="1035.0" spacing="20.0" BorderPane.alignment="TOP_CENTER">
+                                                         <children>
+                                                            <ImageView fitHeight="150.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@../../../Image/home.png" />
+                                                               </image>
+                                                            </ImageView>
+                                                            <Label alignment="CENTER" prefHeight="47.0" prefWidth="294.0" text="Note Space">
+                                                               <font>
+                                                                  <Font name="Comic Sans MS Bold" size="35.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </children>
+                                                      </VBox>
+                                                   </center>
+                                                </BorderPane>
+                                                <ScrollPane fx:id="homePageScrollPane" cache="true" cacheHint="SPEED" fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" prefHeight="80.0" prefWidth="1035.0" style="-fx-background-color: #F9FAFE; -fx-background-radius: 50 50 0 0; -fx-border-color: none;" vbarPolicy="NEVER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                                   <content>
+                                                      <VBox alignment="TOP_CENTER" cache="true" cacheHint="SPEED" prefHeight="400.0" prefWidth="360.0" spacing="50.0">
+                                                         <children>
+                                                            <AnchorPane layoutX="327.0" layoutY="310.0" maxWidth="400.0" minHeight="400.0" prefHeight="300.0" prefWidth="400.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 50;">
+                                                               <effect>
+                                                                  <DropShadow blurType="GAUSSIAN" color="#6943f04d" height="50.0" radius="24.5" width="50.0" />
+                                                               </effect>
+                                                               <children>
+                                                                  <Label layoutX="37.0" layoutY="37.0" prefHeight="36.0" prefWidth="214.0" style="-fx-text-fill: #7240F0;" text="Create New Note" AnchorPane.leftAnchor="37.0" AnchorPane.topAnchor="37.0">
+                                                                     <font>
+                                                                        <Font name="Arial Bold" size="25.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <VBox layoutX="28.0" layoutY="282.0" prefHeight="84.0" prefWidth="319.0" spacing="10.0" AnchorPane.leftAnchor="28.0" AnchorPane.rightAnchor="53.0">
+                                                                     <children>
+                                                                        <HBox prefHeight="40.0" prefWidth="319.0" spacing="20.0">
+                                                                           <children>
+                                                                              <TextField fx:id="fileNameTextField" prefHeight="40.0" prefWidth="212.0" promptText="File Name" style="-fx-background-color: white; -fx-border-color: #7240F0; -fx-border-radius: 10; -fx-background-radius: 10;" styleClass="textfield">
+                                                                                 <effect>
+                                                                                    <DropShadow color="#6b43f04d" height="116.36" radius="57.675" width="116.34" />
+                                                                                 </effect>
+                                                                              </TextField>
+                                                                              <Label fx:id="createNewFileLabel" alignment="CENTER" prefHeight="38.0" prefWidth="57.0" style="-fx-background-color: #7240F0; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 10;" text="CREATE">
+                                                                                 <cursor>
+                                                                                    <Cursor fx:constant="HAND" />
+                                                                                 </cursor>
+                                                                                 <effect>
+                                                                                    <DropShadow color="#6943f04d" height="116.0" radius="57.5" width="116.0" />
+                                                                                 </effect>
+                                                                              </Label>
+                                                                           </children>
+                                                                        </HBox>
+                                                                        <Label fx:id="duplicateWarningLabel" style="-fx-text-fill: #7240F0;" text="Duplicate File Name">
+                                                                           <font>
+                                                                              <Font name="Arial" size="14.0" />
+                                                                           </font>
+                                                                        </Label>
+                                                                     </children>
+                                                                  </VBox>
+                                                                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="28.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@../../../Image/addnote.png" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                               </children>
+                                                            </AnchorPane>
+                                                            <AnchorPane layoutX="327.0" layoutY="60.0" maxWidth="400.0" minHeight="400.0" prefHeight="300.0" prefWidth="400.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 50;">
+                                                               <effect>
+                                                                  <DropShadow blurType="GAUSSIAN" color="#6943f04d" height="50.0" radius="24.5" width="50.0" />
+                                                               </effect>
+                                                               <children>
+                                                                  <Label layoutX="37.0" layoutY="37.0" prefHeight="36.0" prefWidth="214.0" style="-fx-text-fill: #7240F0;" text="User Experience" AnchorPane.leftAnchor="37.0" AnchorPane.topAnchor="37.0">
+                                                                     <font>
+                                                                        <Font name="Arial Bold" size="25.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="37.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+                                                                     <image>
+                                                                        <Image url="@../../../Image/UX.png" />
+                                                                     </image>
+                                                                  </ImageView>
+                                                                  <Label alignment="CENTER" layoutX="37.0" layoutY="228.0" prefHeight="38.0" prefWidth="155.0" style="-fx-background-color: #7240F0; -fx-text-fill: white; -fx-background-radius: 10;" text="Content Container">
+                                                                     <effect>
+                                                                        <DropShadow color="#6943f080" height="30.0" radius="14.5" width="30.0" />
+                                                                     </effect>
+                                                                     <font>
+                                                                        <Font name="Arial" size="15.0" />
+                                                                     </font>
+                                                                     <cursor>
+                                                                        <Cursor fx:constant="HAND" />
+                                                                     </cursor>
+                                                                  </Label>
+                                                                  <Label alignment="CENTER" layoutX="212.0" layoutY="311.0" prefHeight="38.0" prefWidth="155.0" style="-fx-background-color: #7240F0; -fx-text-fill: white; -fx-background-radius: 10;" text="Searchbar">
+                                                                     <effect>
+                                                                        <DropShadow color="#6943f080" height="30.0" radius="14.5" width="30.0" />
+                                                                     </effect>
+                                                                     <font>
+                                                                        <Font name="Arial" size="15.0" />
+                                                                     </font>
+                                                                     <cursor>
+                                                                        <Cursor fx:constant="HAND" />
+                                                                     </cursor>
+                                                                  </Label>
+                                                               </children>
+                                                            </AnchorPane>
+                                                            <AnchorPane layoutX="327.0" layoutY="60.0" maxWidth="400.0" minHeight="200.0" prefHeight="200.0" prefWidth="400.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 35;">
+                                                               <effect>
+                                                                  <DropShadow blurType="GAUSSIAN" color="#27282b1a" height="255.0" radius="127.0" width="255.0" />
+                                                               </effect>
+                                                               <children>
+                                                                  <Label layoutX="37.0" layoutY="37.0" prefHeight="36.0" prefWidth="214.0" style="-fx-text-fill: #7240F0;" text="Create New Note" AnchorPane.leftAnchor="37.0" AnchorPane.topAnchor="37.0">
+                                                                     <font>
+                                                                        <Font name="Franklin Gothic Medium" size="19.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <TextField layoutX="37.0" layoutY="100.0" prefHeight="38.0" prefWidth="239.0" promptText="File Name" style="-fx-background-color: white; -fx-border-color: #7240F0; -fx-border-radius: 10; -fx-background-radius: 10;" styleClass="textfield">
+                                                                     <effect>
+                                                                        <DropShadow color="#7241f01a" height="117.08" radius="57.855000000000004" spread="0.41" width="116.34" />
+                                                                     </effect>
+                                                                  </TextField>
+                                                                  <Label alignment="CENTER" layoutX="291.0" layoutY="100.0" prefHeight="38.0" prefWidth="57.0" style="-fx-background-color: #7240F0; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 10;" text="CREATE">
+                                                                     <cursor>
+                                                                        <Cursor fx:constant="HAND" />
+                                                                     </cursor>
+                                                                  </Label>
+                                                               </children>
+                                                            </AnchorPane>
+                                                         </children>
+                                                         <padding>
+                                                            <Insets bottom="50.0" top="50.0" />
+                                                         </padding>
+                                                      </VBox>
+                                                   </content>
+                                                </ScrollPane>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane fx:id="directoryChooseAnchorPane" prefHeight="397.0" prefWidth="724.0" visible="false" />
+                                          <AnchorPane fx:id="logsAnchorPane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" visible="false">
+                                             <children>
+                                                <ScrollPane fitToHeight="true" fitToWidth="true" layoutX="13.0" layoutY="12.0" prefHeight="437.0" prefWidth="1024.0" style="-fx-background-color: #F9F8FD; -fx-border-color: none;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+                                                   <content>
+                                                      <VBox fx:id="logsResultVBox" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="15.0">
+                                                         <children>
+                                                            <AnchorPane minHeight="150.0" prefHeight="151.0" prefWidth="668.0" style="-fx-background-color: white;" styleClass="topRightBottomLeftBorder">
+                                                               <children>
+                                                                  <Label alignment="CENTER" layoutX="17.0" layoutY="21.0" prefHeight="25.0" text="You created " />
+                                                                  <Label alignment="CENTER" layoutX="92.0" layoutY="21.0" prefHeight="25.0" text="doc.txt">
+                                                                     <styleClass>
+                                                                        <String fx:value="fontbold" />
+                                                                        <String fx:value="vboxClickEffect" />
+                                                                        <String fx:value="font11" />
+                                                                     </styleClass>
+                                                                     <padding>
+                                                                        <Insets left="10.0" right="10.0" />
+                                                                     </padding>
+                                                                     <cursor>
+                                                                        <Cursor fx:constant="HAND" />
+                                                                     </cursor>
+                                                                  </Label>
+                                                                  <Label layoutX="165.0" layoutY="25.0" text="at" />
+                                                                  <Label alignment="CENTER" layoutX="191.0" layoutY="21.0" prefHeight="25.0" text="D://NoteSpaceHere//T3">
+                                                                     <styleClass>
+                                                                        <String fx:value="fontbold" />
+                                                                        <String fx:value="vboxClickEffect" />
+                                                                        <String fx:value="font11" />
+                                                                     </styleClass>
+                                                                     <padding>
+                                                                        <Insets left="10.0" right="10.0" />
+                                                                     </padding>
+                                                                     <cursor>
+                                                                        <Cursor fx:constant="HAND" />
+                                                                     </cursor>
+                                                                  </Label>
+                                                                  <Label layoutX="19.0" layoutY="66.0" prefHeight="17.0" styleClass="font10" text="Creation time:" />
+                                                                  <Label alignment="CENTER" layoutX="92.0" layoutY="63.0" prefHeight="25.0" text="28/11/2021 10:35 am">
+                                                                     <styleClass>
+                                                                        <String fx:value="fontbold" />
+                                                                        <String fx:value="vboxClickEffect" />
+                                                                        <String fx:value="font11" />
+                                                                     </styleClass>
+                                                                     <padding>
+                                                                        <Insets left="10.0" right="10.0" />
+                                                                     </padding>
+                                                                  </Label>
+                                                                  <Label alignment="CENTER" layoutX="579.0" layoutY="21.0" prefHeight="25.0" prefWidth="88.0" text="Remove" AnchorPane.rightAnchor="14.333333333333371">
+                                                                     <styleClass>
+                                                                        <String fx:value="fontbold" />
+                                                                        <String fx:value="vboxClickEffect" />
+                                                                        <String fx:value="font11" />
+                                                                     </styleClass>
+                                                                  </Label>
+                                                                  <Label alignment="CENTER" layoutX="362.0" layoutY="21.0" prefHeight="25.0" text="CREATED">
+                                                                     <styleClass>
+                                                                        <String fx:value="fontbold" />
+                                                                        <String fx:value="vboxClickEffect" />
+                                                                        <String fx:value="font11" />
+                                                                     </styleClass>
+                                                                     <padding>
+                                                                        <Insets left="10.0" right="10.0" />
+                                                                     </padding>
+                                                                  </Label>
+                                                               </children>
+                                                            </AnchorPane>
+                                                            <AnchorPane layoutX="20.0" layoutY="20.0" minHeight="150.0" prefHeight="151.0" prefWidth="668.0" style="-fx-background-color: white;" styleClass="topRightBottomLeftBorder">
+                                                               <children>
+                                                                  <Label alignment="CENTER" layoutX="17.0" layoutY="21.0" prefHeight="25.0" text="You created " />
+                                                                  <Label alignment="CENTER" layoutX="92.0" layoutY="21.0" prefHeight="25.0" text="doc.txt">
+                                                                     <styleClass>
+                                                                        <String fx:value="fontbold" />
+                                                                        <String fx:value="vboxClickEffect" />
+                                                                        <String fx:value="font11" />
+                                                                     </styleClass>
+                                                                     <padding>
+                                                                        <Insets left="10.0" right="10.0" />
+                                                                     </padding>
+                                                                     <cursor>
+                                                                        <Cursor fx:constant="HAND" />
+                                                                     </cursor>
+                                                                  </Label>
+                                                                  <Label layoutX="165.0" layoutY="25.0" text="at" />
+                                                                  <Label alignment="CENTER" layoutX="191.0" layoutY="21.0" prefHeight="25.0" text="D://NoteSpaceHere//T3">
+                                                                     <styleClass>
+                                                                        <String fx:value="fontbold" />
+                                                                        <String fx:value="vboxClickEffect" />
+                                                                        <String fx:value="font11" />
+                                                                     </styleClass>
+                                                                     <padding>
+                                                                        <Insets left="10.0" right="10.0" />
+                                                                     </padding>
+                                                                     <cursor>
+                                                                        <Cursor fx:constant="HAND" />
+                                                                     </cursor>
+                                                                  </Label>
+                                                                  <Label layoutX="19.0" layoutY="66.0" prefHeight="17.0" styleClass="font10" text="Creation time:" />
+                                                                  <Label alignment="CENTER" layoutX="92.0" layoutY="63.0" prefHeight="25.0" text="28/11/2021 10:35 am">
+                                                                     <styleClass>
+                                                                        <String fx:value="fontbold" />
+                                                                        <String fx:value="vboxClickEffect" />
+                                                                        <String fx:value="font11" />
+                                                                     </styleClass>
+                                                                     <padding>
+                                                                        <Insets left="10.0" right="10.0" />
+                                                                     </padding>
+                                                                  </Label>
+                                                                  <Label alignment="CENTER" layoutX="579.0" layoutY="21.0" prefHeight="25.0" prefWidth="88.0" text="Remove" AnchorPane.rightAnchor="14.333333333333371">
+                                                                     <styleClass>
+                                                                        <String fx:value="fontbold" />
+                                                                        <String fx:value="vboxClickEffect" />
+                                                                        <String fx:value="font11" />
+                                                                     </styleClass>
+                                                                  </Label>
+                                                                  <Label alignment="CENTER" layoutX="362.0" layoutY="21.0" prefHeight="25.0" text="CREATED">
+                                                                     <styleClass>
+                                                                        <String fx:value="fontbold" />
+                                                                        <String fx:value="vboxClickEffect" />
+                                                                        <String fx:value="font11" />
+                                                                     </styleClass>
+                                                                     <padding>
+                                                                        <Insets left="10.0" right="10.0" />
+                                                                     </padding>
+                                                                  </Label>
+                                                               </children>
+                                                            </AnchorPane>
+                                                            <AnchorPane layoutX="20.0" layoutY="186.0" minHeight="150.0" prefHeight="151.0" prefWidth="668.0" style="-fx-background-color: white;" styleClass="topRightBottomLeftBorder">
+                                                               <children>
+                                                                  <Label alignment="CENTER" layoutX="17.0" layoutY="21.0" prefHeight="25.0" text="You created " />
+                                                                  <Label alignment="CENTER" layoutX="92.0" layoutY="21.0" prefHeight="25.0" text="doc.txt">
+                                                                     <styleClass>
+                                                                        <String fx:value="fontbold" />
+                                                                        <String fx:value="vboxClickEffect" />
+                                                                        <String fx:value="font11" />
+                                                                     </styleClass>
+                                                                     <padding>
+                                                                        <Insets left="10.0" right="10.0" />
+                                                                     </padding>
+                                                                     <cursor>
+                                                                        <Cursor fx:constant="HAND" />
+                                                                     </cursor>
+                                                                  </Label>
+                                                                  <Label layoutX="165.0" layoutY="25.0" text="at" />
+                                                                  <Label alignment="CENTER" layoutX="191.0" layoutY="21.0" prefHeight="25.0" text="D://NoteSpaceHere//T3">
+                                                                     <styleClass>
+                                                                        <String fx:value="fontbold" />
+                                                                        <String fx:value="vboxClickEffect" />
+                                                                        <String fx:value="font11" />
+                                                                     </styleClass>
+                                                                     <padding>
+                                                                        <Insets left="10.0" right="10.0" />
+                                                                     </padding>
+                                                                     <cursor>
+                                                                        <Cursor fx:constant="HAND" />
+                                                                     </cursor>
+                                                                  </Label>
+                                                                  <Label layoutX="19.0" layoutY="66.0" prefHeight="17.0" styleClass="font10" text="Creation time:" />
+                                                                  <Label alignment="CENTER" layoutX="92.0" layoutY="63.0" prefHeight="25.0" text="28/11/2021 10:35 am">
+                                                                     <styleClass>
+                                                                        <String fx:value="fontbold" />
+                                                                        <String fx:value="vboxClickEffect" />
+                                                                        <String fx:value="font11" />
+                                                                     </styleClass>
+                                                                     <padding>
+                                                                        <Insets left="10.0" right="10.0" />
+                                                                     </padding>
+                                                                  </Label>
+                                                                  <Label alignment="CENTER" layoutX="579.0" layoutY="21.0" prefHeight="25.0" prefWidth="88.0" text="Remove" AnchorPane.rightAnchor="14.333333333333371">
+                                                                     <styleClass>
+                                                                        <String fx:value="fontbold" />
+                                                                        <String fx:value="vboxClickEffect" />
+                                                                        <String fx:value="font11" />
+                                                                     </styleClass>
+                                                                  </Label>
+                                                                  <Label alignment="CENTER" layoutX="362.0" layoutY="21.0" prefHeight="25.0" text="CREATED">
+                                                                     <styleClass>
+                                                                        <String fx:value="fontbold" />
+                                                                        <String fx:value="vboxClickEffect" />
+                                                                        <String fx:value="font11" />
+                                                                     </styleClass>
+                                                                     <padding>
+                                                                        <Insets left="10.0" right="10.0" />
+                                                                     </padding>
+                                                                  </Label>
+                                                               </children>
+                                                            </AnchorPane>
+                                                         </children>
+                                                         <padding>
+                                                            <Insets bottom="50.0" left="10.0" right="10.0" top="50.0" />
+                                                         </padding>
+                                                      </VBox>
+                                                   </content>
+                                                </ScrollPane>
+                                                <Label layoutX="14.0" layoutY="8.0" prefHeight="30.0" prefWidth="98.0" style="-fx-background-color: white; -fx-text-fill: #A7B0F5;" text="Logs" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="8.0">
+                                                   <styleClass>
+                                                      <String fx:value="fontbold" />
+                                                      <String fx:value="font-16" />
+                                                   </styleClass>
+                                                </Label>
+                                                <HBox alignment="CENTER_RIGHT" layoutX="734.0" layoutY="18.0" prefHeight="32.0" prefWidth="287.0" spacing="20.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="8.0">
+                                                   <children>
+                                                      <Label fx:id="deleteAllLogsLabel" alignment="CENTER" prefHeight="32.0" prefWidth="136.0" text="Delete All Logs">
+                                                         <font>
+                                                            <Font name="Calibri Light" size="14.0" />
+                                                         </font>
+                                                         <styleClass>
+                                                            <String fx:value="underline" />
+                                                            <String fx:value="vboxClickEffect" />
+                                                         </styleClass>
+                                                      </Label>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane fx:id="backupAnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;">
+                                             <children>
+                                                <ScrollPane fitToHeight="true" fitToWidth="true" layoutX="13.0" layoutY="12.0" prefHeight="437.0" prefWidth="1024.0" style="-fx-background-color: #F9F8FD; -fx-border-color: none;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+                                                   <content>
+                                                      <VBox fx:id="backupResultVBox" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="15.0">
+                                                         <padding>
+                                                            <Insets bottom="50.0" left="10.0" right="10.0" top="50.0" />
+                                                         </padding>
+                                                      </VBox>
+                                                   </content>
+                                                </ScrollPane>
+                                                <Label layoutX="23.0" layoutY="9.0" prefHeight="30.0" prefWidth="98.0" style="-fx-background-color: white; -fx-text-fill: #A7B0F5;" text="Backup" AnchorPane.leftAnchor="23.0" AnchorPane.topAnchor="9.0">
+                                                   <styleClass>
+                                                      <String fx:value="fontbold" />
+                                                      <String fx:value="font-16" />
+                                                   </styleClass>
+                                                </Label>
+                                                <HBox alignment="CENTER_RIGHT" layoutX="734.0" layoutY="18.0" prefHeight="32.0" prefWidth="287.0" spacing="20.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="8.0">
+                                                   <children>
+                                                      <Label fx:id="deleteAllLogsLabel1" alignment="CENTER" prefHeight="32.0" prefWidth="136.0" text="Delete All Logs">
+                                                         <font>
+                                                            <Font name="Calibri Light" size="14.0" />
+                                                         </font>
+                                                         <styleClass>
+                                                            <String fx:value="underline" />
+                                                            <String fx:value="vboxClickEffect" />
+                                                         </styleClass>
+                                                      </Label>
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" layoutX="231.0" layoutY="4.0" prefHeight="40.0" prefWidth="251.0" spacing="5.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="4.0">
+                                                   <children>
+                                                      <Label alignment="CENTER_RIGHT" prefHeight="49.0" prefWidth="44.0" style="-fx-text-fill: #A7B0F5;" text="">
+                                                         <styleClass>
+                                                            <String fx:value="icon-fill" />
+                                                            <String fx:value="font-25" />
+                                                            <String fx:value="searchIcon" />
+                                                         </styleClass>
+                                                      </Label>
+                                                      <TextField fx:id="backupSearchTextField" prefHeight="38.0" prefWidth="230.0" promptText="Find Backup Note ( .txt )" styleClass="textfield" />
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </StackPane>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="textAreaContainerAnchorPane">
+                                 <children>
+                                    <BorderPane fx:id="textAreaBorderPane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <center>
+                                          <AnchorPane prefWidth="1035.0" styleClass="card">
+                                             <children>
+                                                <BorderPane fx:id="textAreaContainerBorderPane" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="-1.0">
+                                                   <center>
+                                                      <AnchorPane>
+                                                         <children>
+                                                            <TextArea fx:id="textArea" prefHeight="438.0" prefWidth="857.0" promptText="TextArea (Type your text here ) " wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                               <font>
+                                                                  <Font name="Perpetua" size="12.0" />
+                                                               </font>
+                                                            </TextArea>
+                                                            <HBox alignment="CENTER_LEFT" prefHeight="20.0" prefWidth="200.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                                               <children>
+                                                                  <Label text="Ctrl+Right Arrow - move pointer end">
+                                                                     <font>
+                                                                        <Font size="11.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                               </children>
+                                                               <padding>
+                                                                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                               </padding>
+                                                            </HBox>
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </center>
+                                                   <right>
+                                                      <ScrollPane fx:id="textAreaSettingsScrollPane" fitToHeight="true" fitToWidth="true" prefHeight="400.0" prefWidth="177.0" BorderPane.alignment="CENTER">
+                                                         <content>
+                                                            <VBox fx:id="textAreaSettingsVBox" prefHeight="328.0" prefWidth="173.0" style="-fx-background-color: white;" styleClass="bottomLeftRightBorder">
+                                                               <children>
+                                                                  <HBox fx:id="threecolHBox11" alignment="CENTER" layoutX="11.0" layoutY="66.0" minHeight="28.0" prefHeight="28.0" prefWidth="146.0" styleClass="topBottomBorder">
+                                                                     <children>
+                                                                        <Label alignment="CENTER" prefHeight="29.0" prefWidth="28.0" style="-fx-text-fill: #A7B0F5;" text="">
+                                                                           <styleClass>
+                                                                              <String fx:value="icon-fill" />
+                                                                              <String fx:value="font-15" />
+                                                                           </styleClass>
+                                                                        </Label>
+                                                                        <Label prefHeight="19.0" prefWidth="107.0" style="-fx-text-fill: #A7B0F5;" text="Textarea Options" />
+                                                                     </children>
+                                                                     <VBox.margin>
+                                                                        <Insets />
+                                                                     </VBox.margin>
+                                                                  </HBox>
+                                                                  <HBox fx:id="textAreaNewWindowHBox" alignment="CENTER_LEFT" minHeight="28.0" prefHeight="28.0" prefWidth="146.0" spacing="10.0">
+                                                                     <children>
+                                                                        <Label alignment="CENTER" prefHeight="29.0" prefWidth="28.0" style="-fx-text-fill: #A7B0F5;" text="">
+                                                                           <styleClass>
+                                                                              <String fx:value="icon-fill" />
+                                                                              <String fx:value="font-17" />
+                                                                           </styleClass>
+                                                                        </Label>
+                                                                        <Label prefHeight="17.0" prefWidth="121.0" text="New Window (Shift+F4)">
+                                                                           <font>
+                                                                              <Font size="11.0" />
+                                                                           </font>
+                                                                        </Label>
+                                                                     </children>
+                                                                     <padding>
+                                                                        <Insets left="5.0" />
+                                                                     </padding>
+                                                                     <styleClass>
+                                                                        <String fx:value="topBottomBorder" />
+                                                                        <String fx:value="f2f2f9Hover" />
+                                                                        <String fx:value="opacityHover" />
+                                                                     </styleClass>
+                                                                  </HBox>
+                                                                  <HBox fx:id="copyClipboardHBox" alignment="CENTER_LEFT" layoutX="11.0" layoutY="38.0" minHeight="28.0" prefHeight="28.0" prefWidth="146.0" spacing="10.0">
+                                                                     <children>
+                                                                        <Label alignment="CENTER" prefHeight="29.0" prefWidth="28.0" style="-fx-text-fill: #A7B0F5;" text="">
+                                                                           <styleClass>
+                                                                              <String fx:value="icon-fill" />
+                                                                              <String fx:value="font-17" />
+                                                                           </styleClass>
+                                                                        </Label>
+                                                                        <Label fx:id="copyClipboardHBoxLabel" prefHeight="17.0" prefWidth="121.0" text="Copy to Clipboard">
+                                                                           <font>
+                                                                              <Font size="11.0" />
+                                                                           </font>
+                                                                        </Label>
+                                                                     </children>
+                                                                     <padding>
+                                                                        <Insets left="5.0" />
+                                                                     </padding>
+                                                                     <styleClass>
+                                                                        <String fx:value="topBottomBorder" />
+                                                                        <String fx:value="f2f2f9Hover" />
+                                                                        <String fx:value="opacityHover" />
+                                                                     </styleClass>
+                                                                  </HBox>
+                                                                  <HBox fx:id="suggestHBox" alignment="CENTER_LEFT" layoutX="11.0" layoutY="66.0" minHeight="28.0" prefHeight="28.0" prefWidth="146.0" spacing="10.0">
+                                                                     <children>
+                                                                        <Label alignment="CENTER" prefHeight="29.0" prefWidth="28.0" style="-fx-text-fill: linear-gradient(to right top, #7162fc, #7d5efb, #895afa, #9456f8, #9e51f6, #a44ef5, #a94bf4, #af47f3, #b146f3, #b345f3, #b443f2, #b642f2);" text="">
+                                                                           <styleClass>
+                                                                              <String fx:value="icon-fill" />
+                                                                              <String fx:value="font-17" />
+                                                                           </styleClass>
+                                                                        </Label>
+                                                                        <Label fx:id="suggestHBoxLabel" prefHeight="17.0" prefWidth="123.0" style="-fx-text-fill: linear-gradient(to right top, #7162fc, #7d5efb, #895afa, #9456f8, #9e51f6, #a44ef5, #a94bf4, #af47f3, #b146f3, #b345f3, #b443f2, #b642f2);" text="Suggestions (Ctrl+SPACE)">
+                                                                           <font>
+                                                                              <Font size="10.0" />
+                                                                           </font>
+                                                                        </Label>
+                                                                     </children>
+                                                                     <padding>
+                                                                        <Insets left="5.0" />
+                                                                     </padding>
+                                                                     <styleClass>
+                                                                        <String fx:value="topBottomBorder" />
+                                                                        <String fx:value="f2f2f9Hover" />
+                                                                        <String fx:value="opacityHover" />
+                                                                     </styleClass>
+                                                                  </HBox>
+                                                                  <HBox fx:id="lineCaseHBox" alignment="CENTER_LEFT" layoutX="11.0" layoutY="122.0" minHeight="28.0" prefHeight="28.0" prefWidth="146.0" spacing="10.0">
+                                                                     <children>
+                                                                        <Label alignment="CENTER" prefHeight="29.0" prefWidth="28.0" style="-fx-text-fill: #A7B0F5;" text="">
+                                                                           <styleClass>
+                                                                              <String fx:value="icon-fill" />
+                                                                              <String fx:value="font-17" />
+                                                                           </styleClass>
+                                                                        </Label>
+                                                                        <Label fx:id="suggestHBoxLabel11" prefHeight="17.0" prefWidth="123.0" text="Search Line by Line">
+                                                                           <font>
+                                                                              <Font size="11.0" />
+                                                                           </font>
+                                                                        </Label>
+                                                                     </children>
+                                                                     <padding>
+                                                                        <Insets left="5.0" />
+                                                                     </padding>
+                                                                     <styleClass>
+                                                                        <String fx:value="topBottomBorder" />
+                                                                        <String fx:value="f2f2f9Hover" />
+                                                                        <String fx:value="opacityHover" />
+                                                                     </styleClass>
+                                                                  </HBox>
+                                                                  <HBox fx:id="matchCaseHBox" alignment="CENTER_LEFT" layoutX="11.0" layoutY="94.0" minHeight="28.0" prefHeight="28.0" prefWidth="146.0" spacing="10.0">
+                                                                     <children>
+                                                                        <Label alignment="CENTER" prefHeight="29.0" prefWidth="28.0" style="-fx-text-fill: #A7B0F5;" text="">
+                                                                           <styleClass>
+                                                                              <String fx:value="icon-fill" />
+                                                                              <String fx:value="font-17" />
+                                                                           </styleClass>
+                                                                        </Label>
+                                                                        <Label fx:id="suggestHBoxLabel1" prefHeight="17.0" prefWidth="123.0" text="Highlight Word (Ctrl+F)">
+                                                                           <font>
+                                                                              <Font size="11.0" />
+                                                                           </font>
+                                                                        </Label>
+                                                                     </children>
+                                                                     <padding>
+                                                                        <Insets left="5.0" />
+                                                                     </padding>
+                                                                     <styleClass>
+                                                                        <String fx:value="topBottomBorder" />
+                                                                        <String fx:value="f2f2f9Hover" />
+                                                                        <String fx:value="opacityHover" />
+                                                                     </styleClass>
+                                                                  </HBox>
+                                                                  <HBox fx:id="forceToSaveHBox" alignment="CENTER_LEFT" layoutX="11.0" layoutY="122.0" minHeight="28.0" prefHeight="28.0" prefWidth="146.0" spacing="10.0">
+                                                                     <children>
+                                                                        <Label alignment="CENTER" prefHeight="29.0" prefWidth="28.0" style="-fx-text-fill: #A7B0F5;" text="">
+                                                                           <styleClass>
+                                                                              <String fx:value="icon-fill" />
+                                                                              <String fx:value="font-17" />
+                                                                           </styleClass>
+                                                                        </Label>
+                                                                        <Label prefHeight="17.0" prefWidth="123.0" text="Force to save (Ctrl+S)">
+                                                                           <font>
+                                                                              <Font size="11.0" />
+                                                                           </font>
+                                                                        </Label>
+                                                                     </children>
+                                                                     <padding>
+                                                                        <Insets left="5.0" />
+                                                                     </padding>
+                                                                     <styleClass>
+                                                                        <String fx:value="topBottomBorder" />
+                                                                        <String fx:value="f2f2f9Hover" />
+                                                                        <String fx:value="opacityHover" />
+                                                                     </styleClass>
+                                                                  </HBox>
+                                                                  <HBox fx:id="deleteHBox" alignment="CENTER_LEFT" layoutX="11.0" layoutY="150.0" minHeight="28.0" prefHeight="28.0" prefWidth="146.0" spacing="10.0">
+                                                                     <children>
+                                                                        <Label alignment="CENTER" prefHeight="29.0" prefWidth="28.0" style="-fx-text-fill: #EA4C89;" text="">
+                                                                           <styleClass>
+                                                                              <String fx:value="icon-fill" />
+                                                                              <String fx:value="font-17" />
+                                                                           </styleClass>
+                                                                        </Label>
+                                                                        <Label fx:id="deleteHBoxInsideLabel" prefHeight="17.0" prefWidth="123.0" style="-fx-text-fill: #EA4C89;" text="Delete Note">
+                                                                           <font>
+                                                                              <Font size="11.0" />
+                                                                           </font>
+                                                                        </Label>
+                                                                     </children>
+                                                                     <padding>
+                                                                        <Insets left="5.0" />
+                                                                     </padding>
+                                                                     <styleClass>
+                                                                        <String fx:value="topBottomBorder" />
+                                                                        <String fx:value="f2f2f9Hover" />
+                                                                        <String fx:value="opacityHover" />
+                                                                     </styleClass>
+                                                                  </HBox>
+                                                                  <HBox fx:id="notePadHBox" alignment="CENTER_LEFT" layoutX="11.0" layoutY="178.0" minHeight="28.0" prefHeight="28.0" prefWidth="146.0" spacing="10.0">
+                                                                     <children>
+                                                                        <Label alignment="CENTER" prefHeight="29.0" prefWidth="28.0" style="-fx-text-fill: #A7B0F5;" text="">
+                                                                           <styleClass>
+                                                                              <String fx:value="icon-fill" />
+                                                                              <String fx:value="font-17" />
+                                                                           </styleClass>
+                                                                        </Label>
+                                                                        <Label prefHeight="17.0" prefWidth="123.0" text="NotePad">
+                                                                           <font>
+                                                                              <Font size="11.0" />
+                                                                           </font>
+                                                                        </Label>
+                                                                     </children>
+                                                                     <padding>
+                                                                        <Insets left="5.0" />
+                                                                     </padding>
+                                                                     <styleClass>
+                                                                        <String fx:value="topBottomBorder" />
+                                                                        <String fx:value="f2f2f9Hover" />
+                                                                        <String fx:value="opacityHover" />
+                                                                     </styleClass>
+                                                                  </HBox>
+                                                                  <HBox fx:id="recentlyOpenedHBox" alignment="CENTER_LEFT" layoutX="11.0" layoutY="206.0" minHeight="28.0" prefHeight="28.0" prefWidth="146.0" spacing="10.0">
+                                                                     <children>
+                                                                        <Label alignment="CENTER" prefHeight="29.0" prefWidth="28.0" style="-fx-text-fill: #A7B0F5;" text="">
+                                                                           <styleClass>
+                                                                              <String fx:value="icon-fill" />
+                                                                              <String fx:value="font-17" />
+                                                                           </styleClass>
+                                                                        </Label>
+                                                                        <Label prefHeight="17.0" prefWidth="123.0" text="Recently Opened">
+                                                                           <font>
+                                                                              <Font size="11.0" />
+                                                                           </font>
+                                                                        </Label>
+                                                                     </children>
+                                                                     <padding>
+                                                                        <Insets left="5.0" />
+                                                                     </padding>
+                                                                     <styleClass>
+                                                                        <String fx:value="topBottomBorder" />
+                                                                        <String fx:value="f2f2f9Hover" />
+                                                                        <String fx:value="opacityHover" />
+                                                                     </styleClass>
+                                                                  </HBox>
+                                                                  <HBox fx:id="editHistoryHBox" alignment="CENTER_LEFT" layoutX="11.0" layoutY="234.0" minHeight="28.0" prefHeight="28.0" prefWidth="146.0" spacing="10.0">
+                                                                     <children>
+                                                                        <Label alignment="CENTER" prefHeight="29.0" prefWidth="28.0" style="-fx-text-fill: #A7B0F5;" text="">
+                                                                           <styleClass>
+                                                                              <String fx:value="icon-fill" />
+                                                                              <String fx:value="font-17" />
+                                                                           </styleClass>
+                                                                        </Label>
+                                                                        <Label prefHeight="17.0" prefWidth="123.0" text="Edit History">
+                                                                           <font>
+                                                                              <Font size="11.0" />
+                                                                           </font>
+                                                                        </Label>
+                                                                     </children>
+                                                                     <padding>
+                                                                        <Insets left="5.0" />
+                                                                     </padding>
+                                                                     <styleClass>
+                                                                        <String fx:value="topBottomBorder" />
+                                                                        <String fx:value="f2f2f9Hover" />
+                                                                        <String fx:value="opacityHover" />
+                                                                     </styleClass>
+                                                                  </HBox>
+                                                                  <HBox fx:id="previousNoteHBox" alignment="CENTER_LEFT" layoutX="11.0" layoutY="262.0" minHeight="28.0" prefHeight="28.0" prefWidth="146.0" spacing="10.0">
+                                                                     <children>
+                                                                        <Label alignment="CENTER" prefHeight="29.0" prefWidth="28.0" style="-fx-text-fill: #A7B0F5;" text="">
+                                                                           <styleClass>
+                                                                              <String fx:value="icon-fill" />
+                                                                              <String fx:value="font-17" />
+                                                                           </styleClass>
+                                                                        </Label>
+                                                                        <Label prefHeight="17.0" prefWidth="123.0" text="Previous (Alt+LeftArrow)">
+                                                                           <font>
+                                                                              <Font size="11.0" />
+                                                                           </font>
+                                                                        </Label>
+                                                                     </children>
+                                                                     <padding>
+                                                                        <Insets left="5.0" />
+                                                                     </padding>
+                                                                     <styleClass>
+                                                                        <String fx:value="topBottomBorder" />
+                                                                        <String fx:value="f2f2f9Hover" />
+                                                                        <String fx:value="opacityHover" />
+                                                                     </styleClass>
+                                                                  </HBox>
+                                                                  <HBox fx:id="nextNoteHBox" alignment="CENTER_LEFT" layoutX="11.0" layoutY="234.0" minHeight="28.0" prefHeight="28.0" prefWidth="146.0" spacing="10.0">
+                                                                     <children>
+                                                                        <Label alignment="CENTER" prefHeight="29.0" prefWidth="28.0" style="-fx-text-fill: #A7B0F5;" text="">
+                                                                           <styleClass>
+                                                                              <String fx:value="icon-fill" />
+                                                                              <String fx:value="font-17" />
+                                                                           </styleClass>
+                                                                        </Label>
+                                                                        <Label prefHeight="17.0" prefWidth="123.0" text="Next (Alt+RightArrow)">
+                                                                           <font>
+                                                                              <Font size="11.0" />
+                                                                           </font>
+                                                                        </Label>
+                                                                     </children>
+                                                                     <padding>
+                                                                        <Insets left="5.0" />
+                                                                     </padding>
+                                                                     <styleClass>
+                                                                        <String fx:value="topBottomBorder" />
+                                                                        <String fx:value="f2f2f9Hover" />
+                                                                        <String fx:value="opacityHover" />
+                                                                     </styleClass>
+                                                                  </HBox>
+                                                                  <HBox fx:id="controlShortcutsHBox" alignment="CENTER_LEFT" layoutX="11.0" layoutY="290.0" minHeight="28.0" prefHeight="28.0" prefWidth="146.0" spacing="10.0">
+                                                                     <children>
+                                                                        <Label alignment="CENTER" prefHeight="29.0" prefWidth="28.0" style="-fx-text-fill: #A7B0F5;" text="">
+                                                                           <styleClass>
+                                                                              <String fx:value="icon-fill" />
+                                                                              <String fx:value="font-17" />
+                                                                           </styleClass>
+                                                                        </Label>
+                                                                        <Label prefHeight="17.0" prefWidth="123.0" text="Control Shortcuts">
+                                                                           <font>
+                                                                              <Font size="11.0" />
+                                                                           </font>
+                                                                        </Label>
+                                                                     </children>
+                                                                     <padding>
+                                                                        <Insets left="5.0" />
+                                                                     </padding>
+                                                                     <styleClass>
+                                                                        <String fx:value="topBottomBorder" />
+                                                                        <String fx:value="f2f2f9Hover" />
+                                                                        <String fx:value="opacityHover" />
+                                                                     </styleClass>
+                                                                  </HBox>
+                                                                  <HBox fx:id="undoHBox" alignment="CENTER_LEFT" layoutX="11.0" layoutY="346.0" minHeight="28.0" prefHeight="28.0" prefWidth="146.0" spacing="10.0">
+                                                                     <children>
+                                                                        <Label alignment="CENTER" prefHeight="29.0" prefWidth="28.0" style="-fx-text-fill: #A7B0F5;" text="">
+                                                                           <styleClass>
+                                                                              <String fx:value="icon-fill" />
+                                                                              <String fx:value="font-17" />
+                                                                           </styleClass>
+                                                                        </Label>
+                                                                        <Label prefHeight="17.0" prefWidth="123.0" text="Undo (Shift+TopArrow)">
+                                                                           <font>
+                                                                              <Font size="11.0" />
+                                                                           </font>
+                                                                        </Label>
+                                                                     </children>
+                                                                     <padding>
+                                                                        <Insets left="5.0" />
+                                                                     </padding>
+                                                                     <styleClass>
+                                                                        <String fx:value="topBottomBorder" />
+                                                                        <String fx:value="f2f2f9Hover" />
+                                                                        <String fx:value="opacityHover" />
+                                                                     </styleClass>
+                                                                  </HBox>
+                                                                  <HBox fx:id="redoHBox" alignment="CENTER_LEFT" layoutX="11.0" layoutY="374.0" minHeight="28.0" prefHeight="28.0" prefWidth="146.0" spacing="10.0">
+                                                                     <children>
+                                                                        <Label alignment="CENTER" prefHeight="29.0" prefWidth="28.0" style="-fx-text-fill: #A7B0F5;" text="">
+                                                                           <styleClass>
+                                                                              <String fx:value="icon-fill" />
+                                                                              <String fx:value="font-17" />
+                                                                           </styleClass>
+                                                                        </Label>
+                                                                        <Label prefHeight="17.0" prefWidth="123.0" text="Redo (Shift+TopArrow)">
+                                                                           <font>
+                                                                              <Font size="11.0" />
+                                                                           </font>
+                                                                        </Label>
+                                                                     </children>
+                                                                     <padding>
+                                                                        <Insets left="5.0" />
+                                                                     </padding>
+                                                                     <styleClass>
+                                                                        <String fx:value="topBottomBorder" />
+                                                                        <String fx:value="f2f2f9Hover" />
+                                                                        <String fx:value="opacityHover" />
+                                                                     </styleClass>
+                                                                  </HBox>
+                                                               </children>
+                                                            </VBox>
+                                                         </content>
+                                                         <padding>
+                                                            <Insets bottom="-1.0" left="-1.0" right="-1.0" top="-1.0" />
+                                                         </padding>
+                                                      </ScrollPane>
+                                                   </right>
+                                                   <bottom>
+                                                      <HBox alignment="CENTER_LEFT" style="-fx-background-color: #A7B0F5;" BorderPane.alignment="CENTER">
+                                                         <children>
+                                                            <HBox fx:id="shortcutHBox" alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="584.0">
+                                                               <children>
+                                                                  <Label fx:id="shortcutDialogIconLabel" alignment="CENTER" prefHeight="44.0" prefWidth="32.0" style="-fx-text-fill: white;" text="">
+                                                                     <styleClass>
+                                                                        <String fx:value="icon-fill" />
+                                                                        <String fx:value="font-17" />
+                                                                        <String fx:value="radius5" />
+                                                                        <String fx:value="opacityHover" />
+                                                                     </styleClass>
+                                                                     <cursor>
+                                                                        <Cursor fx:constant="HAND" />
+                                                                     </cursor>
+                                                                  </Label>
+                                                                  <Label fx:id="shortcutLabel" prefHeight="29.0" prefWidth="81.0" style="-fx-text-fill: white;" text="Ctrl1">
+                                                                     <font>
+                                                                        <Font name="Ebrima" size="15.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                               </children>
+                                                            </HBox>
+                                                            <Label prefHeight="29.0" style="-fx-text-fill: white;" text="Ctrl+Shift+Num 1 , to 9">
+                                                               <font>
+                                                                  <Font name="Ebrima" size="12.0" />
+                                                               </font>
+                                                            </Label>
+                                                         </children>
+                                                      </HBox>
+                                                   </bottom>
+                                                   <top>
+                                                      <HBox fx:id="progressBarHBox" alignment="CENTER_LEFT" prefHeight="33.0" prefWidth="734.0" spacing="10.0" style="-fx-background-color: #F9F8FD;" BorderPane.alignment="CENTER">
+                                                         <children>
+                                                            <Label fx:id="progressLabel" prefHeight="16.0" text="Opening notepad..">
+                                                               <font>
+                                                                  <Font size="11.0" />
+                                                               </font>
+                                                            </Label>
+                                                            <ProgressBar fx:id="progressBar" prefHeight="4.0" prefWidth="131.0" progress="0.38" />
+                                                         </children>
+                                                         <padding>
+                                                            <Insets left="10.0" />
+                                                         </padding>
+                                                      </HBox>
+                                                   </top>
+                                                   <left>
+                                                      <VBox prefHeight="440.0" prefWidth="29.0" style="-fx-background-color: white;" styleClass="leftRightBorder" BorderPane.alignment="CENTER">
+                                                         <children>
+                                                            <Label fx:id="closeTextAreLabel" alignment="CENTER" prefHeight="29.0" prefWidth="48.0" style="-fx-text-fill: #A7B0F5;" text="">
+                                                               <styleClass>
+                                                                  <String fx:value="icon-fill" />
+                                                                  <String fx:value="font-16" />
+                                                               </styleClass>
+                                                               <cursor>
+                                                                  <Cursor fx:constant="HAND" />
+                                                               </cursor>
+                                                            </Label>
+                                                            <Label fx:id="textAreaSettingsLabel" alignment="CENTER" prefHeight="29.0" prefWidth="39.0" style="-fx-text-fill: #A7B0F5;" text="">
+                                                               <styleClass>
+                                                                  <String fx:value="icon-fill" />
+                                                                  <String fx:value="font-16" />
+                                                               </styleClass>
+                                                               <cursor>
+                                                                  <Cursor fx:constant="HAND" />
+                                                               </cursor>
+                                                            </Label>
+                                                         </children>
+                                                      </VBox>
+                                                   </left>
+                                                </BorderPane>
+                                                <VBox fx:id="suggestVBox" layoutX="85.0" layoutY="84.0" prefHeight="356.0" prefWidth="433.0" style="-fx-background-color: white;" styleClass="bottomLeftRightBorder">
+                                                   <children>
+                                                      <HBox styleClass="topLeftRightBorder">
+                                                         <VBox.margin>
+                                                            <Insets />
+                                                         </VBox.margin>
+                                                         <children>
+                                                            <HBox fx:id="suggestDragHandlerHBox" alignment="CENTER_LEFT" minHeight="28.0" prefHeight="28.0" prefWidth="364.0">
+                                                               <children>
+                                                                  <Label alignment="CENTER" prefHeight="29.0" prefWidth="28.0" style="-fx-text-fill: linear-gradient(to right top, #7162fc, #7d5efb, #895afa, #9456f8, #9e51f6, #a44ef5, #a94bf4, #af47f3, #b146f3, #b345f3, #b443f2, #b642f2);" text="">
+                                                                     <styleClass>
+                                                                        <String fx:value="icon-fill" />
+                                                                        <String fx:value="font-17" />
+                                                                     </styleClass>
+                                                                  </Label>
+                                                                  <Label prefHeight="19.0" prefWidth="83.0" style="-fx-text-fill: linear-gradient(to right top, #7162fc, #7d5efb, #895afa, #9456f8, #9e51f6, #a44ef5, #a94bf4, #af47f3, #b146f3, #b345f3, #b443f2, #b642f2);" text="Suggest words">
+                                                                     <font>
+                                                                        <Font size="11.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <Label layoutX="38.0" layoutY="15.0" prefHeight="19.0" prefWidth="150.0" style="-fx-text-fill: #BB8EF5;" text="Ctrl+ENTER ( Dictionary Suggest )">
+                                                                     <font>
+                                                                        <Font size="9.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                                  <Label fx:id="ctrlEnterLabel" alignment="CENTER_RIGHT" layoutX="145.0" layoutY="15.0" prefHeight="19.0" prefWidth="98.0" text="Dictionary">
+                                                                     <font>
+                                                                        <Font name="System Bold" size="9.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                               </children>
+                                                               <padding>
+                                                                  <Insets left="5.0" />
+                                                               </padding>
+                                                            </HBox>
+                                                            <Label fx:id="suggestRefreshLabel" alignment="CENTER" prefHeight="29.0" prefWidth="28.0" text="">
+                                                               <styleClass>
+                                                                  <String fx:value="icon-fill" />
+                                                                  <String fx:value="font-17" />
+                                                                  <String fx:value="f2f2f9Hover" />
+                                                                  <String fx:value="radius5" />
+                                                               </styleClass>
+                                                            </Label>
+                                                            <Label fx:id="suggestContainerCloseLabel" alignment="CENTER" prefHeight="29.0" prefWidth="28.0" text="">
+                                                               <styleClass>
+                                                                  <String fx:value="icon-fill" />
+                                                                  <String fx:value="font-17" />
+                                                                  <String fx:value="f2f2f9Hover" />
+                                                                  <String fx:value="radius5" />
+                                                               </styleClass>
+                                                            </Label>
+                                                         </children>
+                                                      </HBox>
+                                                      <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" prefHeight="302.0" prefWidth="229.0">
+                                                         <content>
+                                                            <VBox fx:id="suggestResultVBox" prefHeight="303.0" prefWidth="144.0">
+                                                               <padding>
+                                                                  <Insets top="-2.0" />
+                                                               </padding>
+                                                               <children>
+                                                                  <HBox fx:id="copyClipboardHBox1" alignment="CENTER_LEFT" minHeight="28.0" prefHeight="28.0" prefWidth="146.0" spacing="10.0">
+                                                                     <children>
+                                                                        <Label alignment="CENTER" disable="true" prefHeight="29.0" prefWidth="28.0" text="">
+                                                                           <styleClass>
+                                                                              <String fx:value="icon-fill" />
+                                                                              <String fx:value="font-17" />
+                                                                           </styleClass>
+                                                                        </Label>
+                                                                        <Label prefHeight="17.0" prefWidth="251.0" text="Copy to Clipboard">
+                                                                           <font>
+                                                                              <Font size="11.0" />
+                                                                           </font>
+                                                                        </Label>
+                                                                        <HBox alignment="CENTER_LEFT" prefHeight="25.0" prefWidth="133.0">
+                                                                           <children>
+                                                                              <Label alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="198.0" text="Page.txt">
+                                                                                 <font>
+                                                                                    <Font size="11.0" />
+                                                                                 </font>
+                                                                              </Label>
+                                                                           </children>
+                                                                        </HBox>
+                                                                     </children>
+                                                                     <styleClass>
+                                                                        <String fx:value="topRightBottomLeftBorder" />
+                                                                        <String fx:value="f2f2f9Hover" />
+                                                                     </styleClass>
+                                                                     <padding>
+                                                                        <Insets left="5.0" right="5.0" />
+                                                                     </padding>
+                                                                  </HBox>
+                                                               </children>
+                                                            </VBox>
+                                                         </content>
+                                                         <VBox.margin>
+                                                            <Insets />
+                                                         </VBox.margin>
+                                                         <padding>
+                                                            <Insets left="-1.0" right="-1.0" />
+                                                         </padding>
+                                                      </ScrollPane>
+                                                      <AnchorPane>
+                                                         <children>
+                                                            <TextField fx:id="searchSuggestWordTextField" prefHeight="38.0" prefWidth="390.0" promptText="search word ( Shift+SPACE )" styleClass="textfield" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </children>
+                                                   <effect>
+                                                      <DropShadow color="#a9b2f533" height="50.0" radius="24.5" width="50.0" />
+                                                   </effect>
+                                                </VBox>
+                                                <AnchorPane fx:id="floatMatchCaseAnchorPane" layoutX="139.0" layoutY="54.0" maxWidth="650.0" prefHeight="419.0" prefWidth="797.0" style="-fx-background-color: white;" styleClass="topRightBottomLeftBorder" visible="false" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+                                                   <effect>
+                                                      <DropShadow color="#a9b2f533" height="50.0" radius="24.5" width="50.0" />
+                                                   </effect></AnchorPane>
+                                                <AnchorPane fx:id="lineMatchCaseAnchorPane" layoutX="61.0" layoutY="81.0" maxWidth="650.0" prefHeight="419.0" prefWidth="797.0" style="-fx-background-color: white;" styleClass="topRightBottomLeftBorder" visible="false" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+                                                   <effect>
+                                                      <DropShadow color="#a9b3f54d" height="70.0" radius="34.5" width="70.0" />
+                                                   </effect>
+                                                </AnchorPane>
+                                                <AnchorPane fx:id="editHistoryAnchorPane" layoutX="495.0" layoutY="12.0" prefHeight="392.0" prefWidth="362.0" style="-fx-border-color: gray; -fx-border-width: 0.2; -fx-background-color: white;" visible="false" AnchorPane.bottomAnchor="38.0" AnchorPane.rightAnchor="193.0" AnchorPane.topAnchor="11.0">
+                                                   <children>
+                                                      <AnchorPane layoutX="0.20000000298023224" layoutY="0.20000000298023224" prefHeight="27.0" prefWidth="362.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                         <children>
+                                                            <HBox fx:id="editHistoryDraghandlerHBox" alignment="CENTER_LEFT" layoutX="14.0" layoutY="3.0" prefHeight="35.0" prefWidth="140.0" spacing="25.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="222.0" AnchorPane.topAnchor="0.0">
+                                                               <children>
+                                                                  <Label style="-fx-text-fill: #A7B0F5;" text="Edit History">
+                                                                     <font>
+                                                                        <Font name="System Bold" size="12.0" />
+                                                                     </font>
+                                                                  </Label>
+                                                               </children>
+                                                               <padding>
+                                                                  <Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
+                                                               </padding>
+                                                            </HBox>
+                                                            <HBox alignment="CENTER_RIGHT" layoutX="137.0" layoutY="4.0" prefHeight="37.0" prefWidth="225.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="137.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                               <padding>
+                                                                  <Insets bottom="5.0" left="20.0" right="10.0" top="5.0" />
+                                                               </padding>
+                                                               <children>
+                                                                  <Label prefHeight="37.0" prefWidth="110.0" style="-fx-text-fill: #A7B0F5;" styleClass="underline" text="Show All Edit History" wrapText="true" />
+                                                                  <Label fx:id="closeEditHistoryAnchorPaneLabel" alignment="CENTER" prefHeight="29.0" prefWidth="28.0" style="-fx-text-fill: #464958;" text="">
+                                                                     <styleClass>
+                                                                        <String fx:value="icon-fill" />
+                                                                        <String fx:value="font-16" />
+                                                                        <String fx:value="f2f2f9Hover" />
+                                                                        <String fx:value="radius5" />
+                                                                     </styleClass>
+                                                                  </Label>
+                                                               </children>
+                                                            </HBox>
+                                                         </children>
+                                                      </AnchorPane>
+                                                      <ScrollPane fx:id="editHistoryContentScrollPane" fitToHeight="true" fitToWidth="true" layoutX="0.20000000298023224" layoutY="37.20000076293945" maxWidth="405.0" prefHeight="355.0" prefWidth="362.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="27.0">
+                                                         <content>
+                                                            <VBox fx:id="editHistoryContentVBox" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+                                                               <children>
+                                                                  <VBox maxHeight="146.0" minHeight="146.0" prefHeight="146.0" prefWidth="351.0" style="-fx-background-color: #F9F8FD; -fx-border-color: #A7B0F5; -fx-border-width: 0.2;">
+                                                                     <children>
+                                                                        <HBox alignment="CENTER_LEFT" prefHeight="104.0" prefWidth="349.0" spacing="10.0">
+                                                                           <children>
+                                                                              <Label prefHeight="103.0" text="ရန်ကုန် " wrapText="true">
+                                                                                 <styleClass>
+                                                                                    <String fx:value="fontPyidaungsu" />
+                                                                                    <String fx:value="font-20" />
+                                                                                    <String fx:value="fontbold" />
+                                                                                 </styleClass>
+                                                                              </Label>
+                                                                           </children>
+                                                                           <padding>
+                                                                              <Insets left="15.0" right="15.0" />
+                                                                           </padding>
+                                                                        </HBox>
+                                                                        <HBox alignment="CENTER">
+                                                                           <children>
+                                                                              <HBox alignment="CENTER_LEFT" prefHeight="57.0" prefWidth="288.0">
+                                                                                 <children>
+                                                                                    <Label style="-fx-text-fill: #A7B0F5;" text="1 min ago">
+                                                                                       <styleClass>
+                                                                                          <String fx:value="font-15" />
+                                                                                          <String fx:value="fontbold" />
+                                                                                       </styleClass>
+                                                                                    </Label>
+                                                                                 </children>
+                                                                                 <padding>
+                                                                                    <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                                                                                 </padding>
+                                                                              </HBox>
+                                                                              <HBox alignment="CENTER_RIGHT" prefHeight="57.0" prefWidth="172.0">
+                                                                                 <children>
+                                                                                    <Label style="-fx-background-color: #EA4C89; -fx-background-radius: 10; -fx-text-fill: white; -fx-font-weight: bold;" text="View">
+                                                                                       <padding>
+                                                                                          <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                                                                                       </padding>
+                                                                                    </Label>
+                                                                                 </children>
+                                                                                 <padding>
+                                                                                    <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+                                                                                 </padding>
+                                                                              </HBox>
+                                                                           </children>
+                                                                        </HBox>
+                                                                     </children>
+                                                                  </VBox>
+                                                               </children>
+                                                               <padding>
+                                                                  <Insets top="-1.0" />
+                                                               </padding>
+                                                            </VBox>
+                                                         </content>
+                                                         <padding>
+                                                            <Insets bottom="-1.0" left="-1.0" right="-1.0" top="-1.0" />
+                                                         </padding>
+                                                      </ScrollPane>
+                                                   </children>
+                                                   <effect>
+                                                      <DropShadow color="#a9b3f533" height="50.0" radius="24.5" width="50.0" />
+                                                   </effect>
+                                                </AnchorPane>
+                                                <VBox fx:id="notifyChooseNoteVBox" alignment="CENTER" layoutX="1.0" layoutY="168.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                   <children>
+                                                      <AnchorPane maxWidth="400.0" minHeight="170.0" prefHeight="170.0" prefWidth="400.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 25;">
+                                                         <effect>
+                                                            <DropShadow blurType="GAUSSIAN" color="#6943f033" height="50.0" radius="24.5" width="50.0" />
+                                                         </effect>
+                                                         <children>
+                                                            <Label fx:id="notifyChooseNotePathLabel" alignment="CENTER" layoutX="93.0" layoutY="61.0" prefHeight="36.0" prefWidth="214.0" style="-fx-text-fill: #7240F0;" styleClass="fontPyidaungsu" text="Create New Note" AnchorPane.leftAnchor="93.0" AnchorPane.topAnchor="61.0">
+                                                               <font>
+                                                                  <Font name="Arial Bold" size="25.0" />
+                                                               </font>
+                                                               <effect>
+                                                                  <DropShadow color="#6943f080" height="116.0" radius="57.5" width="116.0" />
+                                                               </effect>
+                                                            </Label>
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </AnchorPane>
+                                       </center>
+                                       <bottom>
+                                          <AnchorPane fx:id="filePathHBoxAnchorPane" BorderPane.alignment="CENTER">
+                                             <children>
+                                                <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="368.0" />
+                                             </children>
+                                          </AnchorPane>
+                                       </bottom>
+                                       <top>
+                                          <ScrollPane fx:id="recentNoteResultScrollPane" fitToHeight="true" fitToWidth="true" BorderPane.alignment="CENTER">
+                                             <content>
+                                                <HBox fx:id="recentNoteResultHBox" alignment="CENTER_LEFT" prefHeight="76.0" prefWidth="1035.0" spacing="5.0">
+                                                   <padding>
+                                                      <Insets left="15.0" right="15.0" />
+                                                   </padding>
+                                                </HBox>
+                                             </content>
+                                          </ScrollPane>
+                                       </top>
+                                    </BorderPane>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </StackPane>
+                     </center>
+                     <bottom>
+                        <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="954.0" spacing="20.0">
+                           <children>
+                              <Button layoutX="750.0" layoutY="20.0" mnemonicParsing="false" onAction="#openHome" text="Home (Alt+Home)" />
+                              <Button layoutX="592.0" layoutY="20.0" mnemonicParsing="false" onAction="#openSettings" text="Settings (Alt+Shift+S)" />
+                              <Button layoutX="154.0" layoutY="20.0" mnemonicParsing="false" onAction="#openContentContainer" text="Contents (Alt+1)" />
+                              <Button layoutX="305.0" layoutY="20.0" mnemonicParsing="false" onAction="#openSearchBar" text="SearchBar (Alt+2)" />
+                              <Button layoutX="429.0" layoutY="20.0" mnemonicParsing="false" onAction="#openRecentlyInnerBorder" text="Recently Opened" />
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                     </bottom>
+                     <BorderPane.margin>
+                        <Insets />
+                     </BorderPane.margin>
+                     <top>
+                        <ScrollPane fx:id="recentNoteResultScrollPane1" fitToHeight="true" fitToWidth="true" prefHeight="50.0" prefWidth="1035.0" BorderPane.alignment="CENTER">
+                           <content>
+                              <HBox fx:id="recentNoteResultHBox1" alignment="CENTER_LEFT" prefHeight="76.0" prefWidth="1035.0" spacing="5.0">
+                                 <padding>
+                                    <Insets left="15.0" right="15.0" />
+                                 </padding>
+                              </HBox>
+                           </content>
+                        </ScrollPane>
+                     </top>
+                     <left>
+                        <SplitPane fx:id="dockContainerSplitPane" orientation="VERTICAL" prefHeight="200.0" prefWidth="301.0" style="-fx-background-color: transparent;" BorderPane.alignment="CENTER">
+                           <padding>
+                              <Insets bottom="-1.0" left="-1.0" right="-1.0" top="-1.0" />
+                           </padding>
+                        </SplitPane>
+                     </left>
+                  </BorderPane>
+               </center>
+               <top>
+                  <AnchorPane prefHeight="52.0" prefWidth="1035.0" styleClass="topRightBottomLeftBorder" BorderPane.alignment="CENTER">
+                     <children>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="14.0" layoutY="7.0" pickOnBounds="true" smooth="false" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0">
+                           <image>
+                              <Image url="@../../../Image/ij.jpg" />
+                           </image>
+                        </ImageView>
+                        <HBox alignment="CENTER_RIGHT" layoutX="141.0" layoutY="9.0" prefHeight="41.0" prefWidth="327.0" spacing="7.0" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+                           <children>
+                              <Button fx:id="openDirectoryButton" layoutX="139.0" layoutY="14.0" mnemonicParsing="false" styleClass="font-16" text="D" />
+                              <Button fx:id="openLogsButton" layoutX="176.0" layoutY="14.0" mnemonicParsing="false" styleClass="font-16" text="L" />
+                              <Button fx:id="openBackupButton" mnemonicParsing="false" styleClass="font-16" text="B" />
+                              <Button fx:id="newNoteButton" mnemonicParsing="false" text="">
+                                 <styleClass>
+                                    <String fx:value="icon-fill" />
+                                    <String fx:value="font-16" />
+                                 </styleClass>
+                              </Button>
+                              <Label fx:id="allUIRefreshLabel" alignment="CENTER" prefHeight="29.0" prefWidth="28.0" text="">
+                                 <styleClass>
+                                    <String fx:value="icon-fill" />
+                                    <String fx:value="font-16" />
+                                    <String fx:value="radius5" />
+                                    <String fx:value="f2f2f9Hover" />
+                                 </styleClass>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <HBox alignment="CENTER" prefHeight="42.0" prefWidth="47.0">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="29.0" prefWidth="28.0" text="">
+                                       <styleClass>
+                                          <String fx:value="icon-fill" />
+                                          <String fx:value="font-16" />
+                                          <String fx:value="radius5" />
+                                          <String fx:value="f2f2f9Hover" />
+                                       </styleClass>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Label>
+                                    <Label alignment="CENTER" prefHeight="20.0" prefWidth="20.0" style="-fx-background-color: #E34140; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 50;" text="1">
+                                       <HBox.margin>
+                                          <Insets left="-8.0" top="-20.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </HBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="302.2" layoutY="7.2" prefHeight="47.0" prefWidth="408.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="301.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Button fx:id="openHomeButton" layoutX="10.0" layoutY="11.0" mnemonicParsing="false" text="">
+                                 <styleClass>
+                                    <String fx:value="icon-fill" />
+                                    <String fx:value="font-16" />
+                                 </styleClass>
+                              </Button>
+                              <Button fx:id="openContentContainerButton" mnemonicParsing="false" text="">
+                                 <styleClass>
+                                    <String fx:value="icon-fill" />
+                                    <String fx:value="font-16" />
+                                 </styleClass>
+                              </Button>
+                              <Button fx:id="openSearchBarButton" mnemonicParsing="false" text="">
+                                 <styleClass>
+                                    <String fx:value="icon-fill" />
+                                    <String fx:value="font-16" />
+                                 </styleClass>
+                              </Button>
+                              <Button fx:id="openControlShortcutContainerButton" layoutX="59.0" layoutY="11.0" mnemonicParsing="false" text="">
+                                 <styleClass>
+                                    <String fx:value="icon-fill" />
+                                    <String fx:value="font-16" />
+                                 </styleClass>
+                              </Button>
+                              <Button fx:id="openSettingsButton" layoutX="139.0" layoutY="11.0" mnemonicParsing="false" text="">
+                                 <styleClass>
+                                    <String fx:value="icon-fill" />
+                                    <String fx:value="font-16" />
+                                 </styleClass>
+                              </Button>
+                              <Button fx:id="openSettingsButton1" layoutX="206.0" layoutY="10.0" mnemonicParsing="false" text="">
+                                 <styleClass>
+                                    <String fx:value="icon-fill" />
+                                    <String fx:value="font-16" />
+                                 </styleClass>
+                              </Button>
+                              <Button fx:id="openNoteFromDirButton" layoutX="252.0" layoutY="10.0" mnemonicParsing="false" text="">
+                                 <styleClass>
+                                    <String fx:value="icon-fill" />
+                                    <String fx:value="font-16" />
+                                 </styleClass>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children></AnchorPane>
+               </top>
+               <bottom>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="23.0" prefWidth="1035.0" spacing="10.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label fx:id="initialPreparingLabel" text="indexing..." />
+                        <ProgressBar fx:id="initialPreparingProgressBar" prefHeight="3.0" prefWidth="200.0" progress="0.37" />
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </HBox>
+               </bottom>
+            </BorderPane>
+         </children>
+      </StackPane>
+      <VBox fx:id="floatContentVBox" layoutX="250.0" layoutY="100.0" maxHeight="500.0" AnchorPane.rightAnchor="50.0">
+         <effect>
+            <DropShadow color="#a7b0f533" height="50.0" radius="24.5" width="50.0" />
+         </effect></VBox>
+      <VBox fx:id="floatSearchBarVBox" layoutX="101.0" layoutY="462.0" maxHeight="500.0" prefHeight="38.0" visible="false" AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="101.0" AnchorPane.rightAnchor="99.0">
+         <effect>
+            <DropShadow color="#00000033" height="50.0" radius="24.5" width="50.0" />
+         </effect></VBox>
+      <AnchorPane fx:id="controlShortcutValueSpecifyAnchorPane" layoutX="20.0" layoutY="628.0" maxWidth="400.0" minHeight="104.0" prefHeight="104.0" prefWidth="363.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 25;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" color="#6943f033" height="50.0" radius="24.5" width="50.0" />
+         </effect>
+         <children>
+            <Label fx:id="controlShortcutValueSpecifyLabel" alignment="CENTER" layoutX="64.0" layoutY="34.0" prefHeight="36.0" style="-fx-text-fill: #7240F0;" styleClass="fontPyidaungsu" text="No value specify for Ctrl1" AnchorPane.bottomAnchor="34.0" AnchorPane.leftAnchor="64.0" AnchorPane.topAnchor="34.0">
+               <font>
+                  <Font name="Arial Bold" size="22.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#6943f080" height="116.0" radius="57.5" width="116.0" />
+               </effect>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

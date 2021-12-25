@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.CheckMenuItem?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.CustomMenuItem?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane fx:id="notecardAnchor" cache="true" cacheHint="SPEED" minHeight="336.0" minWidth="320.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="336.0" prefWidth="359.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane fx:id="pane" cache="true" cacheHint="SPEED" layoutX="27.0" layoutY="35.0" maxHeight="291.0" maxWidth="254.0" minHeight="269.0" minWidth="254.0" prefHeight="272.0" prefWidth="300.0" style="-fx-background-color: transparent;" styleClass="pane" AnchorPane.bottomAnchor="29.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="35.0">
+         <children>
+            <Label fx:id="textLabel" alignment="TOP_LEFT" cache="true" cacheHint="QUALITY" layoutX="14.0" layoutY="50.0" prefHeight="144.0" prefWidth="280.0" text="indexing..." wrapText="true" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <contextMenu>
+                  <ContextMenu>
+                     <items>
+                        <Menu mnemonicParsing="false" text="Card Menu">
+                           <items>
+                              <MenuItem fx:id="refreshMenuItem" disable="true" mnemonicParsing="false" text="Refresh(Auto Refresh When Hover)" />
+                              <SeparatorMenuItem mnemonicParsing="false" />
+                              <CheckMenuItem fx:id="pintostartCheckMenuItem" mnemonicParsing="false" text="Pin to Startup" />
+                              <SeparatorMenuItem mnemonicParsing="false" />
+                              <MenuItem fx:id="openOptionsMenuItem" mnemonicParsing="false" text="Open Card Options" />
+                              <SeparatorMenuItem mnemonicParsing="false" />
+                              <Menu fx:id="cardsizeMenu" mnemonicParsing="false" text="Card Size">
+                                 <items>
+                                    <MenuItem fx:id="adjustSizeMenuItem" mnemonicParsing="false" text="Adjust Size Using (Mouse Wheel)" />
+                                    <SeparatorMenuItem mnemonicParsing="false" />
+                                    <MenuItem fx:id="currentsizeMenuItem" disable="true" mnemonicParsing="false" text="Current Size : 380  X  390" />
+                                    <CheckMenuItem fx:id="defaultSizeMenuItem" mnemonicParsing="false" selected="true" text="Default Size ( 320 X 336 )" />
+                                    <CheckMenuItem fx:id="size1MenuItem" mnemonicParsing="false" text="400 x 500" />
+                                    <CheckMenuItem fx:id="size2MenuItem" mnemonicParsing="false" text="500 x 600" />
+                                    <CheckMenuItem fx:id="size3MenuItem" mnemonicParsing="false" text="600 x 700" />
+                                    <CheckMenuItem fx:id="size4MenuItem" mnemonicParsing="false" text="Custom Size..." />
+                                 </items>
+                              </Menu>
+                              <Menu fx:id="cardshapeMenu" mnemonicParsing="false" text="Card Shape">
+                                 <items>
+                                    <CustomMenuItem fx:id="shape1" mnemonicParsing="false">
+                                       <content>
+                                          <AnchorPane prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: linear-gradient(to right top, #ff8080, #ff9588, #ffa893, #ffbaa1, #ffccb3); -fx-shape: &quot;M26.2,-33C31.4,-26.8,31.4,-16.2,31.3,-7C31.1,2.2,30.9,10,28.4,18.4C25.9,26.9,21.2,36.2,13.7,39.8C6.2,43.4,-4.1,41.4,-12.4,37.1C-20.8,32.8,-27.3,26.1,-29.8,18.7C-32.3,11.3,-30.8,3,-30.1,-6.1C-29.5,-15.3,-29.7,-25.4,-24.8,-31.8C-19.9,-38.1,-10,-40.6,0.3,-40.9C10.5,-41.2,20.9,-39.3,26.2,-33Z&quot;;" />
+                                       </content>
+                                    </CustomMenuItem>
+                                    <CustomMenuItem mnemonicParsing="false" text="Unspecified Action">
+                                       <content>
+                                          <AnchorPane prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: linear-gradient(to right top, #ff8080, #ff9588, #ffa893, #ffbaa1, #ffccb3); -fx-shape: &quot;M17.8,-28.3C23,-27.9,27,-22.9,26.9,-17.4C26.8,-11.9,22.7,-6,22.7,0C22.7,6,26.9,11.9,25.6,15.1C24.4,18.3,17.7,18.7,12.5,21.4C7.4,24.1,3.7,29.1,-1.1,31C-5.8,32.9,-11.7,31.6,-15.1,27.8C-18.5,24.1,-19.5,18,-19.4,12.9C-19.3,7.9,-18.1,3.9,-20.4,-1.3C-22.8,-6.6,-28.6,-13.2,-27.6,-16.4C-26.5,-19.5,-18.7,-19.2,-13,-19.2C-7.2,-19.2,-3.6,-19.7,1.4,-22C6.3,-24.4,12.7,-28.7,17.8,-28.3Z&quot;;" />
+                                       </content>
+                                    </CustomMenuItem>
+                                    <CustomMenuItem mnemonicParsing="false" text="Unspecified Action">
+                                       <content>
+                                          <AnchorPane prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: linear-gradient(to right top, #ff8080, #ff9588, #ffa893, #ffbaa1, #ffccb3); -fx-shape: &quot;M14.8,-21.6C19.2,-17.2,22.8,-12.9,27,-7.1C31.1,-1.4,35.7,5.9,35.4,13C35.2,20.1,30,27.1,23.3,32.9C16.5,38.7,8.3,43.2,-0.2,43.5C-8.7,43.8,-17.5,39.9,-22.9,33.8C-28.4,27.6,-30.6,19.1,-30.7,11.7C-30.8,4.2,-28.8,-2.2,-27.9,-10.3C-26.9,-18.3,-27,-27.8,-22.6,-32.1C-18.1,-36.4,-9,-35.5,-1.9,-32.9C5.2,-30.3,10.4,-25.9,14.8,-21.6Z&quot;;" />
+                                       </content>
+                                    </CustomMenuItem>
+                                 </items>
+                              </Menu>
+                              <Menu fx:id="cardanimationMenu" mnemonicParsing="false" text="Card Animation">
+                                 <items>
+                                    <CheckMenuItem mnemonicParsing="false" text="Animation On" />
+                                    <CheckMenuItem mnemonicParsing="false" text="Animation Off" />
+                                 </items>
+                              </Menu>
+                              <MenuItem fx:id="cardappearanceMenuItem" mnemonicParsing="false" text="Card Apperance" />
+                              <SeparatorMenuItem mnemonicParsing="false" />
+                              <MenuItem fx:id="pinNoteMenuItem" mnemonicParsing="false" text="Pin Note" />
+                              <MenuItem fx:id="unpinNoteMenuItem" mnemonicParsing="false" text="Unpin Note" />
+                              <MenuItem fx:id="copyNoteMenuItem" mnemonicParsing="false" text="Copy Note" />
+                              <MenuItem fx:id="editNoteMenuItem" mnemonicParsing="false" text="Edit Note" />
+                              <MenuItem fx:id="previewmode" mnemonicParsing="false" text="Edit Note ( Preview Mode )" />
+                              <MenuItem fx:id="glasswindowmode" text="Edit Note ( Glassmorphism Mode )" />
+                              <MenuItem fx:id="tabmode" text="Edit Note ( Tab Mode )" />
+                              <MenuItem fx:id="putlabelMenuItem" mnemonicParsing="false" text="Put a Label" />
+                              <Menu fx:id="setpasswordMenu" mnemonicParsing="false" text="Set Password">
+                                 <items>
+                                    <CheckMenuItem fx:id="setPasswordAllNote" mnemonicParsing="false" text="ALL" />
+                                    <CheckMenuItem fx:id="setPasswordOnlyThisNote" mnemonicParsing="false" text="Only This Note" />
+                                 </items>
+                              </Menu>
+                              <MenuItem fx:id="removePasswordMenuItem" mnemonicParsing="false" text="Remove Password" />
+                              <MenuItem fx:id="removePasswordAllMenuItem" mnemonicParsing="false" text="Remove All Notes Password" />
+                              <MenuItem fx:id="deleteNoteMenuItem" mnemonicParsing="false" text="Delete Note" />
+                              <SeparatorMenuItem mnemonicParsing="false" />
+                              <MenuItem fx:id="previewNoteMenuItem" mnemonicParsing="false" text="Preview ( Ctrl + LeftClick )" />
+                              <Menu mnemonicParsing="false" text="Open In">
+                                 <items>
+                                    <MenuItem fx:id="openNotePad" mnemonicParsing="false" text="NotePad" />
+                                    <MenuItem fx:id="openExplorer" mnemonicParsing="false" text="Explorer" />
+                                 </items>
+                              </Menu>
+                              <MenuItem fx:id="copyNoteAbsolutePathMenuItem" mnemonicParsing="false" text="Copy Note Absolute Path" />
+                           </items>
+                        </Menu>
+                     </items>
+                  </ContextMenu>
+               </contextMenu>
+               <font>
+                  <Font name="Pyidaungsu" size="25.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="text-area" />
+                  <String fx:value="font-25" />
+                  <String fx:value="font-bold" />
+                  <String fx:value="font-pyidaungsu" />
+               </styleClass>
+               <tooltip>
+                  <Tooltip text="Double CLick to edit">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Tooltip>
+               </tooltip>
+            </Label>
+            <Label fx:id="createDateLabel" layoutX="28.0" layoutY="220.0" prefHeight="26.0" prefWidth="175.0" styleClass="createDateLabel" text="05/08/2021" AnchorPane.bottomAnchor="44.0" AnchorPane.leftAnchor="20.0">
+               <font>
+                  <Font name="SansSerif Regular" size="12.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="textArea" cache="true" cacheHint="QUALITY" layoutX="20.0" layoutY="20.0" prefHeight="174.0" prefWidth="238.0" styleClass="font-pyidaungsu" visible="false" wrapText="true" AnchorPane.bottomAnchor="78.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="25.0">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="Pyidaungsu" size="12.0" />
+               </font>
+            </TextArea>
+            <Label fx:id="modifiedDateLabel" alignment="TOP_LEFT" layoutX="20.0" layoutY="227.0" prefHeight="40.0" prefWidth="154.0" styleClass="hover" text="Modified: " wrapText="true" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="20.0">
+               <font>
+                  <Font name="SansSerif Regular" size="11.0" />
+               </font>
+            </Label>
+            <VBox fx:id="passwordVBox" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" styleClass="pane" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <StackPane prefHeight="276.0" prefWidth="278.0">
+                     <children>
+                        <VBox alignment="CENTER">
+                           <children>
+                              <Label fx:id="enterPasswordLabel" prefHeight="28.0" prefWidth="200.0" text="Enter Password">
+                                 <font>
+                                    <Font name="Impact" size="25.0" />
+                                 </font>
+                              </Label>
+                              <StackPane>
+                                 <children>
+                                    <HBox fx:id="passwordbox" alignment="CENTER" maxHeight="30.0" prefHeight="30.0" prefWidth="146.0">
+                                       <children>
+                                          <PasswordField fx:id="passwordfield" maxWidth="232.0" prefHeight="25.0" prefWidth="200.0" promptText="Password" styleClass="bg-transparent">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </PasswordField>
+                                          <Label fx:id="showPasswordLabel" text="">
+                                             <styleClass>
+                                                <String fx:value="icon-fill" />
+                                                <String fx:value="font-20" />
+                                             </styleClass>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox fx:id="textfieldpasswordBox" alignment="CENTER" maxHeight="25.0" prefWidth="146.0" visible="false">
+                                       <children>
+                                          <TextField fx:id="passwordTextfield" maxWidth="232.0" prefHeight="25.0" prefWidth="200.0" promptText="Password" style="-fx-background-color: transparent;" styleClass="bg-transparent">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </TextField>
+                                          <Label fx:id="hidePasswordLabel" text="">
+                                             <styleClass>
+                                                <String fx:value="icon-fill" />
+                                                <String fx:value="font-20" />
+                                             </styleClass>
+                                             <cursor>
+                                                <Cursor fx:constant="HAND" />
+                                             </cursor>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </StackPane>
+                              <HBox fx:id="buttonBox" alignment="CENTER" prefHeight="32.0" prefWidth="278.0">
+                                 <children>
+                                    <Label fx:id="clearLabel" alignment="CENTER" disable="true" prefHeight="32.0" prefWidth="83.0" text="Clear">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="applyLabel" alignment="CENTER" disable="true" prefHeight="32.0" prefWidth="83.0" text="Apply">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="applyLabelIcon" alignment="CENTER" prefHeight="32.0" prefWidth="33.0" text="">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                       <styleClass>
+                                          <String fx:value="icon-fill" />
+                                          <String fx:value="font-20" />
+                                       </styleClass>
+                                    </Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <Label fx:id="incorrectLabel" alignment="CENTER" disable="true" prefHeight="17.0" prefWidth="181.0" text="Your password is incorrect." visible="false">
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </StackPane>
+               </children>
+            </VBox>
+            <Label fx:id="pinlabel" alignment="CENTER" layoutX="257.0" layoutY="10.0" prefHeight="40.0" prefWidth="20.0" text="" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="10.0">
+               <styleClass>
+                  <String fx:value="icon-fill" />
+                  <String fx:value="font-20" />
+               </styleClass>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="hashlabel" alignment="CENTER" layoutX="68.0" layoutY="10.0" opacity="0.6" styleClass="hover" text="#" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="10.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="attlabel" alignment="CENTER" layoutX="114.0" layoutY="15.0" opacity="0.6" styleClass="hover" text="\@" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="10.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="hyperlinklabel" alignment="CENTER" layoutX="127.0" layoutY="11.0" text="" AnchorPane.leftAnchor="65.0" AnchorPane.topAnchor="9.0">
+               <styleClass>
+                  <String fx:value="icon-fill" />
+                  <String fx:value="font-30" />
+                  <String fx:value="hover" />
+               </styleClass>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <HBox fx:id="putlabelhbox" alignment="CENTER_LEFT" layoutX="221.0" layoutY="175.0" maxWidth="181.0" style="-fx-background-color: rgba(0,0,0,0.5); -fx-border-radius: 10; -fx-background-radius: 10;" AnchorPane.bottomAnchor="62.0" AnchorPane.rightAnchor="-20.0">
+               <children>
+                  <Label fx:id="foldeLabel" alignment="CENTER" maxWidth="30.0" prefHeight="30.0" prefWidth="30.0" style="-fx-text-fill: white;" text="">
+                     <styleClass>
+                        <String fx:value="icon-fill" />
+                        <String fx:value="font-15" />
+                     </styleClass>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <Label fx:id="putlabel" alignment="TOP_CENTER" graphicTextGap="1.0" maxWidth="150.0" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                     <font>
+                        <Font name="Pyidaungsu" size="10.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <padding>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                     </padding>
+                     <tooltip>
+                        <Tooltip text="Double CLick to edit" />
+                     </tooltip>
+                     <contextMenu>
+                        <ContextMenu>
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Remove Label" />
+                           </items>
+                        </ContextMenu>
+                     </contextMenu>
+                  </Label>
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </HBox>
+            <HBox fx:id="putlabelhbox2" layoutX="110.0" layoutY="175.0" maxWidth="181.0" prefHeight="31.0" style="-fx-background-color: rgba(0,0,0,0.5); -fx-border-radius: 10; -fx-background-radius: 10;" visible="false" AnchorPane.bottomAnchor="62.0" AnchorPane.rightAnchor="-20.0">
+               <children>
+                  <Label alignment="CENTER" maxWidth="30.0" prefHeight="30.0" prefWidth="30.0" style="-fx-text-fill: white;" text="">
+                     <styleClass>
+                        <String fx:value="icon-fill" />
+                        <String fx:value="font-15" />
+                     </styleClass>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <TextField fx:id="puttextfield" maxWidth="150.0" prefHeight="31.0" prefWidth="181.0" style="-fx-background-color: transparent; -fx-text-fill: white; -fx-border-radius: 10; -fx-background-radius: 10;" text="hello">
+                     <font>
+                        <Font name="Pyidaungsu" size="10.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                     </padding>
+                  </TextField>
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </HBox>
+            <HBox fx:id="putlabelfoldbox" alignment="CENTER_LEFT" layoutX="210.0" layoutY="185.0" maxWidth="181.0" prefHeight="30.0" style="-fx-background-color: rgba(0,0,0,0.5); -fx-border-radius: 10; -fx-background-radius: 10;" AnchorPane.bottomAnchor="62.0" AnchorPane.rightAnchor="-20.0">
+               <children>
+                  <Label fx:id="reopenLabel" alignment="CENTER" prefHeight="30.0" prefWidth="130.0" style="-fx-text-fill: white;" text="">
+                     <styleClass>
+                        <String fx:value="icon-fill" />
+                        <String fx:value="font-15" />
+                     </styleClass>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </HBox>
+            <Label fx:id="lockiconlabel" alignment="CENTER" layoutX="203.0" layoutY="9.0" prefHeight="40.0" prefWidth="20.0" text="" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="10.0">
+               <styleClass>
+                  <String fx:value="icon-fill" />
+                  <String fx:value="font-20" />
+                  <String fx:value="hover" />
+               </styleClass>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <HBox alignment="CENTER_RIGHT" layoutX="225.0" layoutY="221.0" prefHeight="44.0" prefWidth="99.0" spacing="10.0" AnchorPane.bottomAnchor="11.0" AnchorPane.rightAnchor="15.0">
+               <children>
+                  <HBox fx:id="previewHBox" alignment="CENTER" maxHeight="30.0" maxWidth="30.0" minHeight="30.0" minWidth="30.0" prefHeight="30.0" prefWidth="30.0" spacing="10.0" styleClass="hover">
+                     <children>
+                        <Label fx:id="previewlabel" text="">
+                           <styleClass>
+                              <String fx:value="icon-fill" />
+                              <String fx:value="font-20" />
+                           </styleClass>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                     </children>
+                     <effect>
+                        <Reflection fraction="0.64" topOpacity="0.2" />
+                     </effect>
+                  </HBox>
+                  <VBox fx:id="editVBox" maxHeight="40.0" maxWidth="40.0" minHeight="40.0" minWidth="40.0" prefHeight="40.0" prefWidth="40.0">
+                     <children>
+                        <Label fx:id="editLabel" alignment="CENTER" prefHeight="40.0" prefWidth="40.0" text="">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <styleClass>
+                              <String fx:value="icon-fill" />
+                              <String fx:value="hover" />
+                           </styleClass>
+                        </Label>
+                     </children>
+                     <effect>
+                        <Reflection fraction="0.64" topOpacity="0.2" />
+                     </effect>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <Label fx:id="filenameLabel" alignment="CENTER" layoutX="5.0" layoutY="287.0" prefHeight="26.0" prefWidth="310.0" style="-fx-text-fill: rgba(0,0,0,0.7);" text="Document.txt" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
+         <font>
+            <Font name="Pyidaungsu" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="minNoteCardLabel" alignment="CENTER" layoutX="336.0" layoutY="15.0" text="" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="5.0">
+         <styleClass>
+            <String fx:value="icon-fill" />
+            <String fx:value="font-20" />
+            <String fx:value="hover" />
+         </styleClass>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="closeNoteCardLabel" alignment="CENTER" layoutX="287.0" layoutY="4.0" text="" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="5.0">
+         <styleClass>
+            <String fx:value="icon-fill" />
+            <String fx:value="font-20" />
+            <String fx:value="hover" />
+         </styleClass>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <HBox fx:id="optionsHbox" alignment="CENTER_LEFT" layoutX="20.0" layoutY="3.0" prefHeight="34.0" prefWidth="229.0" style="-fx-background-color: transparent;" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="80.0">
+         <children>
+            <Label fx:id="smalliconCopyLabel" alignment="CENTER" opacity="0.6" prefHeight="30.0" prefWidth="30.0" text="">
+               <styleClass>
+                  <String fx:value="icon-fill" />
+                  <String fx:value="font-15" />
+                  <String fx:value="hover" />
+               </styleClass>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="smalliconPutLabel" alignment="CENTER" layoutX="20.0" layoutY="12.0" opacity="0.6" prefHeight="30.0" prefWidth="30.0" text="">
+               <styleClass>
+                  <String fx:value="icon-fill" />
+                  <String fx:value="font-15" />
+                  <String fx:value="hover" />
+               </styleClass>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+         </children>
+      </HBox>
+      <AnchorPane fx:id="maskerPane" layoutX="-86.0" layoutY="55.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: transparent;" styleClass="radius20" visible="false" AnchorPane.bottomAnchor="68.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="68.0">
+         <children>
+            <Label fx:id="closesizePrefixPaneLabel" alignment="CENTER" layoutX="267.0" layoutY="14.0" text="" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="10.0">
+               <styleClass>
+                  <String fx:value="icon-fill" />
+                  <String fx:value="font-20" />
+                  <String fx:value="hover" />
+               </styleClass>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <HBox alignment="CENTER" layoutX="14.0" layoutY="50.0" prefHeight="100.0" prefWidth="220.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="50.0">
+               <children>
+                  <Label fx:id="sizePrefix" alignment="CENTER" prefHeight="59.0" prefWidth="217.0" text="320 X 335">
+                     <font>
+                        <Font name="System Bold" size="27.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <AnchorPane fx:id="verticalScroll" layoutX="286.0" layoutY="40.0" maxWidth="4.0" prefHeight="120.0" prefWidth="4.0" style="-fx-background-color: gray;" AnchorPane.bottomAnchor="27.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="40.0">
+               <cursor>
+                  <Cursor fx:constant="V_RESIZE" />
+               </cursor>
+            </AnchorPane>
+            <AnchorPane fx:id="horizontalScroll" layoutX="42.0" layoutY="166.0" maxHeight="7.0" minHeight="4.0" prefHeight="4.0" prefWidth="250.0" style="-fx-background-color: gray;" AnchorPane.bottomAnchor="27.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="30.0">
+               <cursor>
+                  <Cursor fx:constant="H_RESIZE" />
+               </cursor>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <VBox fx:id="imageViewVbox" alignment="CENTER" layoutX="20.0" layoutY="35.0" visible="false" AnchorPane.bottomAnchor="29.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="35.0">
+         <children>
+            <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" smooth="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </VBox>
+      <VBox fx:id="mediaViewVbox" prefHeight="200.0" prefWidth="100.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <MediaView fx:id="mediaView" fitHeight="200.0" fitWidth="200.0" />
+         </children>
+      </VBox>
+      <AnchorPane fx:id="webviewAnchor" layoutX="20.0" layoutY="35.0" visible="false" AnchorPane.bottomAnchor="29.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="35.0">
+         <children>
+            <WebView fx:id="webview" prefHeight="237.0" prefWidth="280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <HBox alignment="CENTER_RIGHT" layoutX="170.0" layoutY="235.0" prefHeight="40.0" prefWidth="130.0" spacing="8.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <Label fx:id="browsericonLabel" alignment="CENTER" layoutX="294.0" layoutY="306.0" text="" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="10.0">
+         <styleClass>
+            <String fx:value="icon-fill" />
+            <String fx:value="font-20" />
+            <String fx:value="hover" />
+         </styleClass>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="openinbrowserLabel" alignment="CENTER_RIGHT" layoutX="221.0" layoutY="313.0" prefHeight="17.0" prefWidth="98.0" text="open in browser" AnchorPane.bottomAnchor="-12.0" AnchorPane.rightAnchor="1.0">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label fx:id="typefigLabel" alignment="CENTER" layoutX="304.0" layoutY="316.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="20.0">
+         <styleClass>
+            <String fx:value="icon-fill" />
+            <String fx:value="font-20" />
+            <String fx:value="hover" />
+         </styleClass>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <AnchorPane fx:id="atthasReceiveAnchorPane" cache="true" cacheHint="QUALITY" layoutX="210.0" layoutY="29.0" prefHeight="272.0" prefWidth="200.0" style="-fx-background-color: rgba(0,0,0,0.5);" styleClass="radius35" visible="false" AnchorPane.bottomAnchor="29.0" AnchorPane.leftAnchor="120.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="35.0">
+         <children>
+            <TextArea fx:id="atthashReceiveTextArea" cache="true" cacheHint="QUALITY" editable="false" layoutX="6.0" layoutY="63.0" prefHeight="169.0" prefWidth="200.0" styleClass="font-pyidaungsu" text="https://javascript.info&#10;https://google.com&#10;https://dart.dev&#10;&#10;" wrapText="true" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="63.0" />
+            <Label fx:id="atthasTypeLabel" alignment="CENTER_RIGHT" layoutX="90.0" layoutY="22.0" prefHeight="40.0" prefWidth="99.0" text="Hyperlink" AnchorPane.leftAnchor="90.0" AnchorPane.rightAnchor="21.0" AnchorPane.topAnchor="22.0">
+               <styleClass>
+                  <String fx:value="font20" />
+                  <String fx:value="icon-fill" />
+               </styleClass>
+            </Label>
+            <Label fx:id="closeatthasReceiveAnchorLabel" alignment="CENTER" layoutX="21.0" layoutY="14.0" text="">
+               <styleClass>
+                  <String fx:value="icon-fill" />
+                  <String fx:value="font-20" />
+                  <String fx:value="hover" />
+               </styleClass>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow height="10.0" radius="4.5" width="10.0" />
+         </effect></AnchorPane>
+   </children>
+   <stylesheets>
+      <URL value="@NoteCard.css" />
+      <URL value="@../shape.css" />
+      <URL value="@../CSS/extra.css" />
+   </stylesheets>
+</AnchorPane>

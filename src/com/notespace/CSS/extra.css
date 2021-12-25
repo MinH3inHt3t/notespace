@@ -1,0 +1,95 @@
+.icon-fill{
+    -fx-font-family: 'Material Icons';
+   /* -fx-fill: firebrick;*/
+
+}
+
+.fontbold{
+    -fx-font-weight: bold;
+}
+.font12{
+    -fx-font-size: 12;
+}
+.font13{
+    -fx-font-size: 13;
+}
+.font14{
+    -fx-font-size: 14;
+}
+.font15{
+    -fx-font-size: 15;
+}
+.font20{
+    -fx-font-size: 20;
+}
+.font30{
+    -fx-font-size: 30;
+}
+
+.glassmorphism{
+    -fx-background-color: rgba(0,0,0,0.5);
+}
+
+.radius10{
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+.radius20{
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+}
+
+.radius35{
+    -fx-border-radius: 35;
+    -fx-background-radius: 35;
+}
+
+.f2f2f7{
+     -fx-background-color: #f2f2f7;
+}
+
+.white{
+    -fx-background-color: white;
+}
+
+.gradientColor1Fill{
+    -fx-text-fill:linear-gradient(to top,   derive(#3980F4, 50%) , derive(#BB8EF5, 50%));
+}
+.gradientColor2Fill{
+    -fx-text-fill: linear-gradient(to right top, #9b7eea, #a37de6, #aa7ce3, #b07cdf, #b67bdb, #bc7bd8, #c27ad4, #c77ad1, #ce79cd, #d479c9, #da78c5, #df78c1);
+}
+.gradientColor3Fill{
+    -fx-text-fill: linear-gradient(to top,   derive(#2E274D, 50%) , derive(#8478C5, 50%));
+}
+.gradientColor4Fill{
+    -fx-text-fill: linear-gradient(to right top, #a782e0, #ba7fd9, #cb7dd2, #da7bc9, #e67abf, #ea7abb, #ee7ab8, #f27ab4, #f179b7, #f078b9, #ef77bc, #ee76bf);
+}
+.gradientColor5Fill{
+    -fx-text-fill: linear-gradient(to top,   derive(#02796b, 50%) , derive(#73e57b, 50%));
+}
+
+
+
+
+.BgColorRgbaDark{
+    -fx-background-color: rgba(0,0,0,0.5);
+}
+
+.BgColorWhite{
+    -fx-background-color: #f2f2f7;
+}
+
+
+.opacity6{
+    -fx-opacity: 0.6;
+}
+
+.hover{
+    -fx-opacity: 0.6;
+
+}
+.hover:hover{
+    -fx-opacity: 1;
+}
+

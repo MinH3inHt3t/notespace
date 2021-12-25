@@ -1,0 +1,986 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="page1Anchor" cache="true" cacheHint="SPEED" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="817.0" prefWidth="1187.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <SplitPane fx:id="page1SplitPane" dividerPositions="0.7" layoutX="818.0" layoutY="210.0" prefHeight="466.0" prefWidth="1188.0" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="-2.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="-2.0">
+         <items>
+            <SplitPane fx:id="page1SplitPane2" dividerPositions="0.0" orientation="VERTICAL" prefWidth="829.0">
+               <items>
+                  <AnchorPane style="-fx-background-color: white;">
+                     <children>
+                        <ScrollPane fx:id="uiAppearanceScroll" fitToHeight="true" fitToWidth="true" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <content>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;">
+                                 <children>
+                                    <BorderPane layoutX="14.0" layoutY="5.0" prefHeight="26.0" prefWidth="797.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+                                       <left>
+                                          <Label prefHeight="32.0" prefWidth="548.0" text="Appearance ( Split Down )">
+                                             <font>
+                                                <Font name="Calibri" size="16.0" />
+                                             </font>
+                                          </Label>
+                                       </left>
+                                       <right>
+                                          <HBox alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="116.0" BorderPane.alignment="CENTER">
+                                             <children>
+                                                <Label fx:id="expandWindowLabel1" alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="65.0" text="Extend DIsplay">
+                                                   <font>
+                                                      <Font name="Segoe UI" size="9.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="expandWindowLabel" alignment="CENTER" prefHeight="26.0" prefWidth="47.0" text="">
+                                                   <styleClass>
+                                                      <String fx:value="icon-fill" />
+                                                      <String fx:value="font15" />
+                                                      <String fx:value="hover" />
+                                                   </styleClass>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                       </right>
+                                    </BorderPane>
+                                    <VBox layoutX="119.0" layoutY="87.0" prefHeight="397.0" prefWidth="829.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="70.0">
+                                       <children>
+                                          <VBox prefHeight="460.0" prefWidth="776.0" spacing="20.0">
+                                             <children>
+                                                <Label prefHeight="17.0" prefWidth="115.0" text="IMAGE 1">
+                                                   <font>
+                                                      <Font name="Consolas" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <VBox spacing="20.0">
+                                                   <children>
+                                                      <HBox prefHeight="360.0" prefWidth="650.0" spacing="20.0">
+                                                         <children>
+                                                            <VBox prefHeight="361.0" prefWidth="443.0">
+                                                               <children>
+                                                                  <AnchorPane prefHeight="407.0" prefWidth="379.0" style="-fx-background-color: black; -fx-background-radius: 20;">
+                                                                     <children>
+                                                                        <StackPane layoutX="28.0" layoutY="10.0" prefHeight="384.0" prefWidth="327.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                                           <children>
+                                                                              <ImageView fitHeight="277.0" fitWidth="294.0" pickOnBounds="true">
+                                                                                 <effect>
+                                                                                    <BoxBlur height="60.0" iterations="3" width="60.0" />
+                                                                                 </effect>
+                                                                                 <image>
+                                                                                    <Image url="@../../../Image/mg1.jpg" />
+                                                                                 </image>
+                                                                              </ImageView>
+                                                                              <AnchorPane>
+                                                                                 <children>
+                                                                                    <AnchorPane layoutX="30.0" layoutY="33.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgba(0,0,0,0.4); -fx-background-radius: 20;">
+                                                                                       <children>
+                                                                                          <Pane layoutX="156.0" layoutY="166.0" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: rgba(0,0,0,0.4); -fx-background-radius: 50;" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+                                                                                          <Label alignment="TOP_LEFT" layoutX="14.0" layoutY="20.0" prefHeight="120.0" prefWidth="146.0" style="-fx-text-fill: linear-gradient(to top,   derive(#3980F4, 50%) , derive(#BB8EF5, 50%)); -fx-font-weight: bold;" text="Lorem Ipsum dolor" />
+                                                                                       </children>
+                                                                                    </AnchorPane>
+                                                                                 </children>
+                                                                              </AnchorPane>
+                                                                           </children>
+                                                                        </StackPane>
+                                                                     </children>
+                                                                     <padding>
+                                                                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                                     </padding>
+                                                                  </AnchorPane>
+                                                               </children>
+                                                            </VBox>
+                                                            <VBox prefHeight="361.0" prefWidth="350.0" spacing="10.0">
+                                                               <children>
+                                                                  <AnchorPane minHeight="200.0" prefHeight="205.0" prefWidth="305.0" style="-fx-background-color: #f2f2f9; -fx-background-radius: 20;">
+                                                                     <effect>
+                                                                        <DropShadow blurType="GAUSSIAN" color="LIGHTGRAY" height="100.0" radius="49.5" width="100.0" />
+                                                                     </effect>
+                                                                     <children>
+                                                                        <Label alignment="CENTER" layoutX="20.0" layoutY="14.0" prefHeight="17.0" prefWidth="89.0" style="-fx-background-color: white; -fx-text-fill: #257ADB; -fx-font-weight: bold; -fx-background-radius: 20;" text="Image">
+                                                                           <padding>
+                                                                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                                           </padding>
+                                                                        </Label>
+                                                                        <VBox layoutX="9.0" layoutY="52.0" prefHeight="155.0" prefWidth="288.0" spacing="10.0">
+                                                                           <children>
+                                                                              <VBox spacing="5.0">
+                                                                                 <children>
+                                                                                    <Label prefHeight="17.0" prefWidth="95.0" text="Background Color">
+                                                                                       <font>
+                                                                                          <Font size="10.0" />
+                                                                                       </font>
+                                                                                    </Label>
+                                                                                    <HBox alignment="CENTER_LEFT" prefHeight="32.0" prefWidth="288.0" spacing="10.0">
+                                                                                       <children>
+                                                                                          <TextField prefHeight="32.0" prefWidth="177.0" style="-fx-background-color: white; -fx-text-fill: #257ADB; -fx-background-radius: 20;" styleClass="fontbold" text="#000000" />
+                                                                                          <ColorPicker prefHeight="36.0" prefWidth="101.0" style="-fx-background-color: white; -fx-background-radius: 20;" />
+                                                                                       </children>
+                                                                                    </HBox>
+                                                                                 </children>
+                                                                              </VBox>
+                                                                              <VBox prefHeight="49.0" prefWidth="265.0" spacing="5.0">
+                                                                                 <children>
+                                                                                    <Label prefHeight="17.0" prefWidth="95.0" text="Image Location">
+                                                                                       <font>
+                                                                                          <Font size="10.0" />
+                                                                                       </font>
+                                                                                    </Label>
+                                                                                    <HBox alignment="CENTER_LEFT" prefHeight="32.0" prefWidth="288.0" spacing="10.0">
+                                                                                       <children>
+                                                                                          <TextField disable="true" editable="false" prefHeight="32.0" prefWidth="177.0" style="-fx-background-color: white; -fx-text-fill: #257ADB; -fx-background-radius: 20;" styleClass="font-pyidaungsu" text="Hello" />
+                                                                                          <Label alignment="CENTER" prefHeight="17.0" prefWidth="89.0" style="-fx-background-color: #257ADB; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 20;" text="Browse">
+                                                                                             <padding>
+                                                                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                                                             </padding>
+                                                                                             <cursor>
+                                                                                                <Cursor fx:constant="HAND" />
+                                                                                             </cursor>
+                                                                                          </Label>
+                                                                                       </children>
+                                                                                    </HBox>
+                                                                                 </children>
+                                                                              </VBox>
+                                                                           </children>
+                                                                           <padding>
+                                                                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                                           </padding>
+                                                                        </VBox>
+                                                                        <CheckBox layoutX="175.0" layoutY="21.0" mnemonicParsing="false" text="Set background ">
+                                                                           <cursor>
+                                                                              <Cursor fx:constant="HAND" />
+                                                                           </cursor>
+                                                                        </CheckBox>
+                                                                     </children>
+                                                                  </AnchorPane>
+                                                                  <AnchorPane minHeight="150.0" prefHeight="151.0" prefWidth="391.0" style="-fx-background-color: #f2f2f9; -fx-background-radius: 20;">
+                                                                     <effect>
+                                                                        <DropShadow blurType="GAUSSIAN" color="LIGHTGRAY" height="100.0" radius="49.5" width="100.0" />
+                                                                     </effect>
+                                                                     <children>
+                                                                        <Label alignment="CENTER" layoutX="20.0" layoutY="14.0" prefHeight="27.0" prefWidth="122.0" style="-fx-background-color: white; -fx-text-fill: #257ADB; -fx-font-weight: bold; -fx-background-radius: 20;" text="Image Render">
+                                                                           <padding>
+                                                                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                                           </padding>
+                                                                        </Label>
+                                                                        <HBox layoutX="20.0" layoutY="52.0" prefHeight="87.0" prefWidth="200.0">
+                                                                           <children>
+                                                                              <VBox prefHeight="49.0" prefWidth="81.0" spacing="5.0">
+                                                                                 <children>
+                                                                                    <Label text="Effect Width" />
+                                                                                    <TextField prefHeight="32.0" prefWidth="55.0" style="-fx-background-color: white; -fx-text-fill: #257ADB; -fx-background-radius: 5;" styleClass="font-pyidaungsu" text="0.1" />
+                                                                                    <Label layoutX="15.0" layoutY="15.0" text="0-100">
+                                                                                       <font>
+                                                                                          <Font size="11.0" />
+                                                                                       </font>
+                                                                                    </Label>
+                                                                                 </children>
+                                                                                 <padding>
+                                                                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                                                 </padding>
+                                                                              </VBox>
+                                                                              <VBox prefHeight="49.0" prefWidth="81.0" spacing="5.0">
+                                                                                 <children>
+                                                                                    <Label text="Iteration" />
+                                                                                    <TextField prefHeight="32.0" prefWidth="55.0" style="-fx-background-color: white; -fx-text-fill: #257ADB; -fx-background-radius: 5;" styleClass="font-pyidaungsu" text="1" />
+                                                                                    <Label layoutX="15.0" layoutY="15.0" text="0-3">
+                                                                                       <font>
+                                                                                          <Font size="11.0" />
+                                                                                       </font>
+                                                                                    </Label>
+                                                                                 </children>
+                                                                                 <padding>
+                                                                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                                                 </padding>
+                                                                              </VBox>
+                                                                           </children>
+                                                                        </HBox>
+                                                                     </children>
+                                                                  </AnchorPane>
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox layoutX="10.0" layoutY="10.0" prefHeight="407.0" prefWidth="800.0" spacing="20.0">
+                                                         <children>
+                                                            <AnchorPane minHeight="135.0" prefHeight="135.0" prefWidth="820.0" style="-fx-background-color: #f2f2f9; -fx-background-radius: 20;">
+                                                               <effect>
+                                                                  <DropShadow blurType="GAUSSIAN" color="LIGHTGRAY" height="100.0" radius="49.5" width="100.0" />
+                                                               </effect>
+                                                               <children>
+                                                                  <Label alignment="CENTER" layoutX="20.0" layoutY="14.0" prefHeight="27.0" prefWidth="122.0" style="-fx-background-color: white; -fx-text-fill: #257ADB; -fx-font-weight: bold; -fx-background-radius: 20;" text="Note Card">
+                                                                     <padding>
+                                                                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                                     </padding>
+                                                                  </Label>
+                                                                  <HBox layoutX="20.0" layoutY="59.0" prefHeight="51.0" prefWidth="644.0" spacing="10.0">
+                                                                     <children>
+                                                                        <VBox prefHeight="51.0" prefWidth="192.0">
+                                                                           <children>
+                                                                              <HBox>
+                                                                                 <children>
+                                                                                    <Label prefHeight="17.0" prefWidth="95.0" text="Glass Opacity">
+                                                                                       <font>
+                                                                                          <Font size="10.0" />
+                                                                                       </font>
+                                                                                    </Label>
+                                                                                    <Label prefHeight="17.0" prefWidth="95.0" text="0-1">
+                                                                                       <font>
+                                                                                          <Font size="10.0" />
+                                                                                       </font>
+                                                                                    </Label>
+                                                                                 </children>
+                                                                              </HBox>
+                                                                              <TextField prefHeight="32.0" prefWidth="55.0" style="-fx-background-color: white; -fx-text-fill: #257ADB; -fx-background-radius: 5;" styleClass="font-pyidaungsu" text="0.1" />
+                                                                           </children>
+                                                                        </VBox>
+                                                                        <HBox alignment="BOTTOM_CENTER" prefHeight="51.0" prefWidth="215.0" spacing="10.0">
+                                                                           <children>
+                                                                              <CheckBox mnemonicParsing="false" text="White Glass">
+                                                                                 <cursor>
+                                                                                    <Cursor fx:constant="HAND" />
+                                                                                 </cursor>
+                                                                              </CheckBox>
+                                                                              <CheckBox mnemonicParsing="false" text="Dark Glass">
+                                                                                 <cursor>
+                                                                                    <Cursor fx:constant="HAND" />
+                                                                                 </cursor>
+                                                                              </CheckBox>
+                                                                           </children>
+                                                                           <padding>
+                                                                              <Insets bottom="10.0" />
+                                                                           </padding>
+                                                                        </HBox>
+                                                                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="51.0" prefWidth="192.0">
+                                                                           <children>
+                                                                              <HBox>
+                                                                                 <children>
+                                                                                    <Label prefHeight="17.0" prefWidth="95.0" text="Password">
+                                                                                       <font>
+                                                                                          <Font size="10.0" />
+                                                                                       </font>
+                                                                                    </Label>
+                                                                                 </children>
+                                                                              </HBox>
+                                                                              <TextField fx:id="setpasswordTextField" prefHeight="32.0" prefWidth="55.0" promptText="Set Password" style="-fx-background-color: white; -fx-text-fill: #257ADB; -fx-background-radius: 5;" styleClass="font-pyidaungsu" />
+                                                                           </children>
+                                                                        </VBox>
+                                                                     </children>
+                                                                  </HBox>
+                                                               </children>
+                                                            </AnchorPane>
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </VBox>
+                                          <VBox layoutX="10.0" layoutY="10.0" prefHeight="579.0" prefWidth="730.0" spacing="20.0">
+                                             <children>
+                                                <Label prefHeight="17.0" prefWidth="115.0" text="IMAGE 1">
+                                                   <font>
+                                                      <Font name="Consolas" size="14.0" />
+                                                   </font>
+                                                </Label>
+                                                <HBox prefHeight="407.0" prefWidth="730.0" spacing="20.0">
+                                                   <children>
+                                                      <VBox prefHeight="361.0" prefWidth="350.0" spacing="10.0">
+                                                         <children>
+                                                            <AnchorPane minHeight="200.0" prefHeight="205.0" prefWidth="305.0" style="-fx-background-color: #f2f2f9; -fx-background-radius: 20;">
+                                                               <effect>
+                                                                  <DropShadow blurType="GAUSSIAN" color="LIGHTGRAY" height="100.0" radius="49.5" width="100.0" />
+                                                               </effect>
+                                                               <children>
+                                                                  <Label alignment="CENTER" layoutX="20.0" layoutY="14.0" prefHeight="17.0" prefWidth="89.0" style="-fx-background-color: white; -fx-text-fill: #257ADB; -fx-font-weight: bold; -fx-background-radius: 20;" text="Image">
+                                                                     <padding>
+                                                                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                                     </padding>
+                                                                  </Label>
+                                                                  <VBox layoutX="9.0" layoutY="52.0" prefHeight="155.0" prefWidth="288.0" spacing="10.0">
+                                                                     <children>
+                                                                        <VBox spacing="5.0">
+                                                                           <children>
+                                                                              <Label prefHeight="17.0" prefWidth="95.0" text="Background Color">
+                                                                                 <font>
+                                                                                    <Font size="10.0" />
+                                                                                 </font>
+                                                                              </Label>
+                                                                              <HBox alignment="CENTER_LEFT" prefHeight="32.0" prefWidth="288.0" spacing="10.0">
+                                                                                 <children>
+                                                                                    <TextField prefHeight="32.0" prefWidth="177.0" style="-fx-background-color: white; -fx-text-fill: #257ADB; -fx-background-radius: 20;" styleClass="fontbold" text="#000000" />
+                                                                                    <ColorPicker prefHeight="36.0" prefWidth="101.0" style="-fx-background-color: white; -fx-background-radius: 20;" />
+                                                                                 </children>
+                                                                              </HBox>
+                                                                           </children>
+                                                                        </VBox>
+                                                                        <VBox prefHeight="49.0" prefWidth="265.0" spacing="5.0">
+                                                                           <children>
+                                                                              <Label prefHeight="17.0" prefWidth="95.0" text="Image Location">
+                                                                                 <font>
+                                                                                    <Font size="10.0" />
+                                                                                 </font>
+                                                                              </Label>
+                                                                              <HBox alignment="CENTER_LEFT" prefHeight="32.0" prefWidth="288.0" spacing="10.0">
+                                                                                 <children>
+                                                                                    <TextField disable="true" editable="false" prefHeight="32.0" prefWidth="177.0" style="-fx-background-color: white; -fx-text-fill: #257ADB; -fx-background-radius: 20;" styleClass="font-pyidaungsu" text="Hello" />
+                                                                                    <Label alignment="CENTER" prefHeight="17.0" prefWidth="89.0" style="-fx-background-color: #257ADB; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 20;" text="Browse">
+                                                                                       <padding>
+                                                                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                                                       </padding>
+                                                                                       <cursor>
+                                                                                          <Cursor fx:constant="HAND" />
+                                                                                       </cursor>
+                                                                                    </Label>
+                                                                                 </children>
+                                                                              </HBox>
+                                                                           </children>
+                                                                        </VBox>
+                                                                     </children>
+                                                                     <padding>
+                                                                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                                     </padding>
+                                                                  </VBox>
+                                                                  <CheckBox layoutX="175.0" layoutY="21.0" mnemonicParsing="false" text="Set background ">
+                                                                     <cursor>
+                                                                        <Cursor fx:constant="HAND" />
+                                                                     </cursor>
+                                                                  </CheckBox>
+                                                               </children>
+                                                            </AnchorPane>
+                                                            <AnchorPane minHeight="150.0" prefHeight="151.0" prefWidth="391.0" style="-fx-background-color: #f2f2f9; -fx-background-radius: 20;">
+                                                               <effect>
+                                                                  <DropShadow blurType="GAUSSIAN" color="LIGHTGRAY" height="100.0" radius="49.5" width="100.0" />
+                                                               </effect>
+                                                               <children>
+                                                                  <Label alignment="CENTER" layoutX="20.0" layoutY="14.0" prefHeight="27.0" prefWidth="122.0" style="-fx-background-color: white; -fx-text-fill: #257ADB; -fx-font-weight: bold; -fx-background-radius: 20;" text="Image Render">
+                                                                     <padding>
+                                                                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                                     </padding>
+                                                                  </Label>
+                                                                  <HBox layoutX="20.0" layoutY="52.0" prefHeight="87.0" prefWidth="200.0">
+                                                                     <children>
+                                                                        <VBox prefHeight="49.0" prefWidth="81.0" spacing="5.0">
+                                                                           <children>
+                                                                              <Label text="Effect Width" />
+                                                                              <TextField prefHeight="32.0" prefWidth="55.0" style="-fx-background-color: white; -fx-text-fill: #257ADB; -fx-background-radius: 5;" styleClass="font-pyidaungsu" text="0.1" />
+                                                                              <Label layoutX="15.0" layoutY="15.0" text="0-100">
+                                                                                 <font>
+                                                                                    <Font size="11.0" />
+                                                                                 </font>
+                                                                              </Label>
+                                                                           </children>
+                                                                           <padding>
+                                                                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                                           </padding>
+                                                                        </VBox>
+                                                                        <VBox prefHeight="49.0" prefWidth="81.0" spacing="5.0">
+                                                                           <children>
+                                                                              <Label text="Iteration" />
+                                                                              <TextField prefHeight="32.0" prefWidth="55.0" style="-fx-background-color: white; -fx-text-fill: #257ADB; -fx-background-radius: 5;" styleClass="font-pyidaungsu" text="1" />
+                                                                              <Label layoutX="15.0" layoutY="15.0" text="0-3">
+                                                                                 <font>
+                                                                                    <Font size="11.0" />
+                                                                                 </font>
+                                                                              </Label>
+                                                                           </children>
+                                                                           <padding>
+                                                                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                                           </padding>
+                                                                        </VBox>
+                                                                     </children>
+                                                                  </HBox>
+                                                               </children>
+                                                            </AnchorPane>
+                                                         </children>
+                                                      </VBox>
+                                                      <VBox prefHeight="361.0" prefWidth="443.0">
+                                                         <children>
+                                                            <AnchorPane prefHeight="407.0" prefWidth="379.0" style="-fx-background-color: black; -fx-background-radius: 20;">
+                                                               <children>
+                                                                  <StackPane layoutX="28.0" layoutY="10.0" prefHeight="384.0" prefWidth="327.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                                     <children>
+                                                                        <ImageView fitHeight="277.0" fitWidth="294.0" pickOnBounds="true">
+                                                                           <effect>
+                                                                              <BoxBlur height="60.0" iterations="0" width="60.0" />
+                                                                           </effect>
+                                                                           <image>
+                                                                              <Image url="@../../../Image/mg1.jpg" />
+                                                                           </image>
+                                                                        </ImageView>
+                                                                        <AnchorPane />
+                                                                     </children>
+                                                                  </StackPane>
+                                                               </children>
+                                                               <padding>
+                                                                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                               </padding>
+                                                            </AnchorPane>
+                                                         </children>
+                                                      </VBox>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="100.0" />
+                                 </padding>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </AnchorPane>
+                  <StackPane fx:id="contentStack" style="-fx-background-color: white;">
+                     <children>
+                        <StackPane style="-fx-background-color: transparent;">
+                           <children>
+                              <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: transparent;" vbarPolicy="NEVER">
+                                 <content>
+                                    <VBox fx:id="backgroundImageBox" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: white;">
+                                       <children>
+                                          <ImageView fx:id="backgroundImage" fitHeight="655.0" fitWidth="822.0" pickOnBounds="true" preserveRatio="true">
+                                             <effect>
+                                                <BoxBlur height="40.0" iterations="0" width="40.0" />
+                                             </effect>
+                                          </ImageView>
+                                       </children>
+                                    </VBox>
+                                 </content>
+                                 <StackPane.margin>
+                                    <Insets />
+                                 </StackPane.margin>
+                              </ScrollPane>
+                              <ScrollPane fx:id="contentScroll" cache="true" cacheHint="QUALITY" depthTest="ENABLE" fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" pannable="true" prefHeight="629.0" prefWidth="821.0" styleClass="contentScrollPane">
+                                 <content>
+                                    <FlowPane fx:id="contentFlow" cache="true" cacheHint="SPEED" hgap="50.0" prefHeight="200.0" prefWidth="200.0" prefWrapLength="800.0" styleClass="contentFlowPane" vgap="20.0">
+                                       <padding>
+                                          <Insets bottom="200.0" left="10.0" right="10.0" top="20.0" />
+                                       </padding>
+                                    </FlowPane>
+                                 </content>
+                                 <contextMenu>
+                                    <ContextMenu>
+                                      <items>
+                                          <MenuItem disable="true" mnemonicParsing="false" text="Refresh Interface" />
+                                        <MenuItem fx:id="refreshMenuItem" mnemonicParsing="false" text="Refresh Notes" />
+                                          <SeparatorMenuItem mnemonicParsing="false" />
+                                          <Menu mnemonicParsing="false" text="Layout Menu">
+                                             <items>
+                                                <Menu mnemonicParsing="false" text="Scroll Position">
+                                                   <items>
+                                                      <MenuItem fx:id="scrollupMenuItem" mnemonicParsing="false" text="Scroll To Up" />
+                                                      <MenuItem fx:id="scrollbotMenuItem" mnemonicParsing="false" text="Scroll To Bottom" />
+                                                   </items>
+                                                </Menu>
+                                             </items>
+                                          </Menu>
+                                          <Menu mnemonicParsing="false" text="Open In">
+                                             <items>
+                                                <MenuItem fx:id="systemexplorer" mnemonicParsing="false" text="System Explorer" />
+                                             </items>
+                                          </Menu>
+                                      </items>
+                                    </ContextMenu>
+                                 </contextMenu>
+                                 <StackPane.margin>
+                                    <Insets right="10.0" />
+                                 </StackPane.margin>
+                              </ScrollPane>
+                           </children>
+                           <StackPane.margin>
+                              <Insets right="-2.0" />
+                           </StackPane.margin>
+                        </StackPane>
+                        <VBox fx:id="indexingBox" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                           <children>
+                              <Label fx:id="progressingLabel" alignment="CENTER" prefHeight="17.0" prefWidth="146.0" text="indexing files ..." />
+                              <ProgressBar fx:id="lg_progressBar" cache="true" cacheHint="QUALITY" prefHeight="2.0" prefWidth="200.0" progress="0.2" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </StackPane>
+               </items>
+            </SplitPane>
+            <StackPane fx:id="dragStack" style="-fx-background-color: white;">
+               <children>
+                  <StackPane style="-fx-background-color: transparent;">
+                     <children>
+                        <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" style="-fx-background-color: transparent;" styleClass="dragScrollPane" vbarPolicy="NEVER">
+                           <content>
+                              <VBox fx:id="backgroundImageBox1" alignment="CENTER" style="-fx-background-color: white;">
+                                 <children>
+                                    <ImageView fx:id="backgroundImage1" fitHeight="655.0" fitWidth="350.0" pickOnBounds="true" preserveRatio="true">
+                                       <effect>
+                                          <BoxBlur height="40.0" iterations="0" width="40.0" />
+                                       </effect>
+                                    </ImageView>
+                                 </children>
+                              </VBox>
+                           </content>
+                        </ScrollPane>
+                        <ScrollPane fx:id="dragScroll" fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" prefHeight="676.0" prefWidth="363.0" style="-fx-background-color: transparent;" styleClass="dragScrollPane">
+                           <content>
+                              <VBox alignment="TOP_CENTER" cacheHint="SPEED" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: transparent;">
+                                 <children>
+                                    <StackPane prefHeight="66.0" prefWidth="330.0">
+                                       <children>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="68.0" prefWidth="342.0" spacing="5.0" style="-fx-background-color: linear-gradient(to right top, #525c7f, #4f597c, #4b5578, #485275, #454f72, #434d70, #414b6e, #3f496c, #3e486b, #3c466a, #3b4569, #3a4468); -fx-border-radius: 10; -fx-background-radius: 10; -fx-shape: &quot;M17.8,-28.3C23,-27.9,27,-22.9,26.9,-17.4C26.8,-11.9,22.7,-6,22.7,0C22.7,6,26.9,11.9,25.6,15.1C24.4,18.3,17.7,18.7,12.5,21.4C7.4,24.1,3.7,29.1,-1.1,31C-5.8,32.9,-11.7,31.6,-15.1,27.8C-18.5,24.1,-19.5,18,-19.4,12.9C-19.3,7.9,-18.1,3.9,-20.4,-1.3C-22.8,-6.6,-28.6,-13.2,-27.6,-16.4C-26.5,-19.5,-18.7,-19.2,-13,-19.2C-7.2,-19.2,-3.6,-19.7,1.4,-22C6.3,-24.4,12.7,-28.7,17.8,-28.3Z&quot;;">
+                                             <children>
+                                                <Label alignment="CENTER" prefHeight="38.0" prefWidth="186.0" style="-fx-text-fill: linear-gradient(to right top, #fea1a5, #fc9fa5, #fb9da6, #f99ba6, #f799a7, #f697a7, #f695a7, #f593a7, #f591a7, #f68fa6, #f68ca6, #f68aa6);" text="Pin Note">
+                                                   <font>
+                                                      <Font name="Corbel Bold Italic" size="30.0" />
+                                                   </font>
+                                                   <effect>
+                                                      <Reflection />
+                                                   </effect>
+                                                </Label>
+                                                <Label prefHeight="39.0" prefWidth="230.0" style="-fx-text-fill: linear-gradient(to top,   derive(#3980F4, 50%) , derive(#BB8EF5, 50%));">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="20.0" />
+                                                   </font>
+                                                   <effect>
+                                                      <Reflection />
+                                                   </effect>
+                                                </Label>
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </padding>
+                                          </HBox>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets top="20.0" />
+                                       </VBox.margin>
+                                    </StackPane>
+                                    <StackPane>
+                                       <VBox.margin>
+                                          <Insets top="20.0" />
+                                       </VBox.margin>
+                                       <children>
+                                          <AnchorPane fx:id="drapanddropscreen" maxWidth="500.0" minHeight="171.0" prefHeight="191.0" prefWidth="342.0" style="-fx-background-color: linear-gradient(to right top, #a782e0, #ba7fd9, #cb7dd2, #da7bc9, #e67abf, #ea7abb, #ee7ab8, #f27ab4, #f179b7, #f078b9, #ef77bc, #ee76bf); -fx-border-radius: 50; -fx-background-radius: 50; -fx-shape: &quot;M26.2,-33C31.4,-26.8,31.4,-16.2,31.3,-7C31.1,2.2,30.9,10,28.4,18.4C25.9,26.9,21.2,36.2,13.7,39.8C6.2,43.4,-4.1,41.4,-12.4,37.1C-20.8,32.8,-27.3,26.1,-29.8,18.7C-32.3,11.3,-30.8,3,-30.1,-6.1C-29.5,-15.3,-29.7,-25.4,-24.8,-31.8C-19.9,-38.1,-10,-40.6,0.3,-40.9C10.5,-41.2,20.9,-39.3,26.2,-33Z&quot;;">
+                                             <children>
+                                                <Label alignment="CENTER" layoutX="19.0" layoutY="40.0" prefHeight="40.0" prefWidth="276.0" style="-fx-text-fill: white;" text="Pin Here" AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="19.0" AnchorPane.topAnchor="40.0">
+                                                   <font>
+                                                      <Font name="Corbel Bold" size="30.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="closeExpandTextArea211" alignment="CENTER" layoutX="110.0" layoutY="116.0" prefHeight="61.0" prefWidth="114.0" style="-fx-text-fill: linear-gradient(to right top, #9181ec, #9180ed, #907fed, #907eee, #907dee, #907aec, #9176eb, #9173e9, #926ce5, #9365e0, #955edb, #9657d6);;" text="" AnchorPane.leftAnchor="110.0" AnchorPane.rightAnchor="110.0" AnchorPane.topAnchor="116.0">
+                                                   <styleClass>
+                                                      <String fx:value="icon-fill" />
+                                                      <String fx:value="font-30" />
+                                                   </styleClass>
+                                                </Label>
+                                                <Label alignment="CENTER" layoutX="95.0" layoutY="92.0" prefHeight="17.0" prefWidth="144.0" style="-fx-text-fill: white;" text="Drag and Drop" AnchorPane.leftAnchor="95.0" AnchorPane.rightAnchor="95.0">
+                                                   <font>
+                                                      <Font name="Berlin Sans FB" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                             <StackPane.margin>
+                                                <Insets top="5.0" />
+                                             </StackPane.margin>
+                                          </AnchorPane>
+                                          <VBox fx:id="dragflowPane" alignment="CENTER" prefHeight="100.0" prefWidth="324.0" style="-fx-background-color: transparent; -fx-border-radius: 20; -fx-background-radius: 20; -fx-background-insets: 0;" />
+                                       </children>
+                                    </StackPane>
+                                    <VBox fx:id="editPane" minHeight="120.0" prefHeight="120.0" prefWidth="324.0" style="-fx-background-color: linear-gradient(to right top, #3d476a, #384162, #333b5b, #2e3653, #29304c); -fx-border-radius: 50  50 0 0; -fx-background-radius: 40 40 0 0;">
+                                       <children>
+                                          <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                             <children>
+                                                <Label layoutX="18.0" layoutY="19.0" prefHeight="30.0" prefWidth="273.0" style="-fx-text-fill: linear-gradient(to right top, #9b7eea, #a37de6, #aa7ce3, #b07cdf, #b67bdb, #bc7bd8, #c27ad4, #c77ad1, #ce79cd, #d479c9, #da78c5, #df78c1); -fx-background-color: linear-gradient(to right top, #525c7f, #4f597c, #4b5578, #485275, #454f72, #434d70, #414b6e, #3f496c, #3e486b, #3c466a, #3b4569, #3a4468); -fx-shape: &quot;M17.8,-28.3C23,-27.9,27,-22.9,26.9,-17.4C26.8,-11.9,22.7,-6,22.7,0C22.7,6,26.9,11.9,25.6,15.1C24.4,18.3,17.7,18.7,12.5,21.4C7.4,24.1,3.7,29.1,-1.1,31C-5.8,32.9,-11.7,31.6,-15.1,27.8C-18.5,24.1,-19.5,18,-19.4,12.9C-19.3,7.9,-18.1,3.9,-20.4,-1.3C-22.8,-6.6,-28.6,-13.2,-27.6,-16.4C-26.5,-19.5,-18.7,-19.2,-13,-19.2C-7.2,-19.2,-3.6,-19.7,1.4,-22C6.3,-24.4,12.7,-28.7,17.8,-28.3Z&quot;;" text="Drag and Drop Here" AnchorPane.leftAnchor="18.0" AnchorPane.topAnchor="19.0">
+                                                   <font>
+                                                      <Font name="Corbel Bold" size="30.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="closeExpandTextArea2" alignment="CENTER" layoutX="188.0" layoutY="55.0" prefHeight="61.0" prefWidth="70.0" style="-fx-text-fill: linear-gradient(to right top, #a782e0, #ba7fd9, #cb7dd2, #da7bc9, #e67abf, #ea7abb, #ee7ab8, #f27ab4, #f179b7, #f078b9, #ef77bc, #ee76bf);" text="">
+                                                   <styleClass>
+                                                      <String fx:value="icon-fill" />
+                                                      <String fx:value="font-30" />
+                                                   </styleClass>
+                                                </Label>
+                                                <AnchorPane layoutX="18.0" layoutY="62.0" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: linear-gradient(to right top, #3d476a, #384162, #333b5b, #2e3653, #29304c); -fx-shape: &quot;M26.2,-33C31.4,-26.8,31.4,-16.2,31.3,-7C31.1,2.2,30.9,10,28.4,18.4C25.9,26.9,21.2,36.2,13.7,39.8C6.2,43.4,-4.1,41.4,-12.4,37.1C-20.8,32.8,-27.3,26.1,-29.8,18.7C-32.3,11.3,-30.8,3,-30.1,-6.1C-29.5,-15.3,-29.7,-25.4,-24.8,-31.8C-19.9,-38.1,-10,-40.6,0.3,-40.9C10.5,-41.2,20.9,-39.3,26.2,-33Z&quot;;">
+                                                   <children>
+                                                      <Label layoutX="14.0" layoutY="10.0" prefHeight="21.0" prefWidth="40.0" style="-fx-text-fill: linear-gradient(to right top, #9b7eea, #a37de6, #aa7ce3, #b07cdf, #b67bdb, #bc7bd8, #c27ad4, #c77ad1, #ce79cd, #d479c9, #da78c5, #df78c1);;" text="Edit">
+                                                         <font>
+                                                            <Font name="Berlin Sans FB" size="18.0" />
+                                                         </font>
+                                                         <effect>
+                                                            <Reflection />
+                                                         </effect>
+                                                      </Label>
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane layoutX="265.0" layoutY="61.0" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: linear-gradient(to top,   derive(#02796b, 50%) , derive(#73e57b, 50%)); -fx-shape: &quot;M26.2,-33C31.4,-26.8,31.4,-16.2,31.3,-7C31.1,2.2,30.9,10,28.4,18.4C25.9,26.9,21.2,36.2,13.7,39.8C6.2,43.4,-4.1,41.4,-12.4,37.1C-20.8,32.8,-27.3,26.1,-29.8,18.7C-32.3,11.3,-30.8,3,-30.1,-6.1C-29.5,-15.3,-29.7,-25.4,-24.8,-31.8C-19.9,-38.1,-10,-40.6,0.3,-40.9C10.5,-41.2,20.9,-39.3,26.2,-33Z&quot;;" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="20.0" />
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets left="10.0" right="10.0" top="20.0" />
+                                       </VBox.margin>
+                                    </VBox>
+                                    <VBox fx:id="deletePane" minHeight="120.0" prefHeight="120.0" prefWidth="324.0" style="-fx-background-color: linear-gradient(to right top, #525c7f, #4f597c, #4b5578, #485275, #454f72, #434d70, #414b6e, #3f496c, #3e486b, #3c466a, #3b4569, #3a4468); -fx-border-radius: 0 0 40 40; -fx-background-radius: 0 0 40 40;">
+                                       <children>
+                                          <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                             <children>
+                                                <Label layoutX="14.0" layoutY="14.0" prefHeight="40.0" prefWidth="276.0" style="-fx-text-fill: linear-gradient(to right top, #fea1a5, #fc9fa5, #fb9da6, #f99ba6, #f799a7, #f697a7, #f695a7, #f593a7, #f591a7, #f68fa6, #f68ca6, #f68aa6); -fx-background-color: linear-gradient(to right top, #3d476a, #384162, #333b5b, #2e3653, #29304c); -fx-shape: &quot;M26.2,-33C31.4,-26.8,31.4,-16.2,31.3,-7C31.1,2.2,30.9,10,28.4,18.4C25.9,26.9,21.2,36.2,13.7,39.8C6.2,43.4,-4.1,41.4,-12.4,37.1C-20.8,32.8,-27.3,26.1,-29.8,18.7C-32.3,11.3,-30.8,3,-30.1,-6.1C-29.5,-15.3,-29.7,-25.4,-24.8,-31.8C-19.9,-38.1,-10,-40.6,0.3,-40.9C10.5,-41.2,20.9,-39.3,26.2,-33Z&quot;;" text="Drag and Drop Here" AnchorPane.leftAnchor="18.0" AnchorPane.topAnchor="19.0">
+                                                   <font>
+                                                      <Font name="Corbel Bold" size="30.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="closeExpandTextArea22" alignment="CENTER" layoutX="188.0" layoutY="55.0" prefHeight="61.0" prefWidth="70.0" style="-fx-text-fill: linear-gradient(to right top, #fea1a5, #fc9fa5, #fb9da6, #f99ba6, #f799a7, #f697a7, #f695a7, #f593a7, #f591a7, #f68fa6, #f68ca6, #f68aa6);" text="">
+                                                   <styleClass>
+                                                      <String fx:value="icon-fill" />
+                                                      <String fx:value="font-30" />
+                                                   </styleClass>
+                                                </Label>
+                                                <AnchorPane layoutX="18.0" layoutY="62.0" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: linear-gradient(to right top, #525c7f, #4f597c, #4b5578, #485275, #454f72, #434d70, #414b6e, #3f496c, #3e486b, #3c466a, #3b4569, #3a4468); -fx-shape: &quot;M14.8,-21.6C19.2,-17.2,22.8,-12.9,27,-7.1C31.1,-1.4,35.7,5.9,35.4,13C35.2,20.1,30,27.1,23.3,32.9C16.5,38.7,8.3,43.2,-0.2,43.5C-8.7,43.8,-17.5,39.9,-22.9,33.8C-28.4,27.6,-30.6,19.1,-30.7,11.7C-30.8,4.2,-28.8,-2.2,-27.9,-10.3C-26.9,-18.3,-27,-27.8,-22.6,-32.1C-18.1,-36.4,-9,-35.5,-1.9,-32.9C5.2,-30.3,10.4,-25.9,14.8,-21.6Z&quot;;">
+                                                   <children>
+                                                      <Label layoutX="14.0" layoutY="10.0" prefHeight="21.0" prefWidth="66.0" style="-fx-text-fill: linear-gradient(to right top, #fea1a5, #fc9fa5, #fb9da6, #f99ba6, #f799a7, #f697a7, #f695a7, #f593a7, #f591a7, #f68fa6, #f68ca6, #f68aa6);" text="Delete">
+                                                         <font>
+                                                            <Font name="Berlin Sans FB" size="18.0" />
+                                                         </font>
+                                                         <effect>
+                                                            <Reflection />
+                                                         </effect>
+                                                      </Label>
+                                                   </children>
+
+                                                                              </AnchorPane>
+                                                <AnchorPane layoutX="239.0" layoutY="34.0" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: linear-gradient(to top,   derive(#3980F4, 50%) , derive(#BB8EF5, 50%)); -fx-shape: &quot;M14.8,-21.6C19.2,-17.2,22.8,-12.9,27,-7.1C31.1,-1.4,35.7,5.9,35.4,13C35.2,20.1,30,27.1,23.3,32.9C16.5,38.7,8.3,43.2,-0.2,43.5C-8.7,43.8,-17.5,39.9,-22.9,33.8C-28.4,27.6,-30.6,19.1,-30.7,11.7C-30.8,4.2,-28.8,-2.2,-27.9,-10.3C-26.9,-18.3,-27,-27.8,-22.6,-32.1C-18.1,-36.4,-9,-35.5,-1.9,-32.9C5.2,-30.3,10.4,-25.9,14.8,-21.6Z&quot;;" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="20.0" />
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets bottom="50.0" left="10.0" right="10.0" />
+                                       </VBox.margin>
+                                    </VBox>
+                                    <VBox fx:id="editPane1" minHeight="120.0" prefHeight="120.0" prefWidth="324.0" style="-fx-background-color: rgba(0,0,0,0.7); -fx-border-radius: 50  50 0 0; -fx-background-radius: 40 40 0 0;" visible="false">
+                                       <children>
+                                          <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                             <children>
+                                                <Label layoutX="18.0" layoutY="19.0" prefHeight="30.0" prefWidth="273.0" style="-fx-text-fill: linear-gradient(to right top, #9b7eea, #a37de6, #aa7ce3, #b07cdf, #b67bdb, #bc7bd8, #c27ad4, #c77ad1, #ce79cd, #d479c9, #da78c5, #df78c1); -fx-background-color: linear-gradient(to right top, #525c7f, #4f597c, #4b5578, #485275, #454f72, #434d70, #414b6e, #3f496c, #3e486b, #3c466a, #3b4569, #3a4468); -fx-shape: &quot;M17.8,-28.3C23,-27.9,27,-22.9,26.9,-17.4C26.8,-11.9,22.7,-6,22.7,0C22.7,6,26.9,11.9,25.6,15.1C24.4,18.3,17.7,18.7,12.5,21.4C7.4,24.1,3.7,29.1,-1.1,31C-5.8,32.9,-11.7,31.6,-15.1,27.8C-18.5,24.1,-19.5,18,-19.4,12.9C-19.3,7.9,-18.1,3.9,-20.4,-1.3C-22.8,-6.6,-28.6,-13.2,-27.6,-16.4C-26.5,-19.5,-18.7,-19.2,-13,-19.2C-7.2,-19.2,-3.6,-19.7,1.4,-22C6.3,-24.4,12.7,-28.7,17.8,-28.3Z&quot;;" text="Drag and Drop Here" AnchorPane.leftAnchor="18.0" AnchorPane.topAnchor="19.0">
+                                                   <font>
+                                                      <Font name="Corbel Bold" size="30.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="closeExpandTextArea21" alignment="CENTER" layoutX="188.0" layoutY="55.0" prefHeight="61.0" prefWidth="70.0" style="-fx-text-fill: linear-gradient(to right top, #a782e0, #ba7fd9, #cb7dd2, #da7bc9, #e67abf, #ea7abb, #ee7ab8, #f27ab4, #f179b7, #f078b9, #ef77bc, #ee76bf);" text="">
+                                                   <styleClass>
+                                                      <String fx:value="icon-fill" />
+                                                      <String fx:value="font-30" />
+                                                   </styleClass>
+                                                </Label>
+                                                <AnchorPane layoutX="18.0" layoutY="62.0" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: linear-gradient(to right top, #3d476a, #384162, #333b5b, #2e3653, #29304c); -fx-shape: &quot;M26.2,-33C31.4,-26.8,31.4,-16.2,31.3,-7C31.1,2.2,30.9,10,28.4,18.4C25.9,26.9,21.2,36.2,13.7,39.8C6.2,43.4,-4.1,41.4,-12.4,37.1C-20.8,32.8,-27.3,26.1,-29.8,18.7C-32.3,11.3,-30.8,3,-30.1,-6.1C-29.5,-15.3,-29.7,-25.4,-24.8,-31.8C-19.9,-38.1,-10,-40.6,0.3,-40.9C10.5,-41.2,20.9,-39.3,26.2,-33Z&quot;;">
+                                                   <children>
+                                                      <Label layoutX="14.0" layoutY="10.0" prefHeight="21.0" prefWidth="40.0" style="-fx-text-fill: linear-gradient(to right top, #9b7eea, #a37de6, #aa7ce3, #b07cdf, #b67bdb, #bc7bd8, #c27ad4, #c77ad1, #ce79cd, #d479c9, #da78c5, #df78c1);;" text="Edit">
+                                                         <font>
+                                                            <Font name="Berlin Sans FB" size="18.0" />
+                                                         </font>
+                                                         <effect>
+                                                            <Reflection />
+                                                         </effect>
+                                                      </Label>
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane layoutX="265.0" layoutY="61.0" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: linear-gradient(to top,   derive(#02796b, 50%) , derive(#73e57b, 50%)); -fx-shape: &quot;M26.2,-33C31.4,-26.8,31.4,-16.2,31.3,-7C31.1,2.2,30.9,10,28.4,18.4C25.9,26.9,21.2,36.2,13.7,39.8C6.2,43.4,-4.1,41.4,-12.4,37.1C-20.8,32.8,-27.3,26.1,-29.8,18.7C-32.3,11.3,-30.8,3,-30.1,-6.1C-29.5,-15.3,-29.7,-25.4,-24.8,-31.8C-19.9,-38.1,-10,-40.6,0.3,-40.9C10.5,-41.2,20.9,-39.3,26.2,-33Z&quot;;" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="20.0" />
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </VBox>
+                                    <VBox fx:id="deletePane1" minHeight="120.0" prefHeight="120.0" prefWidth="324.0" style="-fx-background-color: rgba(0,0,0,0.7); -fx-border-radius: 0 0 40 40; -fx-background-radius: 0 0 40 40;" visible="false">
+                                       <children>
+                                          <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                             <children>
+                                                <Label layoutX="14.0" layoutY="14.0" prefHeight="40.0" prefWidth="276.0" style="-fx-text-fill: linear-gradient(to right top, #fea1a5, #fc9fa5, #fb9da6, #f99ba6, #f799a7, #f697a7, #f695a7, #f593a7, #f591a7, #f68fa6, #f68ca6, #f68aa6); -fx-background-color: linear-gradient(to right top, #3d476a, #384162, #333b5b, #2e3653, #29304c); -fx-shape: &quot;M26.2,-33C31.4,-26.8,31.4,-16.2,31.3,-7C31.1,2.2,30.9,10,28.4,18.4C25.9,26.9,21.2,36.2,13.7,39.8C6.2,43.4,-4.1,41.4,-12.4,37.1C-20.8,32.8,-27.3,26.1,-29.8,18.7C-32.3,11.3,-30.8,3,-30.1,-6.1C-29.5,-15.3,-29.7,-25.4,-24.8,-31.8C-19.9,-38.1,-10,-40.6,0.3,-40.9C10.5,-41.2,20.9,-39.3,26.2,-33Z&quot;;" text="Drag and Drop Here" AnchorPane.leftAnchor="18.0" AnchorPane.topAnchor="19.0">
+                                                   <font>
+                                                      <Font name="Corbel Bold" size="30.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="closeExpandTextArea221" alignment="CENTER" layoutX="188.0" layoutY="55.0" prefHeight="61.0" prefWidth="70.0" style="-fx-text-fill: linear-gradient(to right top, #fea1a5, #fc9fa5, #fb9da6, #f99ba6, #f799a7, #f697a7, #f695a7, #f593a7, #f591a7, #f68fa6, #f68ca6, #f68aa6);" text="">
+                                                   <styleClass>
+                                                      <String fx:value="icon-fill" />
+                                                      <String fx:value="font-30" />
+                                                   </styleClass>
+                                                </Label>
+                                                <AnchorPane layoutX="18.0" layoutY="62.0" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: linear-gradient(to right top, #525c7f, #4f597c, #4b5578, #485275, #454f72, #434d70, #414b6e, #3f496c, #3e486b, #3c466a, #3b4569, #3a4468); -fx-shape: &quot;M14.8,-21.6C19.2,-17.2,22.8,-12.9,27,-7.1C31.1,-1.4,35.7,5.9,35.4,13C35.2,20.1,30,27.1,23.3,32.9C16.5,38.7,8.3,43.2,-0.2,43.5C-8.7,43.8,-17.5,39.9,-22.9,33.8C-28.4,27.6,-30.6,19.1,-30.7,11.7C-30.8,4.2,-28.8,-2.2,-27.9,-10.3C-26.9,-18.3,-27,-27.8,-22.6,-32.1C-18.1,-36.4,-9,-35.5,-1.9,-32.9C5.2,-30.3,10.4,-25.9,14.8,-21.6Z&quot;;">
+                                                   <children>
+                                                      <Label layoutX="14.0" layoutY="10.0" prefHeight="21.0" prefWidth="66.0" style="-fx-text-fill: linear-gradient(to right top, #fea1a5, #fc9fa5, #fb9da6, #f99ba6, #f799a7, #f697a7, #f695a7, #f593a7, #f591a7, #f68fa6, #f68ca6, #f68aa6);" text="Delete">
+                                                         <font>
+                                                            <Font name="Berlin Sans FB" size="18.0" />
+                                                         </font>
+                                                         <effect>
+                                                            <Reflection />
+                                                         </effect>
+                                                      </Label>
+                                                   </children>
+                                                </AnchorPane>
+                                                <AnchorPane layoutX="239.0" layoutY="34.0" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: linear-gradient(to top,   derive(#3980F4, 50%) , derive(#BB8EF5, 50%)); -fx-shape: &quot;M14.8,-21.6C19.2,-17.2,22.8,-12.9,27,-7.1C31.1,-1.4,35.7,5.9,35.4,13C35.2,20.1,30,27.1,23.3,32.9C16.5,38.7,8.3,43.2,-0.2,43.5C-8.7,43.8,-17.5,39.9,-22.9,33.8C-28.4,27.6,-30.6,19.1,-30.7,11.7C-30.8,4.2,-28.8,-2.2,-27.9,-10.3C-26.9,-18.3,-27,-27.8,-22.6,-32.1C-18.1,-36.4,-9,-35.5,-1.9,-32.9C5.2,-30.3,10.4,-25.9,14.8,-21.6Z&quot;;" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="20.0" />
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </padding>
+                              </VBox>
+                           </content>
+                           <contextMenu>
+                              <ContextMenu>
+                                 <items>
+                                    <Menu mnemonicParsing="false" text="Layout Menu">
+                                       <items>
+                                          <Menu mnemonicParsing="false" text="Layout Position">
+                                            <items>
+                                                <MenuItem fx:id="scrollupMenuItem1" mnemonicParsing="false" text="Scroll To Up" />
+                                                <MenuItem fx:id="scrollbotMenuItem1" mnemonicParsing="false" text="Scroll To Bottom" />
+                                            </items>
+                                          </Menu>
+                                          <Menu mnemonicParsing="false" text="Functions">
+                                             <items>
+                                                <MenuItem mnemonicParsing="false" text="Pin Note" />
+                                                <MenuItem mnemonicParsing="false" text="Delete Note" />
+                                             </items>
+                                          </Menu>
+                                       </items>
+                                    </Menu>
+                                 </items>
+                              </ContextMenu>
+                           </contextMenu>
+                           <StackPane.margin>
+                              <Insets right="2.0" />
+                           </StackPane.margin>
+                        </ScrollPane>
+                     </children>
+                  </StackPane>
+               </children>
+            </StackPane>
+         </items>
+      </SplitPane>
+      <AnchorPane fx:id="expandPane" cache="true" cacheHint="SPEED" layoutX="120.0" layoutY="45.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="615.0" prefWidth="288.0" style="-fx-background-color: #e4ee90;" styleClass="expandPane" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="49.0">
+         <children>
+            <Label fx:id="ToggleResizeLabel" alignment="CENTER" layoutX="200.0" layoutY="276.0" prefHeight="40.0" prefWidth="40.0" text="" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0">
+               <styleClass>
+                  <String fx:value="icon-fill" />
+                  <String fx:value="editLabel" />
+               </styleClass>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="createDateLabel" layoutX="20.0" layoutY="258.0" prefHeight="7.0" prefWidth="144.0" styleClass="createDateLabel" text="May 21, 2020" AnchorPane.bottomAnchor="47.0" AnchorPane.leftAnchor="20.0" />
+            <TextArea fx:id="expandTextArea" layoutX="20.0" layoutY="40.0" prefHeight="566.0" prefWidth="692.0" styleClass="font-pyidaungsu" text="Hello" wrapText="true" AnchorPane.bottomAnchor="69.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="45.0">
+               <font>
+                  <Font name="Pyidaungsu" size="13.0" />
+               </font>
+            </TextArea>
+            <Label fx:id="closeExpandTextArea" alignment="CENTER" layoutX="224.0" layoutY="8.0" prefHeight="20.0" prefWidth="20.0" text="" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+               <styleClass>
+                  <String fx:value="icon-fill" />
+                  <String fx:value="closeExpandLabel" />
+               </styleClass>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="modifiedDateLabel" layoutX="20.0" layoutY="291.0" prefHeight="17.0" prefWidth="175.0" text="Modified: " AnchorPane.bottomAnchor="20.0">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <ScrollPane fx:id="settingScrollPane" fitToHeight="true" fitToWidth="true" layoutX="762.0" layoutY="54.0" prefHeight="552.0" prefWidth="261.0" style="-fx-border-radius: 20; -fx-background-radius: 20; -fx-background-color: white;" AnchorPane.bottomAnchor="69.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="54.0">
+               <content>
+                  <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-border-radius: 20; -fx-background-radius: 20;">
+                     <children>
+                        <VBox maxHeight="100.0" minHeight="49.0" prefHeight="49.0" prefWidth="227.0">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label fx:id="settingLabel" prefHeight="50.0" prefWidth="178.0" text="Settings">
+                                       <font>
+                                          <Font name="Impact" size="30.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="79.0" prefWidth="227.0" spacing="5.0">
+                           <children>
+                              <Label fx:id="filenamelbl" disable="true" prefHeight="29.0" prefWidth="142.0" text="File Name:">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="filenameLabel" prefHeight="32.0" prefWidth="203.0" text="Document Name" textOverrun="WORD_ELLIPSIS">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <styleClass>
+                                    <String fx:value="font-pyidaungsu" />
+                                    <String fx:value="font-15" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                           </padding>
+                        </VBox>
+                        <VBox prefHeight="60.0" prefWidth="227.0">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="204.0" spacing="10.0">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                                 <children>
+                                    <Label fx:id="BackgroundLabel" prefHeight="32.0" prefWidth="203.0" text="Background Color:" textOverrun="WORD_ELLIPSIS">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="204.0" spacing="7.0">
+                                 <children>
+                                    <Circle fx:id="bg_circle1" fill="#ffc972" radius="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Circle>
+                                    <Circle fx:id="bg_circle2" fill="#ff9b73" radius="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Circle>
+                                    <Circle fx:id="bg_circle3" fill="#b592ff" radius="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Circle>
+                                    <Circle fx:id="bg_circle4" fill="#00d4ff" radius="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Circle>
+                                    <Circle fx:id="bg_circle5" fill="#e4ee90" radius="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Circle>
+                                    <Circle fx:id="bg_circle6" fill="#f8f9fa" radius="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Circle>
+                                    <ColorPicker fx:id="BackgroundcolorPicker" prefHeight="25.0" prefWidth="110.0" style="-fx-background-color: #F8F9FA;" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="60.0" prefWidth="227.0">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="204.0" spacing="10.0">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                                 <children>
+                                    <Label fx:id="TextColorLabel" prefHeight="32.0" prefWidth="203.0" text="Text Color:" textOverrun="WORD_ELLIPSIS">
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="204.0" spacing="7.0">
+                                 <children>
+                                    <Circle fx:id="txt_circle1" fill="#ffc972" radius="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Circle>
+                                    <Circle fx:id="txt_circle2" fill="#ff9b73" radius="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Circle>
+                                    <Circle fx:id="txt_circle3" fill="#b592ff" radius="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Circle>
+                                    <Circle fx:id="txt_circle4" fill="#00d4ff" radius="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Circle>
+                                    <Circle fx:id="txt_circle5" fill="#e4ee90" radius="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Circle>
+                                    <Circle fx:id="txt_circle6" fill="#f8f9fa" radius="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Circle>
+                                    <ColorPicker fx:id="TextcolorPicker" prefHeight="25.0" prefWidth="110.0" style="-fx-background-color: #F8F9FA;" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </content>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ScrollPane>
+            <Label fx:id="settingIconLabel" alignment="CENTER" layoutX="886.0" layoutY="325.0" prefHeight="40.0" prefWidth="40.0" styleClass="icon-fill" text="" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="80.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+   <stylesheets>
+      <URL value="@Page1.css" />
+      <URL value="@../CSS/extra.css" />
+   </stylesheets>
+</AnchorPane>

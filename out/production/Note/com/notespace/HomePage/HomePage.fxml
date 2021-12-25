@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="baseAnchor" prefHeight="750.0" prefWidth="1290.0" style="-fx-background-color: white;" stylesheets="@HomePage.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane layoutX="539.0" layoutY="219.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <VBox alignment="CENTER" prefHeight="228.0" prefWidth="1238.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane prefHeight="55.0" prefWidth="990.0">
+                     <children>
+                        <VBox alignment="CENTER" layoutX="160.0" layoutY="-54.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label prefHeight="98.0" prefWidth="459.0" style="-fx-text-fill: linear-gradient(from 25px 25px to 100px 100px, #8478C5 ,  #BB8EF5    );" text="Directory Home">
+                                 <font>
+                                    <Font name="Symbol" size="50.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+                  <VBox alignment="CENTER" prefHeight="391.0" prefWidth="990.0">
+                     <children>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="58.0" prefWidth="1290.0">
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="30.0" prefWidth="171.0" spacing="5.0">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="30.0" prefWidth="33.0" style="-fx-text-fill: #AEAEE6;" text="">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                       <styleClass>
+                                          <String fx:value="icon-fill" />
+                                          <String fx:value="font-20" />
+                                       </styleClass>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Label>
+                                    <Label fx:id="helpLabel" alignment="CENTER" prefHeight="30.0" prefWidth="54.0" style="-fx-text-fill: #AEAEE6;" text="Help">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Label>
+                                 </children>
+                                 <padding>
+                                    <Insets left="20.0" right="20.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="347.0" prefWidth="990.0" spacing="25.0">
+                           <children>
+                              <VBox alignment="TOP_CENTER" prefHeight="312.0" prefWidth="248.0" spacing="10.0">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="44.0" prefWidth="225.0" style="-fx-text-fill: #FD5D79;" text="Create NoteSpace Direcotry">
+                                       <font>
+                                          <Font name="Symbol" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <AnchorPane maxWidth="200.0" minWidth="200.0" prefHeight="200.0" prefWidth="194.0" style="-fx-background-color: white; -fx-border-radius: 20; -fx-background-radius: 20;">
+                                       <children>
+                                          <VBox layoutX="14.0" layoutY="89.0" prefHeight="106.0" prefWidth="172.0" spacing="10.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0">
+                                             <children>
+                                                <Label prefHeight="17.0" prefWidth="165.0" style="-fx-text-fill: #FD5D79;" text="-New Directory" underline="true">
+                                                   <font>
+                                                      <Font name="Symbol" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label prefHeight="17.0" prefWidth="165.0" style="-fx-text-fill: #FD5D79;" text="-Import Directory" underline="true">
+                                                   <font>
+                                                      <Font name="Symbol" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </VBox>
+                                          <Label alignment="CENTER" layoutX="69.0" layoutY="32.0" prefHeight="42.0" prefWidth="62.0" style="-fx-text-fill: #FD5D79;" text="">
+                                             <styleClass>
+                                                <String fx:value="icon-fill" />
+                                                <String fx:value="font-30" />
+                                             </styleClass>
+                                          </Label>
+                                       </children>
+                                       <effect>
+                                          <DropShadow height="5.0" radius="2.0" width="5.0" />
+                                       </effect>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </AnchorPane>
+                                    <Label alignment="TOP_CENTER" prefHeight="75.0" prefWidth="192.0" style="-fx-text-fill: #F09FC7;" text="-Import Directory ( Generally doesn't need to use . Use 'Detect' to find Recent Directories. )" wrapText="true">
+                                       <font>
+                                          <Font name="Symbol" size="12.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="248.0" spacing="10.0">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="44.0" prefWidth="225.0" style="-fx-text-fill: #8478C5;" text="Detect NoteSpace Directory">
+                                       <font>
+                                          <Font name="Symbol" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <AnchorPane maxWidth="200.0" minWidth="200.0" prefHeight="200.0" prefWidth="194.0" style="-fx-background-color: #3C4880; -fx-border-radius: 20; -fx-background-radius: 20;">
+                                       <children>
+                                          <VBox layoutX="14.0" layoutY="86.0" prefHeight="109.0" prefWidth="172.0" spacing="10.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0">
+                                             <children>
+                                                <Label prefHeight="17.0" prefWidth="165.0" style="-fx-text-fill: #C08DFA;" text="-Detect from" underline="true">
+                                                   <font>
+                                                      <Font name="Symbol" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <HBox fx:id="partitionHBox" prefHeight="21.0" prefWidth="152.0" spacing="10.0">
+                                                   <padding>
+                                                      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                   </padding>
+                                                   <children>
+                                                      <Label alignment="CENTER" prefHeight="26.0" prefWidth="48.0" style="-fx-background-color: #C08DFA; -fx-text-fill: white; -fx-border-radius: 30; -fx-background-radius: 30;" text="D:">
+                                                         <font>
+                                                            <Font name="System Bold" size="17.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <Label alignment="CENTER" prefHeight="26.0" prefWidth="48.0" style="-fx-background-color: #C08DFA; -fx-text-fill: white; -fx-border-radius: 30; -fx-background-radius: 30;" text="E:">
+                                                         <font>
+                                                            <Font name="System Bold" size="17.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                </HBox>
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </VBox>
+                                          <Label alignment="CENTER" layoutX="69.0" layoutY="34.0" prefHeight="42.0" prefWidth="62.0" style="-fx-text-fill: #C08DFA;" text="">
+                                             <styleClass>
+                                                <String fx:value="icon-fill" />
+                                                <String fx:value="font-30" />
+                                             </styleClass>
+                                          </Label>
+                                       </children>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </AnchorPane>
+                                    <Label alignment="TOP_CENTER" prefHeight="75.0" prefWidth="192.0" style="-fx-text-fill: #C08DFA;" text="-Detect Directory ( Scan partitions to get Recent Directories. )" wrapText="true">
+                                       <font>
+                                          <Font name="Symbol" size="12.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <Label alignment="TOP_LEFT" prefHeight="41.0" prefWidth="474.0" style="-fx-text-fill: #C08DFA;" text="Notice:" wrapText="true">
+                     <font>
+                        <Font name="Symbol" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_LEFT" prefHeight="25.0" prefWidth="474.0" style="-fx-text-fill: #C08DFA;" text="-This Software works only with NoteSpace Directory Structure" wrapText="true">
+                     <font>
+                        <Font name="Symbol" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </center>
+         <right>
+            <AnchorPane fx:id="rightAnchor" prefHeight="750.0" prefWidth="300.0" style="-fx-background-color: #f2f2f7;" BorderPane.alignment="CENTER">
+               <children>
+                  <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" layoutX="38.0" layoutY="144.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: transparent; -fx-border-color: transparent;" vbarPolicy="NEVER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+                     <content>
+                        <VBox fx:id="contentVBox" prefHeight="200.0" prefWidth="100.0" />
+                     </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="875.0" prefWidth="757.0" stylesheets="@../MinimalistPage.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER_LEFT" layoutY="46.0" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: white;" styleClass="topRightBottomLeftBorder" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label text="Choose NoteSpace Directory ">
+               <styleClass>
+                  <String fx:value="fontbold" />
+                  <String fx:value="font-15" />
+               </styleClass>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="20.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+      <ScrollPane fitToHeight="true" fitToWidth="true" layoutX="16.0" layoutY="55.0" prefHeight="384.0" prefWidth="757.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <content>
+            <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+               <children>
+                  <VBox minHeight="80.0" prefHeight="80.0" prefWidth="500.0" spacing="5.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="25.0" prefWidth="129.0" style="-fx-background-color: white; -fx-background-radius: 5; -fx-border-color: lightgray; -fx-border-radius: 5;" text="Choose Directory">
+                           <styleClass>
+                              <String fx:value="fontbold" />
+                              <String fx:value="font11" />
+                           </styleClass>
+                        </Label>
+                        <HBox prefHeight="40.0" prefWidth="589.0" style="-fx-background-color: white;" styleClass="topRightBottomLeftBorder">
+                           <children>
+                              <Label fx:id="directoryChooseLabel" alignment="CENTER" prefHeight="49.0" prefWidth="44.0" text="">
+                                 <styleClass>
+                                    <String fx:value="icon-fill" />
+                                    <String fx:value="font-25" />
+                                    <String fx:value="searchIcon" />
+                                    <String fx:value="f2f2f9Hover" />
+                                 </styleClass>
+                              </Label>
+                              <TextField fx:id="directoryNameTextField" editable="false" prefHeight="38.0" prefWidth="369.0" promptText="Directory Path">
+                                 <styleClass>
+                                    <String fx:value="textfield" />
+                                    <String fx:value="fontbold" />
+                                 </styleClass>
+                              </TextField>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox minHeight="340.0" prefHeight="340.0" prefWidth="715.0" spacing="5.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="41.0" prefWidth="664.0" spacing="20.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="25.0" prefWidth="129.0" style="-fx-background-color: white; -fx-background-radius: 5; -fx-border-color: lightgray; -fx-border-radius: 5;" text="Detect Directory">
+                                 <styleClass>
+                                    <String fx:value="fontbold" />
+                                    <String fx:value="font11" />
+                                 </styleClass>
+                              </Label>
+                              <Button mnemonicParsing="false" onAction="#refreshDetection" prefHeight="11.0" prefWidth="56.0" text="Detect" />
+                           </children>
+                        </HBox>
+                        <ProgressBar fx:id="detectProgressBar" minHeight="2.0" prefHeight="2.0" prefWidth="200.0" progress="0.33" />
+                        <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" prefHeight="251.0" prefWidth="700.0" style="-fx-background-color: white;" styleClass="topRightBottomLeftBorder" vbarPolicy="NEVER">
+                           <content>
+                              <FlowPane fx:id="contentFlowPane" hgap="15.0" prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <HBox fx:id="dirChooseBoxHBox" prefHeight="40.0" prefWidth="300.0" style="-fx-background-color: white;" styleClass="topRightBottomLeftBorder" stylesheets="@../MinimalistPage.css">
+                                       <children>
+                                          <Label fx:id="directoryChooseLabel1" alignment="CENTER" disable="true" prefHeight="49.0" prefWidth="44.0" text="">
+                                             <styleClass>
+                                                <String fx:value="icon-fill" />
+                                                <String fx:value="font-25" />
+                                                <String fx:value="searchIcon" />
+                                                <String fx:value="f2f2f9Hover" />
+                                             </styleClass>
+                                          </Label>
+                                          <Label fx:id="directoryPathLabel" prefHeight="37.0" prefWidth="173.0" text="Label">
+                                             <styleClass>
+                                                <String fx:value="fontbold" />
+                                                <String fx:value="fontPyidaungsu" />
+                                             </styleClass>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox fx:id="dirChooseBoxHBox1" layoutX="10.0" layoutY="10.0" prefHeight="40.0" prefWidth="300.0" style="-fx-background-color: white;" styleClass="topRightBottomLeftBorder" stylesheets="@../MinimalistPage.css">
+                                       <children>
+                                          <Label fx:id="directoryChooseLabel11" alignment="CENTER" disable="true" prefHeight="49.0" prefWidth="44.0" text="">
+                                             <styleClass>
+                                                <String fx:value="icon-fill" />
+                                                <String fx:value="font-25" />
+                                                <String fx:value="searchIcon" />
+                                                <String fx:value="f2f2f9Hover" />
+                                             </styleClass>
+                                          </Label>
+                                          <Label fx:id="directoryPathLabel1" prefHeight="37.0" prefWidth="173.0" text="Label">
+                                             <styleClass>
+                                                <String fx:value="fontbold" />
+                                                <String fx:value="fontPyidaungsu" />
+                                             </styleClass>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox fx:id="dirChooseBoxHBox11" layoutX="10.0" layoutY="50.0" prefHeight="40.0" prefWidth="300.0" style="-fx-background-color: white;" styleClass="topRightBottomLeftBorder" stylesheets="@../MinimalistPage.css">
+                                       <children>
+                                          <Label fx:id="directoryChooseLabel111" alignment="CENTER" disable="true" prefHeight="49.0" prefWidth="44.0" text="">
+                                             <styleClass>
+                                                <String fx:value="icon-fill" />
+                                                <String fx:value="font-25" />
+                                                <String fx:value="searchIcon" />
+                                                <String fx:value="f2f2f9Hover" />
+                                             </styleClass>
+                                          </Label>
+                                          <Label fx:id="directoryPathLabel11" prefHeight="37.0" prefWidth="173.0" text="Label">
+                                             <styleClass>
+                                                <String fx:value="fontbold" />
+                                                <String fx:value="fontPyidaungsu" />
+                                             </styleClass>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox fx:id="dirChooseBoxHBox111" layoutX="10.0" layoutY="90.0" prefHeight="40.0" prefWidth="300.0" style="-fx-background-color: white;" styleClass="topRightBottomLeftBorder" stylesheets="@../MinimalistPage.css">
+                                       <children>
+                                          <Label fx:id="directoryChooseLabel1111" alignment="CENTER" disable="true" prefHeight="49.0" prefWidth="44.0" text="">
+                                             <styleClass>
+                                                <String fx:value="icon-fill" />
+                                                <String fx:value="font-25" />
+                                                <String fx:value="searchIcon" />
+                                                <String fx:value="f2f2f9Hover" />
+                                             </styleClass>
+                                          </Label>
+                                          <Label fx:id="directoryPathLabel111" prefHeight="37.0" prefWidth="173.0" text="Label">
+                                             <styleClass>
+                                                <String fx:value="fontbold" />
+                                                <String fx:value="fontPyidaungsu" />
+                                             </styleClass>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox fx:id="dirChooseBoxHBox1111" layoutX="10.0" layoutY="130.0" prefHeight="40.0" prefWidth="300.0" style="-fx-background-color: white;" styleClass="topRightBottomLeftBorder" stylesheets="@../MinimalistPage.css">
+                                       <children>
+                                          <Label fx:id="directoryChooseLabel11111" alignment="CENTER" disable="true" prefHeight="49.0" prefWidth="44.0" text="">
+                                             <styleClass>
+                                                <String fx:value="icon-fill" />
+                                                <String fx:value="font-25" />
+                                                <String fx:value="searchIcon" />
+                                                <String fx:value="f2f2f9Hover" />
+                                             </styleClass>
+                                          </Label>
+                                          <Label fx:id="directoryPathLabel1111" prefHeight="37.0" prefWidth="173.0" text="Label">
+                                             <styleClass>
+                                                <String fx:value="fontbold" />
+                                                <String fx:value="fontPyidaungsu" />
+                                             </styleClass>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox fx:id="dirChooseBoxHBox11111" layoutX="10.0" layoutY="170.0" prefHeight="40.0" prefWidth="300.0" style="-fx-background-color: white;" styleClass="topRightBottomLeftBorder" stylesheets="@../MinimalistPage.css">
+                                       <children>
+                                          <Label fx:id="directoryChooseLabel111111" alignment="CENTER" disable="true" prefHeight="49.0" prefWidth="44.0" text="">
+                                             <styleClass>
+                                                <String fx:value="icon-fill" />
+                                                <String fx:value="font-25" />
+                                                <String fx:value="searchIcon" />
+                                                <String fx:value="f2f2f9Hover" />
+                                             </styleClass>
+                                          </Label>
+                                          <Label fx:id="directoryPathLabel11111" prefHeight="37.0" prefWidth="173.0" text="Label">
+                                             <styleClass>
+                                                <String fx:value="fontbold" />
+                                                <String fx:value="fontPyidaungsu" />
+                                             </styleClass>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox fx:id="dirChooseBoxHBox111111" layoutX="10.0" layoutY="210.0" prefHeight="40.0" prefWidth="300.0" style="-fx-background-color: white;" styleClass="topRightBottomLeftBorder" stylesheets="@../MinimalistPage.css">
+                                       <children>
+                                          <Label fx:id="directoryChooseLabel1111111" alignment="CENTER" disable="true" prefHeight="49.0" prefWidth="44.0" text="">
+                                             <styleClass>
+                                                <String fx:value="icon-fill" />
+                                                <String fx:value="font-25" />
+                                                <String fx:value="searchIcon" />
+                                                <String fx:value="f2f2f9Hover" />
+                                             </styleClass>
+                                          </Label>
+                                          <Label fx:id="directoryPathLabel111111" prefHeight="37.0" prefWidth="173.0" text="Label">
+                                             <styleClass>
+                                                <String fx:value="fontbold" />
+                                                <String fx:value="fontPyidaungsu" />
+                                             </styleClass>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox fx:id="dirChooseBoxHBox1111111" layoutX="10.0" layoutY="250.0" prefHeight="40.0" prefWidth="300.0" style="-fx-background-color: white;" styleClass="topRightBottomLeftBorder" stylesheets="@../MinimalistPage.css">
+                                       <children>
+                                          <Label fx:id="directoryChooseLabel11111111" alignment="CENTER" disable="true" prefHeight="49.0" prefWidth="44.0" text="">
+                                             <styleClass>
+                                                <String fx:value="icon-fill" />
+                                                <String fx:value="font-25" />
+                                                <String fx:value="searchIcon" />
+                                                <String fx:value="f2f2f9Hover" />
+                                             </styleClass>
+                                          </Label>
+                                          <Label fx:id="directoryPathLabel1111111" prefHeight="37.0" prefWidth="173.0" text="Label">
+                                             <styleClass>
+                                                <String fx:value="fontbold" />
+                                                <String fx:value="fontPyidaungsu" />
+                                             </styleClass>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </FlowPane>
+                           </content>
+                           <padding>
+                              <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                           </padding>
+                        </ScrollPane>
+                        <Label prefHeight="14.0" prefWidth="238.0" text="Detect all matching NoteSpace directory">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="Corbel" size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <AnchorPane prefHeight="298.0" prefWidth="715.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="25.0" prefWidth="129.0" style="-fx-background-color: white; -fx-background-radius: 5; -fx-border-color: lightgray; -fx-border-radius: 5;" text="Recent Directory">
+                           <styleClass>
+                              <String fx:value="fontbold" />
+                              <String fx:value="font11" />
+                           </styleClass>
+                        </Label>
+                        <ScrollPane fitToHeight="true" fitToWidth="true" layoutY="30.0" minHeight="180.0" prefHeight="210.0" prefWidth="702.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+                           <content>
+                              <FlowPane fx:id="recentFlowPane" hgap="20.0" prefHeight="200.0" prefWidth="200.0" vgap="20.0">
+                                 <children>
+                                    <Button minHeight="30.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="163.0" text="D://NoteSpaceHere//T3">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                    </Button>
+                                    <Button layoutX="25.0" layoutY="25.0" minHeight="30.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="163.0" text="D://NoteSpaceHere//Space2">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                    </Button>
+                                    <Button layoutX="208.0" layoutY="25.0" minHeight="30.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="163.0" text="D://NoteSpaceHere//Test">
+                                       <padding>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </padding>
+                                    </Button>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="40.0" left="15.0" right="15.0" top="15.0" />
+                                 </padding>
+                              </FlowPane>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

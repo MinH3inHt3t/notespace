@@ -1,0 +1,30 @@
+.transparentBg{
+    -fx-background-color: transparent;
+}
+
+.fontCorbel{
+    -fx-font-family: "Corbel";
+}
+.font20{
+    -fx-font-size: 20;
+}
+.font30{
+    -fx-font-size: 30;
+}
+.fontbold{
+    -fx-font-weight: bold;
+}
+
+.border20{
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+}
+.border25{
+    -fx-border-radius: 25;
+    -fx-background-radius: 25;
+}
+.border30{
+    -fx-border-radius: 30;
+    -fx-background-radius: 30;
+}
+

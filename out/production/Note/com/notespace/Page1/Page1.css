@@ -1,0 +1,269 @@
+.icon-fill{
+    -fx-font-family: 'Material Icons';
+   /* -fx-fill: firebrick;*/
+
+}
+
+.font-15{
+    -fx-font-size: 15;
+}
+.font-20{
+    -fx-font-size: 20;
+}
+.font-25{
+    -fx-font-size: 25;
+}
+.font-30{
+    -fx-font-size: 30;
+}
+.font-pyidaungsu{
+    -fx-font-family: "Pyidaungsu";
+}
+.font-sansserif{
+    -fx-font-family: "SansSerif";
+}
+
+.editLabel{
+    -fx-font-size: 20px;
+    -fx-background-color: rgba(0,0,0,0.3);
+    -fx-text-fill: rgb(255,255,255);
+    -fx-border-radius: 40px;
+    -fx-background-radius: 40px;
+}
+
+#settingIconLabel{
+    -fx-font-size:20px;
+    -fx-background-color: rgba(0,0,0,0.3);
+     -fx-text-fill: rgb(255,255,255);
+    -fx-border-radius: 40px;
+    -fx-background-radius: 40px;
+}
+
+
+.closeExpandLabel{
+    -fx-font-size: 20px;
+
+}
+
+.createDateLabel{
+    -fx-font-size: 17px;
+}
+
+
+
+
+.contentScrollPane,.dragScrollPane{
+    -fx-background-color: transparent;
+
+}
+
+
+.contentFlowPane{
+    -fx-background-color: transparent;
+
+}
+
+
+
+.expandPane{
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+}
+
+
+.text-area {
+    -fx-background-color: transparent;
+
+    -fx-font-size: 17px;
+}
+
+.text-area .scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.text-area .scroll-pane .viewport{
+    -fx-background-color: transparent;
+
+}
+
+
+.text-area .scroll-pane .content{
+    -fx-background-color: transparent;
+}
+
+
+
+
+ .scroll-pane .viewport {
+        -fx-background-color: transparent;
+ }
+
+
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+
+
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 5em;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+      -fx-background-color:  #f2f2f9;
+    -fx-background-radius: 5em;
+}
+
+
+/* ==== checkbox  */
+.check-box .box {
+
+-fx-background-color: white;
+-fx-border-color: #257ADB;
+-fx-border-radius: 3px;
+-fx-background-insets: 0 0 0 0, 0, 0, 0;
+
+}
+
+.check-box:selected .mark {
+
+-fx-background-color: white;
+
+}
+
+.check-box:selected .box {
+-fx-background-color:  #257ADB;
+}
+/* ==== checkbox  */
+
+
+ #searchScrollPane .viewport {
+        -fx-background-color: transparent;
+ }
+
+
+#searchScrollPane .scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+
+
+
+#searchScrollPane .scroll-bar:horizontal .track,
+#searchScrollPane .scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 5em;
+}
+
+#searchScrollPane .scroll-bar:horizontal .thumb,
+#searchScrollPane .scroll-bar:vertical .thumb {
+    -fx-background-color:   #1967D2;
+    -fx-background-radius: 5em;
+}
+
+
+
+
+
+ #lg_progressBar,#wait_progressBar,#RefreshProgress {
+
+     -fx-background-color:
+         transparent;
+     -fx-background-insets: 0, 1;
+     -fx-indeterminate-bar-length: 60;
+     -fx-indeterminate-bar-escape: true;
+     -fx-indeterminate-bar-flip: true;
+     -fx-indeterminate-bar-animation-time: 2;
+ }
+
+ #lg_progressBar .bar,#wait_progressBar .bar, #RefreshProgress .bar {
+     -fx-background-color:
+         #3980F4;
+     -fx-background-insets: 0, 1, 2;
+     -fx-padding: 0em;
+ }
+
+ #lg_progressBar:indeterminate .bar,#wait_progressBar:indeterminate .bar , #RefreshProgress:indeterminate .bar{
+     -fx-background-color: #3980F4;
+ }
+
+ #lg_progressBar .track , #wait_progressBar .track , #RefreshProgress .track{
+      -fx-background-color:
+         transparent;
+     -fx-background-insets:  0, 1;
+ }
+
+ #lg_progressBar-bar:disabled , #wait_progressBar:disabled , #RefreshProgress:disabled{
+     -fx-opacity: 1;
+ }
+
+.refreshIconLabel{
+
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-opacity: 0.5;
+}
+.refreshIconLabel:hover{
+    -fx-opacity: 1;
+}
+
+.hover{
+    -fx-opacity:0.5;
+}
+.hover:hover{
+    -fx-cursor: hand;
+    -fx-opacity:1 ;
+}
+
+.underlineWhenHover{
+
+}
+.underlineWhenHover:hover{
+    -fx-underline: true;
+ }
+
+
+ .Progressbar {
+
+     -fx-background-color:
+         transparent;
+     -fx-background-insets: 0, 1;
+     -fx-indeterminate-bar-length: 60;
+     -fx-indeterminate-bar-escape: true;
+     -fx-indeterminate-bar-flip: true;
+     -fx-indeterminate-bar-animation-time: 2;
+ }
+
+ .Progressbar .bar {
+     -fx-background-color:
+         #3980F4;
+     -fx-background-insets: 0, 1, 2;
+     -fx-padding: 0em;
+ }
+
+ .Progressbar:indeterminate .bar{
+     -fx-background-color: #3980F4;
+ }
+
+ .Progressbar .track{
+      -fx-background-color:
+         transparent;
+     -fx-background-insets:  0, 1;
+ }
+
+ .Progressbar:disabled{
+     -fx-opacity: 1;
+ }
+
+.split-pane-divider {
+   -fx-background-color:   transparent;
+
+   /*-fx-background-color: rgba(255,255,255,0.4);*/
+   -fx-padding: 1 ;
+}
+
+

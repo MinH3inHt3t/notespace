@@ -1,0 +1,46 @@
+
+.icon-fill{
+    -fx-font-family: 'Material Icons';
+   /* -fx-fill: firebrick;*/
+
+}
+
+.font-20{
+    -fx-font-size: 20;
+}
+.font-30{
+    -fx-font-size: 30;
+}
+
+
+ #progressbar {
+
+     -fx-background-color:
+         transparent;
+     -fx-background-insets: 0, 1;
+     -fx-indeterminate-bar-length: 60;
+     -fx-indeterminate-bar-escape: true;
+     -fx-indeterminate-bar-flip: true;
+     -fx-indeterminate-bar-animation-time: 2;
+ }
+
+ #progressbar .bar {
+     -fx-background-color:
+         #3980F4;
+     -fx-background-insets: 0, 1, 2;
+     -fx-padding: 0em;
+ }
+
+ #progressbar:indeterminate .bar {
+     -fx-background-color: linear-gradient(from 25px 25px to 100px 100px, #F84775 , #2184EF);
+ }
+
+ .progress-bar .track {
+      -fx-background-color:
+         transparent;
+     -fx-background-insets:  0, 1;
+ }
+
+ #progressbar-bar:disabled {
+     -fx-opacity: 1;
+ }

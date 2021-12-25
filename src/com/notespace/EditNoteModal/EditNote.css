@@ -1,0 +1,48 @@
+.icon-fill{
+    -fx-font-family: 'Material Icons';
+   /* -fx-fill: firebrick;*/
+
+}
+
+
+.text-area {
+    -fx-background-color: transparent;
+
+    -fx-font-size: 15px;
+}
+
+.text-area .scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.text-area .scroll-pane .viewport{
+    -fx-background-color: transparent;
+
+}
+
+
+.text-area .scroll-pane .content{
+    -fx-background-color: transparent;
+}
+
+
+
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+
+
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 5em;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #f2f2f7;
+    -fx-background-radius: 5em;
+}
+

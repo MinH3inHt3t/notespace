@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Note:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Note_jar</output-path>
+    <root id="archive" name="Note.jar">
+      <element id="module-output" name="Note" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/Jars/ocpsoft-pretty-time-1.0.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/Jars/Bundle.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

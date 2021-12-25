@@ -1,0 +1,3 @@
+/Main_Page.fxml
+/com.notespace.NoteCard.fxml
+/SettingsPage.fxml

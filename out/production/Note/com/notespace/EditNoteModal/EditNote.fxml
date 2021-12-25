@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="editnoteAnchor" prefHeight="695.0" prefWidth="1135.0" style="-fx-background-color: transparent;" stylesheets="@EditNote.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER" layoutX="83.0" layoutY="135.0" prefHeight="403.0" prefWidth="533.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="60.0" prefWidth="1135.0">
+               <children>
+                  <Label fx:id="fileNameLabel" alignment="CENTER" prefHeight="55.0" prefWidth="327.0" text="New Document.txt">
+                     <font>
+                        <Font name="Tahoma" size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <AnchorPane fx:id="anchor" maxHeight="579.0" maxWidth="1031.0" minHeight="347.0" minWidth="746.0" prefHeight="579.0" prefWidth="1031.0" style="-fx-background-color: white; -fx-border-radius: 20; -fx-background-radius: 20;">
+               <children>
+                  <TextArea fx:id="textArea" layoutX="25.0" layoutY="87.0" prefHeight="420.0" prefWidth="980.0" promptText="Type Here" wrapText="true" AnchorPane.bottomAnchor="72.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="87.0" />
+                  <Label fx:id="AddNewNoteLabel" layoutX="25.0" layoutY="23.0" prefHeight="40.0" prefWidth="305.0" text="EDIT NOTE">
+                     <font>
+                        <Font name="Bauhaus 93" size="35.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="closeAddNewNoteLabel" alignment="CENTER" layoutX="994.0" layoutY="14.0" prefHeight="20.0" prefWidth="20.0" styleClass="icon-fill" text="">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <AnchorPane fx:id="expandPane" layoutX="25.0" layoutY="122.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="254.0" style="-fx-background-color: white; -fx-border-radius: 20; -fx-background-radius: 20;" AnchorPane.bottomAnchor="72.0" AnchorPane.leftAnchor="25.0">
+                     <children>
+                        <VBox layoutX="14.0" layoutY="48.0" prefHeight="325.0" prefWidth="221.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <HBox prefHeight="56.0" prefWidth="244.0">
+                                 <children>
+                                    <Label fx:id="SettingheaderLabel" prefHeight="54.0" prefWidth="204.0" text="Settings">
+                                       <font>
+                                          <Font name="Agency FB Bold" size="30.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label fx:id="closeSettingsPaneLabel" alignment="CENTER" prefHeight="20.0" prefWidth="20.0" styleClass="icon-fill" text="">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                       <HBox.margin>
+                                          <Insets left="11.0" top="6.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <VBox prefHeight="107.0" prefWidth="244.0" spacing="5.0">
+                                 <children>
+                                    <Label fx:id="filenameTitle" disable="true" prefHeight="36.0" prefWidth="252.0" style="-fx-text-fill: gray;" text="File Name :">
+                                       <font>
+                                          <Font name="Forte" size="17.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label fx:id="filenameLabel" prefHeight="36.0" prefWidth="252.0" style="-fx-text-fill: gray;" text="New Document.txt">
+                                       <font>
+                                          <Font name="Malgun Gothic Bold" size="14.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="100.0" prefWidth="244.0">
+                                 <children>
+                                    <VBox alignment="CENTER_LEFT" prefHeight="135.0" prefWidth="204.0" spacing="5.0">
+                                       <children>
+                                          <Label fx:id="BackgroundcolorLabel" disable="true" prefHeight="36.0" prefWidth="265.0" text="Background Color:">
+                                             <font>
+                                                <Font name="Wingdings 3" size="16.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets left="10.0" />
+                                             </padding>
+                                          </Label>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="204.0" spacing="10.0">
+                                             <children>
+                                                <Circle fx:id="bg_circle1" fill="#ffc972" radius="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0">
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                </Circle>
+                                                <Circle fx:id="bg_circle2" fill="#ff9b73" radius="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0">
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                </Circle>
+                                                <Circle fx:id="bg_circle3" fill="#b592ff" radius="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0">
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                </Circle>
+                                                <Circle fx:id="bg_circle4" fill="#00d4ff" radius="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0">
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                </Circle>
+                                                <Circle fx:id="bg_circle5" fill="#e4ee90" radius="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0">
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                </Circle>
+                                                <Circle fx:id="bg_circle6" fill="#f8f9fa" radius="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0">
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                </Circle>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                             <padding>
+                                                <Insets left="10.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox prefHeight="33.0" prefWidth="196.0">
+                                             <children>
+                                                <Label fx:id="custom_BackgroundcolorLabel" disable="true" prefHeight="33.0" prefWidth="125.0" style="-fx-text-fill: gray;" text="Custom Color:">
+                                                   <font>
+                                                      <Font name="Tahoma" size="15.0" />
+                                                   </font>
+                                                   <padding>
+                                                      <Insets left="10.0" />
+                                                   </padding>
+                                                </Label>
+                                                <ColorPicker fx:id="BackgroundcolorPicker" prefHeight="39.0" prefWidth="105.0" promptText="ColorBox" style="-fx-background-color: #F8F9FA;">
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                </ColorPicker>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="100.0" prefWidth="244.0">
+                                 <children>
+                                    <VBox alignment="CENTER_LEFT" prefHeight="135.0" prefWidth="204.0" spacing="5.0">
+                                       <children>
+                                          <Label fx:id="TextcolorLabel" disable="true" prefHeight="36.0" prefWidth="265.0" text="Text Color:">
+                                             <font>
+                                                <Font name="Wingdings 3" size="16.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets left="10.0" />
+                                             </padding>
+                                          </Label>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="204.0" spacing="10.0">
+                                             <children>
+                                                <Circle fx:id="txt_circle1" fill="#ffc972" radius="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0">
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                </Circle>
+                                                <Circle fx:id="txt_circle2" fill="#ff9b73" radius="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0">
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                </Circle>
+                                                <Circle fx:id="txt_circle3" fill="#b592ff" radius="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0">
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                </Circle>
+                                                <Circle fx:id="txt_circle4" fill="#00d4ff" radius="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0">
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                </Circle>
+                                                <Circle fx:id="txt_circle5" fill="#e4ee90" radius="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0">
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                </Circle>
+                                                <Circle fx:id="txt_circle6" fill="#f8f9fa" radius="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0">
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                </Circle>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                             <padding>
+                                                <Insets left="10.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox prefHeight="33.0" prefWidth="196.0">
+                                             <children>
+                                                <Label fx:id="custom_TextcolorLabel" disable="true" prefHeight="33.0" prefWidth="125.0" style="-fx-text-fill: gray;" text="Custom Color:">
+                                                   <font>
+                                                      <Font name="Tahoma" size="15.0" />
+                                                   </font>
+                                                   <padding>
+                                                      <Insets left="10.0" />
+                                                   </padding>
+                                                </Label>
+                                                <ColorPicker fx:id="TextcolorPicker" prefHeight="39.0" prefWidth="105.0" promptText="ColorBox" style="-fx-background-color: #F8F9FA;">
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                </ColorPicker>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="7.0" />
+                                 </VBox.margin>
+                              </VBox>
+                           </children>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </AnchorPane>
+                  <Label fx:id="filepathLabel" layoutX="26.0" layoutY="507.0" prefHeight="25.0" prefWidth="980.0" text="File Path : C://ASUS//Documents//New Document.txt">
+                     <font>
+                        <Font name="SansSerif Regular" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="settingsLabel" alignment="CENTER" layoutX="14.0" layoutY="528.0" prefHeight="40.0" prefWidth="40.0" styleClass="icon-fill" text="">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <HBox layoutX="292.0" layoutY="26.0" prefHeight="36.0" prefWidth="697.0" spacing="10.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="31.0" prefWidth="335.0" spacing="5.0">
+                           <children>
+                              <Label fx:id="BackgroundcolorLabel1" prefHeight="28.0" prefWidth="118.0" text="Background Color">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Label>
+                              <Circle fx:id="bg_circle11" fill="#ffc972" radius="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Circle>
+                              <Circle fx:id="bg_circle21" fill="#ff9b73" radius="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Circle>
+                              <Circle fx:id="bg_circle31" fill="#b592ff" radius="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Circle>
+                              <Circle fx:id="bg_circle41" fill="#00d4ff" radius="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Circle>
+                              <Circle fx:id="bg_circle51" fill="#e4ee90" radius="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Circle>
+                              <Circle fx:id="bg_circle61" fill="#f8f9fa" radius="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Circle>
+                              <ColorPicker fx:id="BackgroundcolorPicker1" promptText="ColorBox" style="-fx-background-color: #F8F9FA;">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ColorPicker>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="31.0" prefWidth="335.0" spacing="5.0">
+                           <children>
+                              <Label fx:id="TextcolorLabel1" prefHeight="28.0" prefWidth="70.0" text="Text Color">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Label>
+                              <Circle fx:id="txt_circle11" fill="#ffc972" radius="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Circle>
+                              <Circle fx:id="txt_circle21" fill="#ff9b73" radius="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Circle>
+                              <Circle fx:id="txt_circle31" fill="#b592ff" radius="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Circle>
+                              <Circle fx:id="txt_circle41" fill="#00d4ff" radius="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Circle>
+                              <Circle fx:id="txt_circle51" fill="#e4ee90" radius="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Circle>
+                              <Circle fx:id="txt_circle61" fill="#f8f9fa" radius="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Circle>
+                              <ColorPicker fx:id="TextcolorPicker1" promptText="ColorBox" style="-fx-background-color: #F8F9FA;">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ColorPicker>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

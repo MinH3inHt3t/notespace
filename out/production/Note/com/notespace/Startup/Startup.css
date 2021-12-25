@@ -1,0 +1,572 @@
+.root{
+ scroll_pane_background_color: background_color;
+     tab_pane_background_color: #f3f3f3;
+      accent_color: #0078d7;
+}
+
+
+.font-15{
+    -fx-font-size: 15;
+}
+
+.font-pyidaungsu{
+    -fx-font-family: "Pyidaungsu";
+}
+
+
+/*******************************************************************************
+ *                                                                             *
+ * Tab Pane and Tabs                                                           *
+ *                                                                             *
+ ******************************************************************************/
+
+.tab-pane {
+    -fx-tab-min-height: 2.91666375em; /* 34 */
+    -fx-tab-max-height: 2.91666375em; /* 34 */
+}
+
+.tab-pane > .tab-header-area {
+    -fx-padding: 0 0.166667em 0em 0.416667em; /* 0 2 0 5 */
+}
+
+.tab-pane > .tab-header-area > .headers-region > .tab {
+    -fx-background-color: transparent, transparent, tab_pane_background_color;
+    -fx-background-radius: 0 0 0 0, 0 0 0 0, 0 0 0 0;
+    -fx-padding: 0.083333em 1.5em 0.0769em 1.5em; /* 1 18 0.99 18 */
+}
+
+.tab-pane > .tab-header-area > .headers-region > .tab:selected {
+    -fx-background-color: transparent, tab_selected_border_color, tab_selected_background_color;
+    -fx-background-radius: 0 0 0 0, 0 0 0 0, 0 0 0 0;
+}
+
+.tab-pane > .tab-header-area > .headers-region > .tab > .tab-container > .tab-label {
+    -fx-text-fill: tab_text_color;
+    -fx-font-size: 1em; /* 12 */
+    -fx-font-family: "Segoe UI";
+}
+
+.tab-pane > .tab-header-area > .headers-region > .tab:hover > .tab-container > .tab-label {
+    -fx-text-fill: tab_text_hover_color;
+}
+
+.tab-pane > .tab-header-area > .headers-region > .tab:selected > .tab-container > .tab-label {
+    -fx-text-fill: accent_color;
+}
+
+.tab-pane > .tab-header-area > .headers-region > .tab:selected:hover > .tab-container > .tab-label {
+    -fx-text-fill: tab_text_selected_hover_color;
+}
+
+.tab-pane > .tab-header-area > .tab-header-background {
+    -fx-background-color:
+            tab_pane_bottom_border_color,
+            transparent,
+            tab_pane_background_color;
+    -fx-background-insets: 1 1 0 1, 0 0 1 0, 1;
+}
+
+.tab-pane:focused > .tab-header-area > .headers-region > .tab:selected .focus-indicator {
+    -fx-border-width: 0, 0;
+    -fx-border-color: transparent, transparent;
+}
+
+/* TabPane button to see more tabs (when space is constricted) */
+
+.tab-pane > .tab-header-area > .control-buttons-tab > .container > .tab-down-button {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0 0 4 0;
+    -fx-padding: 4 8 9 8;
+    -fx-background-radius: 0;
+}
+
+.tab-pane > .tab-header-area > .control-buttons-tab > .container > .tab-down-button:hover {
+    -fx-background-color: more_button_hover_color;
+}
+
+.tab-pane > .tab-header-area > .control-buttons-tab > .container > .tab-down-button:pressed {
+    -fx-background-color: more_button_pressed_color;
+}
+
+.tab-pane > .tab-header-area > .control-buttons-tab > .container > .tab-down-button > .arrow  {
+    -fx-padding: 0.083333em; /* 3px */
+    -fx-scale-shape: false;
+    -fx-shape: "M13.576,7.495c0,0.829-0.672,1.5-1.5,1.5c-0.828,0-1.5-0.672-1.5-1.5s0.672-1.5,1.5-1.5C12.904,5.995,13.576,6.667,13.576,7.495z M12.076,10.995c-0.828,0-1.5,0.672-1.5,1.5c0,0.829,0.672,1.5,1.5,1.5c0.828,0,1.5-0.672,1.5-1.5C13.576,11.667,12.904,10.995,12.076,10.995z M12.076,15.995c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5c0.828,0,1.5-0.672,1.5-1.5S12.904,15.995,12.076,15.995z";
+
+    -fx-background-insets: 0;
+    -fx-background-color: more_button_icon_color;
+}
+
+
+/*******************************************************************************
+ *                                                                             *
+ * TabPane With Underline                                                      *
+ *                                                                             *
+ ******************************************************************************/
+
+.tab-pane.underlined > .tab-header-area > .headers-region > .tab:selected {
+    -fx-background-color: transparent, transparent, transparent;
+    -fx-background-radius: 0 0 0 0, 0 0 0 0, 0 0 0 0;
+}
+
+.tab-pane.underlined > .tab-header-area > .tab-header-background {
+    -fx-background-color:
+            transparent,
+            transparent,
+            tab_pane_background_color;
+    -fx-background-insets: 1 1 0 1, 0 0 1 0, 1;
+}
+
+/*=========================== Tab ========================================*/
+
+.tab-pane.underlined > .tab-header-area > .headers-region > .tab {
+    -fx-padding: 0.083333em 1em 0.0769em 1em; /* 1 12 0.99 12 */
+}
+
+.tab-pane.underlined > .tab-header-area > .headers-region > .tab > .tab-container > .tab-label {
+    -fx-text-fill: tab_not_selected_text_color;
+
+    -fx-padding: 0 0.083333em 0.25em 0; /* 0 1 3 0 */
+
+    -fx-border-color: transparent transparent transparent transparent;
+    -fx-border-width: 0 0 2px 0;
+}
+
+.tab-pane.underlined > .tab-header-area > .headers-region > .tab:hover > .tab-container > .tab-label {
+    -fx-text-fill: tab_hover_text_color;
+}
+
+.tab-pane.underlined > .tab-header-area > .headers-region > .tab:selected > .tab-container > .tab-label {
+    -fx-text-fill: text_color;
+    -fx-font-size: 1em; /* 12 */
+
+    -fx-border-color: transparent transparent accent_color transparent;
+}
+
+.tab-pane.underlined > .tab-header-area > .headers-region > .tab:disabled > .tab-container > .tab-label,
+.tab-pane.underlined > .tab-header-area > .headers-region > .tab:disabled:hover > .tab-container > .tab-label {
+    -fx-text-fill: text_color;
+    -fx-opacity: 0.4;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * TabPane With Underline                                                      *
+ *                                                                             *
+ ******************************************************************************/
+
+.tab-pane.underlined > .tab-header-area > .headers-region > .tab:selected {
+    -fx-background-color: transparent, transparent, transparent;
+    -fx-background-radius: 0 0 0 0, 0 0 0 0, 0 0 0 0;
+}
+
+.tab-pane.underlined > .tab-header-area > .tab-header-background {
+    -fx-background-color:
+            transparent,
+            transparent,
+            tab_pane_background_color;
+    -fx-background-insets: 1 1 0 1, 0 0 1 0, 1;
+}
+
+/*=========================== Tab ========================================*/
+
+.tab-pane.underlined > .tab-header-area > .headers-region > .tab {
+    -fx-padding: 0.083333em 1em 0.0769em 1em; /* 1 12 0.99 12 */
+}
+
+.tab-pane.underlined > .tab-header-area > .headers-region > .tab > .tab-container > .tab-label {
+    -fx-text-fill: tab_not_selected_text_color;
+
+    -fx-padding: 0 0.083333em 0.25em 0; /* 0 1 3 0 */
+
+    -fx-border-color: transparent transparent transparent transparent;
+    -fx-border-width: 0 0 2px 0;
+}
+
+.tab-pane.underlined > .tab-header-area > .headers-region > .tab:hover > .tab-container > .tab-label {
+    -fx-text-fill: tab_hover_text_color;
+}
+
+.tab-pane.underlined > .tab-header-area > .headers-region > .tab:selected > .tab-container > .tab-label {
+    -fx-text-fill: text_color;
+    -fx-font-size: 1em; /* 12 */
+
+    -fx-border-color: transparent transparent accent_color transparent;
+}
+
+.tab-pane.underlined > .tab-header-area > .headers-region > .tab:disabled > .tab-container > .tab-label,
+.tab-pane.underlined > .tab-header-area > .headers-region > .tab:disabled:hover > .tab-container > .tab-label {
+    -fx-text-fill: text_color;
+    -fx-opacity: 0.4;
+}
+
+
+
+/*******************************************************************************
+ *                                                                             *
+ * Tab Pane and Tabs                                                           *
+ *                                                                             *
+ ******************************************************************************/
+
+.tab-pane {
+    tab_pane_bottom_border_color: #ccc;
+
+    tab_text_color: #767676;
+    tab_text_hover_color: accent_color;
+    tab_text_selected_hover_color: derive(accent_color, 30%);
+
+    tab_selected_background_color: #f8f8f8;
+    tab_selected_border_color: tab_pane_bottom_border_color;
+
+    more_button_hover_color: #d5d4d4;
+    more_button_pressed_color: #c2c2c2;
+    more_button_icon_color: #555;
+}
+
+
+/*******************************************************************************
+ *                                                                             *
+ * Tab Pane and Tabs                                                           *
+ *                                                                             *
+ ******************************************************************************/
+
+.tab-pane {
+    -fx-tab-min-height: 2.91666375em; /* 34 */
+    -fx-tab-max-height: 2.91666375em; /* 34 */
+}
+
+.tab-pane > .tab-header-area {
+    -fx-padding: 0 0.166667em 0em 0.416667em; /* 0 2 0 5 */
+}
+
+.tab-pane > .tab-header-area > .headers-region > .tab {
+    -fx-background-color: transparent, transparent, tab_pane_background_color;
+    -fx-background-radius: 0 0 0 0, 0 0 0 0, 0 0 0 0;
+    -fx-padding: 0.083333em 1.5em 0.0769em 1.5em; /* 1 18 0.99 18 */
+}
+
+.tab-pane > .tab-header-area > .headers-region > .tab:selected {
+    -fx-background-color: transparent, tab_selected_border_color, tab_selected_background_color;
+    -fx-background-radius: 0 0 0 0, 0 0 0 0, 0 0 0 0;
+}
+
+.tab-pane > .tab-header-area > .headers-region > .tab > .tab-container > .tab-label {
+    -fx-text-fill: tab_text_color;
+    -fx-font-size: 1em; /* 12 */
+    -fx-font-family: "Segoe UI";
+}
+
+.tab-pane > .tab-header-area > .headers-region > .tab:hover > .tab-container > .tab-label {
+    -fx-text-fill: tab_text_hover_color;
+}
+
+.tab-pane > .tab-header-area > .headers-region > .tab:selected > .tab-container > .tab-label {
+    -fx-text-fill: accent_color;
+}
+
+.tab-pane > .tab-header-area > .headers-region > .tab:selected:hover > .tab-container > .tab-label {
+    -fx-text-fill: tab_text_selected_hover_color;
+}
+
+.tab-pane > .tab-header-area > .tab-header-background {
+    -fx-background-color:
+            tab_pane_bottom_border_color,
+            transparent,
+            tab_pane_background_color;
+    -fx-background-insets: 1 1 0 1, 0 0 1 0, 1;
+}
+
+.tab-pane:focused > .tab-header-area > .headers-region > .tab:selected .focus-indicator {
+    -fx-border-width: 0, 0;
+    -fx-border-color: transparent, transparent;
+}
+
+/* TabPane button to see more tabs (when space is constricted) */
+
+.tab-pane > .tab-header-area > .control-buttons-tab > .container > .tab-down-button {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0 0 4 0;
+    -fx-padding: 4 8 9 8;
+    -fx-background-radius: 0;
+}
+
+.tab-pane > .tab-header-area > .control-buttons-tab > .container > .tab-down-button:hover {
+    -fx-background-color: more_button_hover_color;
+}
+
+.tab-pane > .tab-header-area > .control-buttons-tab > .container > .tab-down-button:pressed {
+    -fx-background-color: more_button_pressed_color;
+}
+
+.tab-pane > .tab-header-area > .control-buttons-tab > .container > .tab-down-button > .arrow  {
+    -fx-padding: 0.083333em; /* 3px */
+    -fx-scale-shape: false;
+    -fx-shape: "M13.576,7.495c0,0.829-0.672,1.5-1.5,1.5c-0.828,0-1.5-0.672-1.5-1.5s0.672-1.5,1.5-1.5C12.904,5.995,13.576,6.667,13.576,7.495z M12.076,10.995c-0.828,0-1.5,0.672-1.5,1.5c0,0.829,0.672,1.5,1.5,1.5c0.828,0,1.5-0.672,1.5-1.5C13.576,11.667,12.904,10.995,12.076,10.995z M12.076,15.995c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5c0.828,0,1.5-0.672,1.5-1.5S12.904,15.995,12.076,15.995z";
+
+    -fx-background-insets: 0;
+    -fx-background-color: more_button_icon_color;
+}
+
+
+/*******************************************************************************
+ *                                                                             *
+ * Scroll Bar and Scroll Pane                                                  *
+ *                                                                             *
+ ******************************************************************************/
+
+.scroll-bar > .thumb{
+    -fx-background-color: thumb_color;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+
+.scroll-bar > .thumb:hover {
+    -fx-background-color: thumb_hover_color;
+}
+
+.scroll-bar > .thumb:pressed {
+    -fx-background-color: thumb_pressed_color;
+}
+
+.scroll-bar > .track {
+    -fx-background-color: track_color;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+.scroll-bar > .track-background {
+    -fx-background-insets: 0;
+}
+
+/* Buttons */
+.scroll-bar > .increment-button,
+.scroll-bar > .decrement-button {
+    -fx-background-color: inc_dec_button_color;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+
+    -fx-padding: 0.5em 0.25em 0.5em 0.25em; /* 6 3 6 3*/
+}
+
+.scroll-bar:horizontal > .increment-button,
+.scroll-bar:horizontal > .decrement-button {
+    -fx-padding: 0.25em 0.5em 0.25em 0.5em ; /* 3 6 3 6*/
+}
+
+.scroll-bar > .increment-button:hover,
+.scroll-bar > .decrement-button:hover  {
+    -fx-background-color: inc_dec_button_hover_color;
+}
+
+.scroll-bar > .increment-button:pressed,
+.scroll-bar > .decrement-button:pressed {
+    -fx-background-color: inc_dec_button_pressed_color;
+}
+
+/* Disabled */
+.scroll-bar:disabled {
+    -fx-opacity: 0.4;
+}
+
+/* ARROW SHAPES */
+.scroll-bar:horizontal > .increment-button > .increment-arrow {
+    -fx-shape: "M14.4,18.611l3.633-3.637L14.4,11.338l0.352-0.352l3.992,3.988 l-3.992,3.988L14.4,18.611z";
+}
+
+.scroll-bar:horizontal > .decrement-button > .decrement-arrow {
+    -fx-shape: "M18.393,18.963L14.4,14.975l3.992-3.988l0.352,0.352l-3.633,3.637 l3.633,3.637L18.393,18.963z";
+}
+
+.scroll-bar:vertical > .increment-button > .increment-arrow {
+    -fx-shape: "M20.561,13.154l-3.988,3.992l-3.988-3.992l0.352-0.352 l3.637,3.633l3.637-3.633L20.561,13.154z";
+}
+
+.scroll-bar:vertical > .decrement-button > .decrement-arrow {
+    -fx-shape: "M20.209,17.146l-3.637-3.633l-3.637,3.633l-0.352-0.352 l3.988-3.992l3.988,3.992L20.209,17.146z";
+}
+
+.scroll-bar > .decrement-button:pressed > .decrement-arrow,
+.scroll-bar > .increment-button:pressed > .increment-arrow {
+    -fx-background-color: transparent, white;
+    -fx-effect: null;
+}
+
+.scroll-bar:vertical > .increment-button > .increment-arrow,
+.scroll-bar:vertical > .decrement-button > .decrement-arrow {
+    -fx-padding: 0.208333em 0.333333em 0.208333em 0.333333em; /* 2.5 4 2.5 4*/
+}
+
+.scroll-bar:horizontal > .increment-button > .increment-arrow,
+.scroll-bar:horizontal > .decrement-button > .decrement-arrow {
+    -fx-padding: 0.333333em 0.208333em 0.333333em 0.208333em; /* 4 2.5 4 2.5 */
+    -fx-translate-y: -1; /* HACK:  Somehow the arrow is not centered so we add this to center it */
+}
+
+.scroll-bar > .decrement-button > .decrement-arrow,
+.scroll-bar > .increment-button > .increment-arrow{
+    -fx-background-insets: 1 0 -1 0, 0;
+    -fx-background-color: arrow_color;
+    -fx-effect: null;
+}
+
+.scroll-bar > .increment-button:pressed > .increment-arrow,
+.scroll-bar > .decrement-button:pressed > .decrement-arrow {
+    -fx-background-color: arrow_pressed_color;
+}
+
+/**************************** Scroll Pane *************************************/
+
+.scroll-pane {
+    -fx-background-color: transparent, transparent;
+}
+
+.scroll-pane .corner {
+    -fx-background-radius: 0 0 0 0;
+    -fx-background-color: corner_background_color;
+    -fx-background-insets: 0 0 0 0;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: scroll_pane_background_color;
+}
+
+
+/*******************************************************************************
+ *                                                                             *
+ * Scroll Bar and Scroll Pane                                                  *
+ *                                                                             *
+ ******************************************************************************/
+
+.scroll-bar {
+    thumb_color: #c2c7ca;
+    thumb_hover_color: #838689;
+    thumb_pressed_color: #585a5c;
+
+    track_color: #e9e9e9;
+
+    inc_dec_button_color: #e8e6e3;
+    inc_dec_button_hover_color: #c6cacf;
+    inc_dec_button_pressed_color: #585a5c;
+
+    arrow_color: #5a5a59;
+    arrow_pressed_color: white;
+}
+
+.scroll-pane {
+    corner_background_color: #e9e9e9;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * Text Area                                                                   *
+ *                                                                             *
+ ******************************************************************************/
+
+.text-area .content {
+    -fx-background-color: border_color, text_input_background_color;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0, 1;
+}
+
+.text-area:hover .content {
+    -fx-background-color: border_color, background_hover_color;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0, 1;
+}
+
+.text-area:focused .content {
+    -fx-background-color: accent_color, background_focused_color;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0, 1;
+}
+
+.text-area:disabled .content {
+    -fx-background-color: border_disabled_color, background_disabled_color;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0, 1;
+}
+
+/* TODO: below not working */
+.text-area:disabled .content .text {
+    -fx-fill: text_disabled_color;
+}
+
+
+/*******************************************************************************
+ *                                                                             *
+ * Text Common (TextField, PasswordField, TextArea)                            *
+ *                                                                             *
+ ******************************************************************************/
+
+.text-input{
+    -fx-background-radius: 0, 0;
+
+    -fx-background-color: border_color, text_input_background_color;
+    -fx-background-insets: 0, 2;
+
+    -fx-prompt-text-fill: prompt_text_color;
+
+    -fx-highlight-fill: highlight_color;
+    -fx-highlight-text-fill: highlighted_text_color;
+
+    -fx-font-size: 1em; /* 12 */
+
+    -fx-text-fill: text_color;
+}
+
+.text-input > Pane {
+    -fx-background-color: transparent;
+}
+
+/* hover */
+.text-input:hover{
+    -fx-background-color: border_hover_color, background_hover_color;
+}
+
+/* focused */
+.text-input:focused{
+    -fx-background-color: accent_color, background_focused_color;
+
+    -fx-text-fill: text_focused_color;
+}
+
+/* disabled */
+.text-input:disabled
+{
+    -fx-opacity: 1;
+    -fx-background-insets: 0, 2;
+    -fx-background-color: border_disabled_color, background_disabled_color;
+    -fx-text-fill: text_disabled_color;
+    -fx-prompt-text-fill: text_disabled_color;
+}
+
+.text-input-dialog.dialog-pane .text-input > Pane {
+    -fx-background-color: transparent;
+}
+
+
+/*******************************************************************************
+ *                                                                             *
+ * Text Common (TextField, PasswordField, TextArea)                            *
+ *                                                                             *
+ ******************************************************************************/
+
+.text-input {
+    border_color: #999999;
+    border_hover_color: #666666;
+    border_disabled_color: #d9d9d9;
+
+    text_input_background_color: white;
+    background_focused_color: white;
+    background_hover_color: white;
+    background_disabled_color: #eaeaea;
+
+    text_color: #111;
+    text_focused_color: #111;
+    text_disabled_color: #adadad;
+    prompt_text_color: #666666;
+
+    highlight_color: accent_color;
+    highlighted_text_color: white;
+
+    graphic_color: #747474;
+}

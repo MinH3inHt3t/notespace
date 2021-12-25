@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="listboxAnchor" maxWidth="329.0" minHeight="80.0" prefHeight="80.0" prefWidth="289.0" style="-fx-background-color: #F8F9FA; -fx-border-radius: 20; -fx-background-radius: 20;" stylesheets="@ListBox.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="spaceLabel" layoutX="14.0" layoutY="14.0" prefHeight="33.0" prefWidth="237.0" style="-fx-text-fill: linear-gradient(from 25px 25px to 100px 100px, #798CF0  ,#65D6DE);" text="D:\\Backup\\Back\\Space">
+         <font>
+            <Font name="Tahoma" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="47.0" prefHeight="27.0" prefWidth="126.0" style="-fx-text-fill: #8478C5;" text="Available" AnchorPane.leftAnchor="11.0">
+         <font>
+            <Font name="Tahoma Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="inuseLabel" alignment="CENTER" layoutX="80.0" layoutY="52.0" prefHeight="18.0" prefWidth="61.0" style="-fx-text-fill: white; -fx-background-color: #3980F4; -fx-border-radius: 8; -fx-background-radius: 8;" text="in use" AnchorPane.leftAnchor="80.0">
+         <font>
+            <Font name="Tahoma" size="14.0" />
+         </font>
+      </Label>
+   </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox fx:id="dirChooseBoxHBox" prefHeight="40.0" prefWidth="300.0" styleClass="f2f2f9Hover" stylesheets="@../MinimalistPage.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="directoryChooseLabel" alignment="CENTER" disable="true" prefHeight="49.0" prefWidth="44.0" text="">
+         <styleClass>
+            <String fx:value="icon-fill" />
+            <String fx:value="font-25" />
+            <String fx:value="searchIcon" />
+            <String fx:value="f2f2f9Hover" />
+         </styleClass>
+      </Label>
+      <Label fx:id="directoryPathLabel" prefHeight="37.0" prefWidth="173.0" style="-fx-text-fill: gray;" text="Label">
+         <styleClass>
+            <String fx:value="fontbold" />
+            <String fx:value="fontPyidaungsu" />
+         </styleClass>
+      </Label>
+      <Label fx:id="currentFolderLabel" alignment="CENTER_RIGHT" layoutX="55.0" layoutY="11.0" prefHeight="37.0" prefWidth="75.0" text="Current Folder">
+         <styleClass>
+            <String fx:value="fontbold" />
+            <String fx:value="font10" />
+         </styleClass>
+      </Label>
+   </children>
+</HBox>

@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPageAnchor" prefHeight="682.0" prefWidth="1283.0" styleClass="mainPageAnchor" stylesheets="@Main_Page.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane fx:id="innerAnchor" layoutX="55.0" layoutY="46.0" prefHeight="508.0" prefWidth="482.0" styleClass="innerCard" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <AnchorPane layoutX="7.0" prefHeight="632.0" prefWidth="80.0" styleClass="leftsideAnchor" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label fx:id="setingsLabel" alignment="CENTER" layoutX="19.0" layoutY="434.0" prefHeight="40.0" prefWidth="40.0" text="" AnchorPane.bottomAnchor="14.0">
+                     <styleClass>
+                        <String fx:value="icon-fill" />
+                        <String fx:value="settingLabel" />
+                     </styleClass>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <VBox alignment="TOP_CENTER" layoutX="18.0" layoutY="14.0" prefHeight="362.0" prefWidth="43.0" spacing="25.0" AnchorPane.leftAnchor="18.0" AnchorPane.topAnchor="14.0">
+                     <children>
+                        <Label fx:id="plusLabel" alignment="CENTER" prefHeight="30.0" prefWidth="30.0" text="">
+                           <styleClass>
+                              <String fx:value="icon-fill" />
+                              <String fx:value="plusLabel" />
+                           </styleClass>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <Circle fx:id="bg_circle1" fill="#b53471" radius="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Circle>
+                        <Circle fx:id="bg_circle2" fill="#fab1a0" radius="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Circle>
+                        <Circle fx:id="bg_circle3" fill="#fdcb6e" radius="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Circle>
+                        <Circle fx:id="bg_circle4" fill="#fd79a8" radius="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Circle>
+                        <Circle fx:id="bg_circle5" fill="#a29bfe" radius="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Circle>
+                        <Circle fx:id="bg_circle6" fill="#f8f9fa" radius="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Circle>
+                        <ColorPicker fx:id="BackgroundcolorPicker" prefHeight="16.0" prefWidth="27.0" promptText="ColorBox" style="-fx-background-color: transparent;">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ColorPicker>
+                     </children>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <HBox alignment="CENTER" layoutX="1029.0" layoutY="26.0" prefHeight="34.0" prefWidth="200.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="26.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="30.0" text="">
+                     <styleClass>
+                        <String fx:value="icon-fill" />
+                        <String fx:value="searchIconLabel" />
+                     </styleClass>
+                  </Label>
+                  <TextField fx:id="txtSearch" prefHeight="30.0" prefWidth="154.0" promptText="Search">
+                     <font>
+                        <Font name="Pyidaungsu" size="12.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="searchTextfield" />
+                        <String fx:value="font-pyidaungsu" />
+                     </styleClass>
+                  </TextField>
+                  <Label fx:id="clearSearch" alignment="CENTER" prefHeight="30.0" prefWidth="30.0" text="">
+                     <styleClass>
+                        <String fx:value="icon-fill" />
+                        <String fx:value="searchIconLabel" />
+                     </styleClass>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+               </children>
+            </HBox>
+            <AnchorPane fx:id="addNewNoteAnchor" layoutX="132.0" layoutY="144.0" prefHeight="369.0" prefWidth="407.0" style="-fx-background-color: white; -fx-border-radius: 8; -fx-background-radius: 8;" visible="false">
+               <children>
+                  <TextArea fx:id="addTextArea" layoutX="14.0" layoutY="28.0" prefHeight="199.0" prefWidth="379.0" promptText="Text Here" style="-fx-background-color: transparent; -fx-border-color: transparent;" styleClass="font-pyidaungsu" wrapText="true" AnchorPane.bottomAnchor="142.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="28.0">
+                     <font>
+                        <Font name="Pyidaungsu" size="13.0" />
+                     </font>
+                  </TextArea>
+                  <Label fx:id="closeAddNotePaneLabel" alignment="CENTER" layoutX="363.0" prefHeight="30.0" prefWidth="30.0" text="" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <styleClass>
+                        <String fx:value="icon-fill" />
+                        <String fx:value="font-20" />
+                     </styleClass>
+                  </Label>
+                  <AnchorPane fx:id="previpane" layoutX="14.0" layoutY="278.0" prefHeight="72.0" prefWidth="379.0" style="-fx-border-color: #f2f2f7; -fx-background-color: white; -fx-border-radius: 0 0 8 8; -fx-background-radius: 0 0 8 8;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <children>
+                        <VBox prefHeight="60.0" prefWidth="227.0">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="204.0" spacing="10.0">
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                                 <children>
+                                    <Label fx:id="TextColorLabel" prefHeight="30.0" prefWidth="133.0" text="Text Color:" textOverrun="WORD_ELLIPSIS">
+                                       <font>
+                                          <Font name="SansSerif Regular" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="countnoLabel" alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="103.0" text="0">
+                                       <font>
+                                          <Font name="SansSerif Regular" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="limitnoLabel" prefHeight="17.0" prefWidth="103.0" text="/130">
+                                       <font>
+                                          <Font name="SansSerif Regular" size="12.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="204.0" spacing="7.0">
+                                 <children>
+                                    <Circle fx:id="txt_circle1" fill="#ffc972" radius="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Circle>
+                                    <Circle fx:id="txt_circle2" fill="#ff9b73" radius="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Circle>
+                                    <Circle fx:id="txt_circle3" fill="#b592ff" radius="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Circle>
+                                    <Circle fx:id="txt_circle4" fill="#00d4ff" radius="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Circle>
+                                    <Circle fx:id="txt_circle5" fill="#e4ee90" radius="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Circle>
+                                    <Circle fx:id="txt_circle6" fill="#f8f9fa" radius="7.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Circle>
+                                    <ColorPicker fx:id="TextcolorPicker" prefHeight="25.0" prefWidth="110.0" style="-fx-background-color: #F8F9FA;" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <HBox fx:id="saveHBox" layoutX="248.0" layoutY="77.0" prefHeight="45.0" prefWidth="110.0" AnchorPane.bottomAnchor="7.0" AnchorPane.rightAnchor="14.0">
+                           <children>
+                              <Label fx:id="saveLabel" prefHeight="45.0" prefWidth="56.0" text="Next">
+                                 <font>
+                                    <Font name="Berlin Sans FB Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="saveIconLabel" alignment="CENTER" prefHeight="50.0" prefWidth="49.0" text="">
+                                 <styleClass>
+                                    <String fx:value="icon-fill" />
+                                    <String fx:value="font-20" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="nextpane" layoutX="14.0" layoutY="61.0" prefHeight="135.0" prefWidth="407.0" style="-fx-background-color: white; -fx-border-color: #f2f2f7; -fx-border-radius: 0 0 8 8; -fx-background-radius: 0 0 8 8;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <children>
+                        <VBox layoutX="17.0" layoutY="38.0" prefHeight="92.0" prefWidth="385.0" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="37.0">
+                           <children>
+                              <VBox>
+                                 <children>
+                                    <HBox prefHeight="5.0" prefWidth="355.0">
+                                       <children>
+                                          <Label text="File Name">
+                                             <font>
+                                                <Font size="10.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="1.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                          <Region prefHeight="15.0" prefWidth="221.0" />
+                                          <Label text="Extension">
+                                             <font>
+                                                <Font size="10.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="18.0" prefWidth="355.0">
+                                       <children>
+                                          <TextField fx:id="filenametextfield" prefHeight="30.0" prefWidth="446.0" promptText="File Name Here" style="-fx-background-color: transparent; -fx-border-color: #f2f2f7; -fx-border-width: 1;" styleClass="bg-transparent">
+                                             <font>
+                                                <Font name="Pyidaungsu" size="11.0" />
+                                             </font>
+                                          </TextField>
+                                          <TextField disable="true" prefHeight="30.0" prefWidth="288.0" style="-fx-background-color: transparent; -fx-border-color: #f2f2f7; -fx-border-width: 1;" text=".txt" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <HBox alignment="CENTER_LEFT">
+                                 <children>
+                                    <CheckBox fx:id="generatecheckbox" mnemonicParsing="false" prefHeight="36.0" prefWidth="266.0" text="Generate Random File Name">
+                                       <font>
+                                          <Font name="Corbel" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="2.0" />
+                                       </HBox.margin>
+                                    </CheckBox>
+                                    <Label fx:id="savefileLabel" alignment="CENTER" prefHeight="28.0" prefWidth="106.0" style="-fx-background-color: rgba(0,0,0,0.6); -fx-border-radius: 8; -fx-text-fill: white; -fx-background-radius: 8;" text="Save">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                       <font>
+                                          <Font name="Berlin Sans FB" size="12.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="8.0" />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <Label fx:id="goprevipane" layoutX="14.0" layoutY="6.0" prefHeight="30.0" prefWidth="33.0" style="-fx-text-fill: black;" text="" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="5.0">
+                           <styleClass>
+                              <String fx:value="icon-fill" />
+                              <String fx:value="font-20" />
+                           </styleClass>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <Label fx:id="clearlabel" alignment="CENTER" layoutX="329.0" layoutY="268.0" prefHeight="17.0" prefWidth="91.0" style="-fx-background-color: rgba(0,0,0,0.5); -fx-text-fill: white; -fx-border-radius: 5; -fx-background-radius: 5;" text="Restart State" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="268.0">
+                     <font>
+                        <Font name="SansSerif Regular" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+               </children>
+               <effect>
+                  <DropShadow height="5.0" radius="2.0" width="5.0" />
+               </effect>
+            </AnchorPane>
+            <AnchorPane fx:id="replaceMainContent" layoutX="78.0" layoutY="115.0" prefHeight="507.0" prefWidth="1143.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="115.0">
+               <children>
+                  <VBox alignment="CENTER" layoutX="196.0" layoutY="43.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label alignment="CENTER" cache="true" cacheHint="QUALITY" prefHeight="199.0" prefWidth="212.0" style="-fx-text-fill: linear-gradient(to top,   derive(#2E274D, 50%) , derive(#8478C5, 50%));" text="">
+                           <styleClass>
+                              <String fx:value="icon-fill" />
+                              <String fx:value="font-70" />
+                           </styleClass>
+                           <effect>
+                              <Reflection bottomOpacity="0.13" fraction="0.72" topOpacity="0.25">
+                                 <input>
+                                    <Glow level="0.29">
+                                       <input>
+                                          <DropShadow height="2.0" radius="0.5" spread="0.2" width="2.0" />
+                                       </input>
+                                    </Glow>
+                                 </input>
+                              </Reflection>
+                           </effect>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="searchResultAnchor" layoutX="1029.0" layoutY="62.0" prefHeight="67.0" prefWidth="200.0" style="-fx-background-color: white; -fx-border-radius: 8; -fx-background-radius: 8;" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="65.0">
+               <effect>
+                  <DropShadow height="5.0" radius="2.0" width="5.0" />
+               </effect>
+               <children>
+                  <VBox fx:id="resultVBox" alignment="TOP_CENTER" layoutX="60.0" layoutY="30.0" prefHeight="103.0" prefWidth="100.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Button alignment="TOP_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="187.0" style="-fx-background-color: white;" text="New Text Document.txt">
+                           <font>
+                              <Font name="Yu Gothic Medium" size="12.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <MenuBar fx:id="menuBar" layoutX="227.0" layoutY="30.0" prefHeight="29.0" prefWidth="341.0" style="-fx-background-color: #f2f2f9; -fx-background-radius: 8; -fx-border-color: #f2f2f9; -fx-border-radius: 8;" AnchorPane.leftAnchor="227.0" AnchorPane.topAnchor="30.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem fx:id="newTextMenuItem" mnemonicParsing="false" text="New" />
+                        <MenuItem fx:id="openTextMenuItem" mnemonicParsing="false" text="Open" />
+                        <Menu fx:id="recentNoteMenu" mnemonicParsing="false" text="Recent Note">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="YOLO.txt" />
+                          </items>
+                        </Menu>
+                        <MenuItem fx:id="settingsMenuItem" mnemonicParsing="false" text="Settings" />
+                        <MenuItem mnemonicParsing="false" text="Import" />
+                        <Menu mnemonicParsing="false" text="Open Note from NoteSpace Project" />
+                  </items>
+                </Menu>
+                <Menu fx:id="edit" mnemonicParsing="false" text="Edit">
+                  <items>
+                        <Menu mnemonicParsing="false" text="Set Password">
+                          <items>
+                          <MenuItem mnemonicParsing="false" text="Rachel.txt" />
+                            <MenuItem mnemonicParsing="false" text="POL.txt" />
+                          </items>
+                        </Menu>
+                  </items>
+                </Menu>
+                  <Menu mnemonicParsing="false" text="View">
+                    <items>
+                      <MenuItem fx:id="closeMenuBarMenuItem" mnemonicParsing="false" text="Close MenuBar (F1)" />
+                        <MenuItem fx:id="openModeMenuMenuItem" mnemonicParsing="false" text="Open ModeMenu (F2)" />
+                        <MenuItem mnemonicParsing="false" text="Card Mode" />
+                    </items>
+                  </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+                  <Menu fx:id="notespace" mnemonicParsing="false" text="NoteSpace">
+                     <items>
+                        <Menu fx:id="recentNoteSpaceMenu" mnemonicParsing="false" text="Recent NoteSpace project" />
+                        <Menu fx:id="detectNoteSpaceMenu" mnemonicParsing="false" text="Detected NoteSpace project in disks" />
+                     </items>
+                  </Menu>
+              </menus>
+            </MenuBar>
+            <Label layoutX="95.0" layoutY="15.0" prefHeight="46.0" prefWidth="116.0" text="Notes">
+               <font>
+                  <Font name="Calibri Bold" size="35.0" />
+               </font>
+            </Label>
+            <VBox fx:id="modeMenuVBox" layoutX="80.0" layoutY="63.0" prefHeight="46.0" prefWidth="1136.0" spacing="1.0" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="63.0">
+               <children>
+                  <Label prefHeight="14.0" prefWidth="103.0" text="Mode Menu (F2)">
+                     <font>
+                        <Font name="Segoe UI" size="9.0" />
+                     </font>
+                     <padding>
+                        <Insets left="2.0" />
+                     </padding>
+                  </Label>
+                  <HBox />
+                  <HBox fx:id="modeMenuHBox" alignment="CENTER_LEFT" prefHeight="29.0" prefWidth="587.0" spacing="10.0">
+                     <children>
+                        <HBox fx:id="cardModeHBox" alignment="CENTER" prefHeight="29.0" prefWidth="143.0" styleClass="modeHBox">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="29.0" prefWidth="78.0">
+                                 <children>
+                                    <Label fx:id="cardModeLabel" alignment="CENTER" prefHeight="17.0" prefWidth="78.0" text="CardMode">
+                                       <font>
+                                          <Font name="System Italic" size="12.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <Label fx:id="cardModeReplaceMainContentLabel" alignment="CENTER" prefHeight="21.0" prefWidth="33.0" rotate="180.0" text="">
+                                 <styleClass>
+                                    <String fx:value="icon-fill" />
+                                    <String fx:value="font-15" />
+                                    <String fx:value="hover" />
+                                 </styleClass>
+                              </Label>
+                              <Label fx:id="cardModeNewWindowLabel" alignment="CENTER" prefHeight="21.0" prefWidth="33.0" text="">
+                                 <styleClass>
+                                    <String fx:value="icon-fill" />
+                                    <String fx:value="font-15" />
+                                    <String fx:value="hover" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="tabModeHBox" alignment="CENTER" prefHeight="29.0" prefWidth="143.0" styleClass="modeHBox">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="29.0" prefWidth="78.0">
+                                 <children>
+                                    <Label fx:id="tabModeLabel" alignment="CENTER" prefHeight="17.0" prefWidth="78.0" text="TabMode">
+                                       <font>
+                                          <Font name="System Italic" size="12.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <Label fx:id="tabModeReplaceMainContentLabel" alignment="CENTER" prefHeight="21.0" prefWidth="33.0" rotate="180.0" text="">
+                                 <styleClass>
+                                    <String fx:value="icon-fill" />
+                                    <String fx:value="font-15" />
+                                    <String fx:value="hover" />
+                                 </styleClass>
+                              </Label>
+                              <Label fx:id="tabModeNewWindowLabel" alignment="CENTER" prefHeight="21.0" prefWidth="33.0" text="">
+                                 <styleClass>
+                                    <String fx:value="icon-fill" />
+                                    <String fx:value="font-15" />
+                                    <String fx:value="hover" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="minimalistModeHBox" alignment="CENTER" layoutX="317.0" layoutY="10.0" prefHeight="29.0" prefWidth="143.0" styleClass="modeHBox">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="29.0" prefWidth="78.0">
+                                 <children>
+                                    <Label fx:id="minimalistModeLabel" alignment="CENTER" prefHeight="17.0" prefWidth="78.0" text="MinMode">
+                                       <font>
+                                          <Font name="System Italic" size="12.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <Label fx:id="minimalistModeReplaceMainContentLabel" alignment="CENTER" prefHeight="21.0" prefWidth="33.0" rotate="180.0" text="">
+                                 <styleClass>
+                                    <String fx:value="icon-fill" />
+                                    <String fx:value="font-15" />
+                                    <String fx:value="hover" />
+                                 </styleClass>
+                              </Label>
+                              <Label fx:id="minimalistModeNewWindowLabel" alignment="CENTER" prefHeight="21.0" prefWidth="33.0" text="">
+                                 <styleClass>
+                                    <String fx:value="icon-fill" />
+                                    <String fx:value="font-15" />
+                                    <String fx:value="hover" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="29.0" prefWidth="33.0" style="-fx-background-color: #f2f2f9; -fx-background-radius: 10;">
+                           <children>
+                              <Label fx:id="hideModeMenuLabel" alignment="CENTER" prefHeight="21.0" prefWidth="33.0" text="">
+                                 <styleClass>
+                                    <String fx:value="icon-fill" />
+                                    <String fx:value="font-15" />
+                                    <String fx:value="hover" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="31.0" prefWidth="455.0" spacing="10.0">
+                           <children>
+                              <HBox alignment="CENTER_RIGHT" prefHeight="31.0" prefWidth="252.0">
+                                 <children>
+                                    <Button fx:id="btn" mnemonicParsing="false" prefHeight="30.0" prefWidth="232.0" styleClass="modeHBox" text="Loading...">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="changeStageReceiver" prefHeight="610.0" prefWidth="1283.0" visible="false" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+   </children>
+</AnchorPane>

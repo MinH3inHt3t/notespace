@@ -1,0 +1,77 @@
+.icon-fill{
+    -fx-font-family: 'Material Icons';
+   /* -fx-fill: firebrick;*/
+
+}
+#settingAnchor{
+    -fx-background-color: transparent;
+}
+
+
+
+.settingIcon{
+    -fx-font-size: 20px;
+
+}
+
+.scroll-pane .viewport {
+       -fx-background-color: transparent;
+}
+
+.button{
+    -fx-background-color:  #3980F4;
+    -fx-text-fill: #ffffff;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+
+
+
+.check-box .box {
+
+-fx-background-color: white;
+-fx-font-size: 12px;
+-fx-border-color:grey;
+-fx-border-radius:3px;
+-fx-background-insets: 0 0 0 0, 0, 0, 0;
+
+}
+
+.check-box:selected .mark {
+
+-fx-background-color: white;
+
+}
+
+.check-box:selected .box {
+
+-fx-background-color: #28a3f4;
+}
+
+
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+
+
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 5em;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #f2f2f9;
+    -fx-background-radius: 5em;
+}
+
+
+.activeBox{
+    -fx-border-color:  #3980F4;
+
+}
+

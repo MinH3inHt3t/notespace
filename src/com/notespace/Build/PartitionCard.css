@@ -1,0 +1,20 @@
+.icon-fill{
+    -fx-font-family: 'Material Icons';
+   /* -fx-fill: firebrick;*/
+
+}
+
+.checkLabel{
+    -fx-font-size: 20px;
+    -fx-background-color: #f2f2f7;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+}
+
+.partition_Pane{
+
+}
+/*
+.partition_Pane:hover{
+    -fx-effect: dropshadow( gaussian  , #000000 , 4.5 , 0.0 , 0.0 , 0.0 );
+}

@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="DateSettingsAnchor" maxHeight="380.0" maxWidth="845.0" minHeight="380.0" minWidth="845.0" prefHeight="380.0" prefWidth="845.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ScrollPane fx:id="datesettingsScroll" fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" layoutX="0.3333333432674408" layoutY="0.3333333432674408" maxHeight="380.0" maxWidth="845.0" minHeight="380.0" minWidth="845.0" prefHeight="380.0" prefWidth="845.0" style="-fx-background-color: transparent;" stylesheets="@SettingsPage.css" vbarPolicy="NEVER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <content>
+            <HBox maxWidth="1690.0" minHeight="370.0" minWidth="1690.0" prefHeight="100.0" prefWidth="1690.0">
+               <children>
+                  <AnchorPane fx:id="DateSettings_Anchor1" maxHeight="370.0" maxWidth="845.0" minHeight="370.0" minWidth="845.0" prefHeight="370.0" prefWidth="845.0" style="-fx-border-radius: 8; -fx-background-radius: 8;" stylesheets="@DateSettings.css">
+                     <children>
+                        <Label layoutX="14.0" layoutY="14.0" prefHeight="35.0" prefWidth="181.0" style="-fx-text-fill: #666666;" text="Date Settings" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0">
+                           <font>
+                              <Font name="Tahoma" size="24.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane layoutX="389.0" layoutY="46.0" prefHeight="270.0" prefWidth="287.0" AnchorPane.bottomAnchor="45.0" AnchorPane.topAnchor="46.0">
+                           <children>
+                              <VBox layoutX="103.0" layoutY="14.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <VBox minHeight="70.0" prefHeight="70.0" prefWidth="287.0">
+                                       <children>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="42.0" prefWidth="325.0" spacing="10.0">
+                                             <children>
+                                                <Label prefHeight="2.0" prefWidth="89.0" style="-fx-background-color: #3980F4; -fx-border-radius: 5; -fx-background-radius: 5;">
+                                                   <font>
+                                                      <Font size="5.0" />
+                                                   </font>
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                </Label>
+                                                <Label prefHeight="17.0" prefWidth="105.0" text="Create Date Label" />
+                                             </children>
+                                             <padding>
+                                                <Insets left="13.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="31.0" prefWidth="287.0" spacing="10.0">
+                                             <children>
+                                                <RadioButton fx:id="rd_notecard_createDateFormat1" mnemonicParsing="false" text="09/12/2020" />
+                                                <RadioButton fx:id="rd_notecard_createDateFormat2" mnemonicParsing="false" text="09/December/2020" />
+                                             </children>
+                                             <padding>
+                                                <Insets left="13.0" />
+                                             </padding>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox minHeight="70.0" prefHeight="70.0" prefWidth="287.0">
+                                       <children>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="42.0" prefWidth="325.0" spacing="10.0">
+                                             <children>
+                                                <Label prefHeight="2.0" prefWidth="89.0" style="-fx-background-color: linear-gradient(from 25px 25px to 100px 100px, #F84775 , #2184EF); -fx-border-radius: 5; -fx-background-radius: 5;">
+                                                   <font>
+                                                      <Font size="5.0" />
+                                                   </font>
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                </Label>
+                                                <Label prefHeight="17.0" prefWidth="162.0" text="Modified Date Label" />
+                                             </children>
+                                             <padding>
+                                                <Insets left="13.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="31.0" prefWidth="287.0" spacing="10.0">
+                                             <children>
+                                                <RadioButton fx:id="rd_notecard_modifiedDateFormat1" mnemonicParsing="false" text="09/12/2020" />
+                                                <RadioButton fx:id="rd_notecard_modifiedDateFormat2" mnemonicParsing="false" text="09/December/2020" />
+                                             </children>
+                                             <padding>
+                                                <Insets left="13.0" />
+                                             </padding>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox minHeight="70.0" prefHeight="70.0" prefWidth="287.0">
+                                       <children>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="42.0" prefWidth="325.0" spacing="10.0">
+                                             <children>
+                                                <Label prefHeight="2.0" prefWidth="89.0" style="-fx-background-color: #738CD9; -fx-border-radius: 5; -fx-background-radius: 5;">
+                                                   <font>
+                                                      <Font size="5.0" />
+                                                   </font>
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                </Label>
+                                                <Label prefHeight="17.0" prefWidth="157.0" text="Modified Time Label" />
+                                             </children>
+                                             <padding>
+                                                <Insets left="13.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="31.0" prefWidth="287.0" spacing="10.0">
+                                             <children>
+                                                <RadioButton fx:id="rd_notecard_modifiedTimeFormat1" mnemonicParsing="false" text="10:45 AM" />
+                                                <RadioButton fx:id="rd_notecard_modifiedTimeFormat2" mnemonicParsing="false" text="10:40:10" />
+                                             </children>
+                                             <padding>
+                                                <Insets left="13.0" />
+                                             </padding>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                        <Label alignment="CENTER" layoutX="34.0" layoutY="316.0" prefHeight="26.0" prefWidth="293.0" text="Main Page" AnchorPane.bottomAnchor="19.0" AnchorPane.leftAnchor="34.0">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane layoutX="14.0" layoutY="63.0" prefHeight="246.0" prefWidth="377.0" style="-fx-background-color: #f2f2f7; -fx-border-radius: 20; -fx-background-radius: 20;" AnchorPane.bottomAnchor="61.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="63.0">
+                           <children>
+                              <AnchorPane layoutX="14.0" layoutY="10.0" prefHeight="176.0" prefWidth="48.0" style="-fx-border-color: lightgray; -fx-border-width: 0 1 0 0;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                              <Label layoutX="58.0" layoutY="40.0" prefHeight="25.0" prefWidth="55.0" text="Notes" AnchorPane.bottomAnchor="181.0">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <AnchorPane layoutX="58.0" layoutY="75.0" prefHeight="98.0" prefWidth="83.0" style="-fx-background-color: #2C2C2D; -fx-border-radius: 10; -fx-background-radius: 10;" AnchorPane.bottomAnchor="73.0">
+                                 <children>
+                                    <Circle layoutX="54.0" layoutY="79.0" radius="8.0" strokeType="INSIDE" AnchorPane.rightAnchor="5.0" />
+                                    <Label layoutY="68.0" prefHeight="5.0" prefWidth="51.0" style="-fx-background-color: #3980F4; -fx-border-radius: 5; -fx-background-radius: 5;" AnchorPane.leftAnchor="5.0">
+                                       <font>
+                                          <Font size="5.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="5.0" layoutY="82.0" prefHeight="8.0" prefWidth="32.0" style="-fx-background-color: linear-gradient(from 25px 25px to 100px 100px, #F84775 , #2184EF);; -fx-border-radius: 5; -fx-background-radius: 5;" AnchorPane.leftAnchor="5.0">
+                                       <font>
+                                          <Font size="5.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="40.0" layoutY="82.0" prefHeight="7.0" prefWidth="18.0" style="-fx-background-color: #738CD9; -fx-border-radius: 5; -fx-background-radius: 5;">
+                                       <font>
+                                          <Font size="5.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="152.0" layoutY="75.0" prefHeight="98.0" prefWidth="83.0" style="-fx-background-color: #2C2C2D; -fx-border-radius: 10; -fx-background-radius: 10;">
+                                 <children>
+                                    <Circle layoutX="54.0" layoutY="79.0" radius="8.0" strokeType="INSIDE" AnchorPane.rightAnchor="5.0" />
+                                    <Label layoutY="68.0" prefHeight="5.0" prefWidth="51.0" style="-fx-background-color: #3980F4; -fx-border-radius: 5; -fx-background-radius: 5;" AnchorPane.leftAnchor="5.0">
+                                       <font>
+                                          <Font size="5.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="5.0" layoutY="82.0" prefHeight="8.0" prefWidth="32.0" style="-fx-background-color: linear-gradient(from 25px 25px to 100px 100px, #F84775 , #2184EF);; -fx-border-radius: 5; -fx-background-radius: 5;" AnchorPane.leftAnchor="5.0">
+                                       <font>
+                                          <Font size="5.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="40.0" layoutY="82.0" prefHeight="7.0" prefWidth="18.0" style="-fx-background-color: #738CD9; -fx-border-radius: 5; -fx-background-radius: 5;">
+                                       <font>
+                                          <Font size="5.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <RadioButton fx:id="rd_notecard_prettyFormat" layoutX="676.0" layoutY="168.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="151.0" text="Pretty Time : 5 m ago" />
+                        <HBox fx:id="previousHbox" layoutX="543.0" layoutY="314.0" prefHeight="39.0" prefWidth="112.0" AnchorPane.bottomAnchor="28.0" AnchorPane.rightAnchor="28.0">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" prefHeight="39.0" prefWidth="35.0" text="" visible="false">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                                 <styleClass>
+                                    <String fx:value="icon-fill" />
+                                    <String fx:value="font-20" />
+                                 </styleClass>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="39.0" prefWidth="69.0" text="Exit">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </HBox>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </AnchorPane>
+                  <AnchorPane fx:id="DateSettings_Anchor" maxHeight="370.0" maxWidth="845.0" minHeight="370.0" minWidth="845.0" prefHeight="370.0" prefWidth="845.0" style="-fx-border-radius: 8; -fx-background-radius: 8;" stylesheets="@DateSettings.css">
+                     <children>
+                        <Label layoutX="14.0" layoutY="14.0" prefHeight="34.0" prefWidth="181.0" style="-fx-text-fill: #666666;" text="Date Settings" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0">
+                           <font>
+                              <Font name="Tahoma" size="24.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane layoutX="389.0" layoutY="46.0" prefHeight="256.0" prefWidth="277.0" AnchorPane.bottomAnchor="68.0" AnchorPane.topAnchor="46.0">
+                           <children>
+                              <VBox layoutX="103.0" layoutY="14.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <VBox prefHeight="90.0" prefWidth="277.0">
+                                       <children>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="42.0" prefWidth="325.0" spacing="10.0">
+                                             <children>
+                                                <Label prefHeight="2.0" prefWidth="89.0" style="-fx-background-color: #3980F4; -fx-border-radius: 5; -fx-background-radius: 5;">
+                                                   <font>
+                                                      <Font size="5.0" />
+                                                   </font>
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                </Label>
+                                                <Label prefHeight="17.0" prefWidth="105.0" text="Create Date Label" />
+                                             </children>
+                                             <padding>
+                                                <Insets left="13.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="31.0" prefWidth="287.0" spacing="10.0">
+                                             <children>
+                                                <RadioButton fx:id="rd_expand_createDateFormat1" mnemonicParsing="false" text="09/12/2020" />
+                                                <RadioButton fx:id="rd_expand_createDateFormat2" mnemonicParsing="false" text="09/December/2020" />
+                                             </children>
+                                             <padding>
+                                                <Insets left="13.0" />
+                                             </padding>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="90.0" prefWidth="287.0">
+                                       <children>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="42.0" prefWidth="325.0" spacing="10.0">
+                                             <children>
+                                                <Label prefHeight="2.0" prefWidth="89.0" style="-fx-background-color: linear-gradient(from 25px 25px to 100px 100px, #F84775 , #2184EF); -fx-border-radius: 5; -fx-background-radius: 5;">
+                                                   <font>
+                                                      <Font size="5.0" />
+                                                   </font>
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                </Label>
+                                                <Label prefHeight="17.0" prefWidth="162.0" text="Modified Date Label" />
+                                             </children>
+                                             <padding>
+                                                <Insets left="13.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="31.0" prefWidth="287.0" spacing="10.0">
+                                             <children>
+                                                <RadioButton fx:id="rd_expand_modifiedDateFormat1" mnemonicParsing="false" text="09/12/2020" />
+                                                <RadioButton fx:id="rd_expand_modifiedDateFormat2" mnemonicParsing="false" text="09/December/2020" />
+                                             </children>
+                                             <padding>
+                                                <Insets left="13.0" />
+                                             </padding>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="90.0" prefWidth="287.0">
+                                       <children>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="42.0" prefWidth="325.0" spacing="10.0">
+                                             <children>
+                                                <Label prefHeight="2.0" prefWidth="89.0" style="-fx-background-color: #738CD9; -fx-border-radius: 5; -fx-background-radius: 5;">
+                                                   <font>
+                                                      <Font size="5.0" />
+                                                   </font>
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                </Label>
+                                                <Label prefHeight="17.0" prefWidth="157.0" text="Modified Time Label" />
+                                             </children>
+                                             <padding>
+                                                <Insets left="13.0" />
+                                             </padding>
+                                          </HBox>
+                                          <HBox alignment="CENTER_LEFT" prefHeight="31.0" prefWidth="287.0" spacing="10.0">
+                                             <children>
+                                                <RadioButton fx:id="rd_expand_modifiedTimeFormat1" mnemonicParsing="false" text="10:45 AM" />
+                                                <RadioButton fx:id="rd_expand_modifiedTimeFormat2" mnemonicParsing="false" text="10:40:10" />
+                                             </children>
+                                             <padding>
+                                                <Insets left="13.0" />
+                                             </padding>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                        <Label alignment="CENTER" layoutX="34.0" layoutY="316.0" prefHeight="26.0" prefWidth="293.0" text="Main Page" AnchorPane.bottomAnchor="19.0" AnchorPane.leftAnchor="34.0">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane layoutX="14.0" layoutY="63.0" prefHeight="237.0" prefWidth="354.0" style="-fx-background-color: #f2f2f7; -fx-border-radius: 20; -fx-background-radius: 20;" AnchorPane.bottomAnchor="61.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="63.0">
+                           <children>
+                              <AnchorPane layoutX="14.0" layoutY="10.0" prefHeight="176.0" prefWidth="48.0" style="-fx-border-color: lightgray; -fx-border-width: 0 1 0 0;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                              <Label layoutX="60.0" layoutY="62.0" prefHeight="25.0" prefWidth="55.0" text="Notes" AnchorPane.bottomAnchor="159.0">
+                                 <font>
+                                    <Font name="System Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <AnchorPane layoutX="60.0" layoutY="102.0" prefHeight="142.0" prefWidth="83.0" style="-fx-background-color: #2C2C2D; -fx-border-radius: 10; -fx-background-radius: 10;" AnchorPane.bottomAnchor="10.0">
+                                 <children>
+                                    <Circle layoutX="70.0" layoutY="109.0" radius="8.0" strokeType="INSIDE" AnchorPane.rightAnchor="5.0" />
+                                    <Label layoutX="5.0" layoutY="98.0" prefHeight="5.0" prefWidth="51.0" style="-fx-background-color: #3980F4; -fx-border-radius: 5; -fx-background-radius: 5;" AnchorPane.leftAnchor="5.0">
+                                       <font>
+                                          <Font size="5.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="5.0" layoutY="112.0" prefHeight="8.0" prefWidth="32.0" style="-fx-background-color: linear-gradient(from 25px 25px to 100px 100px, #F84775 , #2184EF);; -fx-border-radius: 5; -fx-background-radius: 5;" AnchorPane.leftAnchor="5.0">
+                                       <font>
+                                          <Font size="5.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="40.0" layoutY="112.0" prefHeight="7.0" prefWidth="18.0" style="-fx-background-color: #738CD9; -fx-border-radius: 5; -fx-background-radius: 5;">
+                                       <font>
+                                          <Font size="5.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <RadioButton fx:id="rd_expand_prettyFormat" layoutX="666.0" layoutY="178.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="151.0" text="Pretty Time : 5 m ago" />
+                        <HBox fx:id="nextHbox" layoutX="705.0" layoutY="306.0" prefHeight="39.0" prefWidth="112.0" AnchorPane.bottomAnchor="28.0" AnchorPane.rightAnchor="28.0">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" prefHeight="39.0" prefWidth="35.0" text="">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                                 <styleClass>
+                                    <String fx:value="icon-fill" />
+                                    <String fx:value="font-20" />
+                                 </styleClass>
+                              </Label>
+                              <Label alignment="CENTER" prefHeight="39.0" prefWidth="69.0" text="Next">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

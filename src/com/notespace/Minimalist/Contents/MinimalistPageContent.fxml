@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="minimalistPageContentAnchorPane" minHeight="120.0" minWidth="305.0" prefHeight="120.0" prefWidth="305.0" stylesheets="@../MinimalistPage.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="21.0" layoutY="36.0" prefHeight="120.0" prefWidth="305.0" styleClass="card" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="textLabel" layoutX="23.0" layoutY="24.0" maxWidth="261.0" prefHeight="17.0" prefWidth="257.0" styleClass="cardLabel" text="indexing..." textOverrun="WORD_ELLIPSIS" AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="19.0" AnchorPane.topAnchor="20.0">
+               <font>
+                  <Font name="Pyidaungsu" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="createDateLabel" layoutX="21.0" layoutY="59.0" prefHeight="17.0" prefWidth="152.0" styleClass="cardDateLabel" text="11/1/2021" AnchorPane.bottomAnchor="44.0" />
+            <Label fx:id="modifiedDateLabel" layoutX="184.0" layoutY="59.0" prefHeight="17.0" prefWidth="101.0" styleClass="cardModifiedDateLabel" text="1 week ago" AnchorPane.bottomAnchor="44.0" />
+            <TextArea fx:id="textArea" layoutX="24.0" layoutY="5.0" prefHeight="57.0" prefWidth="259.0" wrapText="true" AnchorPane.bottomAnchor="62.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <ProgressBar fx:id="progressBar" layoutX="20.0" layoutY="89.0" prefHeight="4.0" prefWidth="146.0" progress="0.24" AnchorPane.bottomAnchor="27.0" AnchorPane.rightAnchor="5.0" />
+            <HBox fx:id="shortcutHBox" alignment="CENTER_LEFT" layoutX="12.0" layoutY="76.0" prefHeight="36.0" prefWidth="152.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="44.0" prefWidth="32.0" style="-fx-text-fill: linear-gradient(to right top, #7162fc, #7d5efb, #895afa, #9456f8, #9e51f6, #a44ef5, #a94bf4, #af47f3, #b146f3, #b345f3, #b443f2, #b642f2);" text="">
+                     <styleClass>
+                        <String fx:value="icon-fill" />
+                        <String fx:value="font-17" />
+                        <String fx:value="radius5" />
+                        <String fx:value="f2f2f9Hover" />
+                     </styleClass>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Label>
+                  <Label fx:id="shortcutLabel" prefHeight="29.0" prefWidth="81.0" style="-fx-text-fill: linear-gradient(to right top, #7162fc, #7d5efb, #895afa, #9456f8, #9e51f6, #a44ef5, #a94bf4, #af47f3, #b146f3, #b345f3, #b443f2, #b642f2);" text="Ctrl+1">
+                     <font>
+                        <Font name="Ebrima" size="15.0" />
+                     </font></Label>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

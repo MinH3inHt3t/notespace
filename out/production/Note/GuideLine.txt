@@ -1,0 +1,21 @@
+Code style
+
+FOR GUI
+
+class UITest
+
+ScheduleService sch_name
+
+public UITest(){
+
+}
+private Service_Impl(){
+    setsch_name();
+}
+private setsch_name(){
+    sch_name.setOnSucceeded(e->{
+
+    });
+}
+
+

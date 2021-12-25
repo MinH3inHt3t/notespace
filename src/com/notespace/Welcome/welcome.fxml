@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="621.0" prefWidth="1145.0" style="-fx-background-color: white;" stylesheets="@welcome.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER" layoutX="200.0" layoutY="58.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" maxWidth="1005.0" minHeight="500.0" prefHeight="500.0" prefWidth="1005.0" spacing="20.0">
+               <children>
+                  <VBox alignment="TOP_CENTER">
+                     <children>
+                        <AnchorPane fx:id="logoAnchor" maxHeight="200.0" maxWidth="200.0" minHeight="200.0" minWidth="200.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: black; -fx-border-color: linear-gradient(to top,   derive(#2E274D, 50%) , derive(#8478C5, 50%)); -fx-border-width: 5;">
+                           <children>
+                              <Label fx:id="label1" layoutX="14.0" layoutY="14.0" prefHeight="50.0" prefWidth="142.0" style="-fx-text-fill: #ffccff;" text="NoteSpace" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="15.0">
+                                 <font>
+                                    <Font name="Yu Gothic Medium" size="23.0" />
+                                 </font>
+                              </Label>
+                              <AnchorPane layoutX="146.0" layoutY="146.0" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: black; -fx-border-color: #ffccff; -fx-border-width: 3;" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="15.0">
+                                 <children>
+                                    <Label alignment="CENTER" layoutX="9.0" layoutY="5.0" prefHeight="19.0" prefWidth="12.0" style="-fx-text-fill: #ffccff;" text="Y" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0">
+                                       <font>
+                                          <Font name="Yu Gothic Medium" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" layoutX="19.0" layoutY="15.0" prefHeight="19.0" prefWidth="12.0" style="-fx-text-fill: #e6ccff;" text="T" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0">
+                                       <font>
+                                          <Font name="Yu Gothic Medium" size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <Label fx:id="label11" alignment="CENTER_RIGHT" layoutX="38.0" layoutY="75.0" prefHeight="50.0" prefWidth="142.0" style="-fx-text-fill: #ffccff;" text="Software">
+                                 <font>
+                                    <Font name="Yu Gothic Medium" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="label111" layoutX="14.0" layoutY="171.0" prefHeight="19.0" prefWidth="97.0" style="-fx-text-fill: #ffccff;" text="Version 1.0.1" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0">
+                                 <font>
+                                    <Font name="Yu Gothic Medium" size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </AnchorPane>
+                        <Label alignment="CENTER" prefHeight="50.0" prefWidth="192.0" style="-fx-text-fill: #666666;" text="NOTESPACE" wrapText="true">
+                           <font>
+                              <Font name="Impact" size="25.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <AnchorPane prefHeight="500.0" prefWidth="361.0">
+                     <children>
+                        <VBox alignment="TOP_CENTER" layoutX="14.0" layoutY="150.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane prefHeight="208.0" prefWidth="391.0">
+                                 <children>
+                                    <Label alignment="TOP_LEFT" layoutX="8.0" layoutY="50.0" prefHeight="107.0" prefWidth="381.0" style="-fx-text-fill: linear-gradient(to top,   derive(#3980F4, 50%) , derive(#BB8EF5, 50%));" text="Create notespace" wrapText="true" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+                                       <font>
+                                          <Font name="Yu Gothic Medium" size="34.0" />
+                                       </font>
+                                    </Label>
+                                    <HBox layoutX="5.0" layoutY="97.0" prefHeight="50.0" prefWidth="264.0" spacing="10.0">
+                                       <children>
+                                          <Label prefHeight="50.0" prefWidth="90.0" style="-fx-text-fill: linear-gradient(to top,   derive(#3980F4, 50%) , derive(#BB8EF5, 50%));" text="- CREATE">
+                                             <font>
+                                                <Font name="Yu Gothic Light" size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <Label prefHeight="50.0" prefWidth="97.0" style="-fx-text-fill: linear-gradient(to top,   derive(#2E274D, 50%) , derive(#8478C5, 50%));" text="FOLDER">
+                                             <font>
+                                                <Font name="Yu Gothic Light" size="20.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </HBox>
+                                    <HBox layoutX="5.0" layoutY="138.0" prefHeight="50.0" prefWidth="264.0" spacing="10.0">
+                                       <children>
+                                          <Label prefHeight="50.0" prefWidth="90.0" style="-fx-text-fill: linear-gradient(to top,   derive(#3980F4, 50%) , derive(#BB8EF5, 50%));" text="- IMPORT">
+                                             <font>
+                                                <Font name="Yu Gothic Light" size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <Label prefHeight="50.0" prefWidth="97.0" style="-fx-text-fill: linear-gradient(to top,   derive(#2E274D, 50%) , derive(#8478C5, 50%));" text="FOLDER">
+                                             <font>
+                                                <Font name="Yu Gothic Light" size="20.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </HBox>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="145.0" prefWidth="361.0">
+                                 <children>
+                                    <Label alignment="TOP_LEFT" layoutX="8.0" layoutY="50.0" prefHeight="107.0" prefWidth="351.0" style="-fx-text-fill: linear-gradient(to top,   derive(#2E274D, 50%) , derive(#8478C5, 50%));" text="Recent notespace" wrapText="true" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+                                       <font>
+                                          <Font name="Yu Gothic Medium" size="34.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="5.0" layoutY="87.0" opacity="0.5" prefHeight="50.0" prefWidth="214.0" style="-fx-text-fill: #666666;" text="- SCAN FOLDER FROM">
+                                       <font>
+                                          <Font name="Yu Gothic Light" size="20.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Label>
+                                    <Label layoutX="219.0" layoutY="87.0" prefHeight="50.0" prefWidth="112.0" style="-fx-text-fill: #ffb3b3;" text="PARTITIONS">
+                                       <font>
+                                          <Font name="Yu Gothic Light" size="20.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="184.0" prefWidth="361.0">
+                                 <children>
+                                    <Label layoutX="8.0" layoutY="50.0" prefHeight="50.0" prefWidth="362.0" style="-fx-text-fill: linear-gradient(to top,   derive(#02796b, 50%) , derive(#73e57b, 50%));" text="About" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+                                       <font>
+                                          <Font name="Yu Gothic Medium" size="34.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="5.0" layoutY="55.0" opacity="0.5" prefHeight="50.0" prefWidth="235.0" style="-fx-text-fill: #666666;" text="- about">
+                                       <font>
+                                          <Font name="Yu Gothic Light" size="20.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Label>
+                                    <Label layoutX="5.0" layoutY="97.0" opacity="0.5" prefHeight="50.0" prefWidth="235.0" style="-fx-text-fill: #666666;" text="- how to">
+                                       <font>
+                                          <Font name="Yu Gothic Light" size="20.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="314.0" prefWidth="394.0" style="-fx-background-color: white; -fx-border-radius: 10; -fx-background-radius: 10;">
+                     <effect>
+                        <DropShadow blurType="GAUSSIAN" height="8.0" radius="3.5" width="8.0" />
+                     </effect>
+                     <children>
+                        <AnchorPane fx:id="createDirectoryPane" layoutX="32.0" layoutY="140.0" prefHeight="437.0" prefWidth="374.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label layoutX="25.0" layoutY="20.0" opacity="0.83" prefHeight="50.0" prefWidth="235.0" style="-fx-text-fill: #666666;" text="CREATE DIRECTORY" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0">
+                                 <font>
+                                    <Font name="Yu Gothic Light" size="20.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="importDirectoryPane" layoutX="42.0" layoutY="150.0" prefHeight="437.0" prefWidth="374.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label layoutX="25.0" layoutY="20.0" opacity="0.83" prefHeight="50.0" prefWidth="235.0" style="-fx-text-fill: #666666;" text="IMPORT DIRECTORY" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0">
+                                 <font>
+                                    <Font name="Yu Gothic Light" size="20.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="scanPartitionsPane" layoutX="52.0" layoutY="160.0" prefHeight="437.0" prefWidth="374.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label layoutX="25.0" layoutY="20.0" opacity="0.83" prefHeight="50.0" prefWidth="235.0" style="-fx-text-fill: #666666;" text="SCAN PARTITIONS" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0">
+                                 <font>
+                                    <Font name="Yu Gothic Light" size="20.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="277.0" layoutY="24.0" prefHeight="30.0" prefWidth="97.0" style="-fx-background-color: black; -fx-text-fill: #ffccff; -fx-border-color: linear-gradient(to top,   derive(#2E274D, 50%) , derive(#8478C5, 50%)); -fx-border-width: 2;" text="Refresh" AnchorPane.rightAnchor="24.0" AnchorPane.topAnchor="24.0">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="aboutPane" layoutX="52.0" layoutY="160.0" prefHeight="437.0" prefWidth="374.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label layoutX="25.0" layoutY="20.0" opacity="0.83" prefHeight="50.0" prefWidth="235.0" style="-fx-text-fill: linear-gradient(to top,   derive(#2E274D, 50%) , derive(#8478C5, 50%));" text="ABOUT" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0">
+                                 <font>
+                                    <Font name="Yu Gothic Light" size="20.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <ScrollPane hbarPolicy="NEVER" layoutX="15.0" layoutY="75.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="75.0">
+                                 <content>
+                                    <VBox prefHeight="378.0" prefWidth="364.0">
+                                       <children>
+                                          <AnchorPane minHeight="146.0" prefHeight="146.0" prefWidth="361.0">
+                                             <children>
+                                                <Label layoutX="14.0" layoutY="30.0" opacity="0.83" prefHeight="67.0" prefWidth="340.0" style="-fx-text-fill: #666666;" text="-Notice (This software will work only with its Folder Structure).Do not edit or delete the notespace folder structure." wrapText="true" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="30.0">
+                                                   <font>
+                                                      <Font name="Yu Gothic Light" size="14.0" />
+                                                   </font>
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                </Label>
+                                                <Label layoutX="-14.0" layoutY="2.0" opacity="0.83" prefHeight="30.0" prefWidth="248.0" style="-fx-text-fill: #666666;" text="-SOFTWARE" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                   <font>
+                                                      <Font name="Yu Gothic Light" size="20.0" />
+                                                   </font>
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                </Label>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane minHeight="146.0" prefHeight="146.0" prefWidth="361.0">
+                                             <children>
+                                                <Label layoutX="14.0" layoutY="30.0" opacity="0.83" prefHeight="30.0" prefWidth="235.0" style="-fx-text-fill: #666666;" text="-YOUTACK" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="30.0">
+                                                   <font>
+                                                      <Font name="Yu Gothic Light" size="14.0" />
+                                                   </font>
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                </Label>
+                                                <Label layoutX="-14.0" layoutY="2.0" opacity="0.83" prefHeight="30.0" prefWidth="248.0" style="-fx-text-fill: #666666;" text="-DEVELOPER" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                   <font>
+                                                      <Font name="Yu Gothic Light" size="20.0" />
+                                                   </font>
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                </Label>
+                                             </children>
+                                          </AnchorPane>
+                                          <AnchorPane minHeight="146.0" prefHeight="146.0" prefWidth="361.0">
+                                             <children>
+                                                <Label layoutX="14.0" layoutY="30.0" opacity="0.83" prefHeight="30.0" prefWidth="235.0" style="-fx-text-fill: #666666;" text="-YOUTACK" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="30.0">
+                                                   <font>
+                                                      <Font name="Yu Gothic Light" size="14.0" />
+                                                   </font>
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                </Label>
+                                                <Label layoutX="-14.0" layoutY="2.0" opacity="0.83" prefHeight="30.0" prefWidth="248.0" style="-fx-text-fill: #666666;" text="-DEVELOPER" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                   <font>
+                                                      <Font name="Yu Gothic Light" size="20.0" />
+                                                   </font>
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                </Label>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </VBox>
+                                 </content>
+                              </ScrollPane>
+                              <Label alignment="CENTER" layoutX="168.0" layoutY="469.0" prefHeight="30.0" prefWidth="29.0" style="-fx-text-fill: linear-gradient(to top,   derive(#2E274D, 50%) , derive(#8478C5, 50%));" text="" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="9.0">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <styleClass>
+                                    <String fx:value="icon-fill" />
+                                    <String fx:value="font-20" />
+                                 </styleClass>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="356.0" layoutY="39.0" prefHeight="30.0" prefWidth="29.0" style="-fx-text-fill: linear-gradient(to top,   derive(#2E274D, 50%) , derive(#8478C5, 50%));" text="" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="39.0">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <styleClass>
+                                    <String fx:value="icon-fill" />
+                                    <String fx:value="font-20" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

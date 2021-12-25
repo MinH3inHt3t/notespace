@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="590.0" prefWidth="1216.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="590.0" prefWidth="712.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane layoutX="21.0" layoutY="24.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: black; -fx-border-color: linear-gradient(to top,   derive(#2E274D, 50%) , derive(#8478C5, 50%)); -fx-border-width: 5;">
+               <children>
+                  <Label alignment="CENTER" layoutX="14.0" layoutY="41.0" prefHeight="66.0" prefWidth="51.0" style="-fx-text-fill: #ffccff;" text="Y">
+                     <font>
+                        <Font name="Yu Gothic Medium" size="50.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="45.0" layoutY="63.0" prefHeight="37.0" prefWidth="40.0" style="-fx-text-fill: #e6ccff;" text="O">
+                     <font>
+                        <Font name="Yu Gothic Medium" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="72.0" layoutY="63.0" prefHeight="37.0" prefWidth="40.0" style="-fx-text-fill: #cce6ff;" text="U">
+                     <font>
+                        <Font name="Yu Gothic Medium" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="50.0" layoutY="127.0" prefHeight="37.0" prefWidth="40.0" style="-fx-text-fill: #e6ccff;" text="T">
+                     <font>
+                        <Font name="Yu Gothic Medium" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="70.0" layoutY="127.0" prefHeight="37.0" prefWidth="40.0" style="-fx-text-fill: #e6e6cc;" text="h">
+                     <font>
+                        <Font name="Yu Gothic Medium" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="90.0" layoutY="127.0" prefHeight="37.0" prefWidth="40.0" style="-fx-text-fill: #ccffff;" text="r">
+                     <font>
+                        <Font name="Yu Gothic Medium" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="110.0" layoutY="127.0" prefHeight="37.0" prefWidth="40.0" style="-fx-text-fill: linear-gradient(to top,   derive(#3980F4, 50%) , derive(#BB8EF5, 50%));" text="e">
+                     <font>
+                        <Font name="Yu Gothic Medium" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="130.0" layoutY="127.0" prefHeight="37.0" prefWidth="40.0" style="-fx-text-fill: linear-gradient(to top,   derive(#BB8EF5, 50%) , derive(#3980F4, 50%));" text="a">
+                     <font>
+                        <Font name="Yu Gothic Medium" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="150.0" layoutY="127.0" prefHeight="37.0" prefWidth="40.0" style="-fx-text-fill: #b380b3;" text="d">
+                     <font>
+                        <Font name="Yu Gothic Medium" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="310.0" layoutY="104.0" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: black; -fx-border-color: linear-gradient(to top,   derive(#2E274D, 50%) , derive(#8478C5, 50%)); -fx-border-width: 3;">
+               <children>
+                  <Label alignment="CENTER" layoutX="9.0" layoutY="5.0" prefHeight="19.0" prefWidth="12.0" style="-fx-text-fill: #ffccff;" text="Y" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0">
+                     <font>
+                        <Font name="Yu Gothic Medium" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="19.0" layoutY="15.0" prefHeight="19.0" prefWidth="12.0" style="-fx-text-fill: #e6ccff;" text="T" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0">
+                     <font>
+                        <Font name="Yu Gothic Medium" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="310.0" layoutY="367.0" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: black; -fx-border-color: linear-gradient(to top,   derive(#3980F4, 50%) , derive(#BB8EF5, 50%)); -fx-border-width: 3;">
+               <children>
+                  <Label alignment="CENTER" layoutX="9.0" layoutY="5.0" prefHeight="19.0" prefWidth="12.0" style="-fx-text-fill: #ffccff;" text="Y" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0">
+                     <font>
+                        <Font name="Yu Gothic Medium" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="19.0" layoutY="15.0" prefHeight="19.0" prefWidth="12.0" style="-fx-text-fill: #e6ccff;" text="T" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0">
+                     <font>
+                        <Font name="Yu Gothic Medium" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="21.0" layoutY="287.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: black; -fx-border-color: linear-gradient(to top,   derive(#3980F4, 50%) , derive(#BB8EF5, 50%)); -fx-border-width: 5;">
+               <children>
+                  <Label alignment="CENTER" layoutX="14.0" layoutY="41.0" prefHeight="66.0" prefWidth="51.0" style="-fx-text-fill: #ffccff;" text="Y">
+                     <font>
+                        <Font name="Yu Gothic Medium" size="50.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="45.0" layoutY="63.0" prefHeight="37.0" prefWidth="40.0" style="-fx-text-fill: #e6ccff;" text="O">
+                     <font>
+                        <Font name="Yu Gothic Medium" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="72.0" layoutY="63.0" prefHeight="37.0" prefWidth="40.0" style="-fx-text-fill: #cce6ff;" text="U">
+                     <font>
+                        <Font name="Yu Gothic Medium" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="50.0" layoutY="127.0" prefHeight="37.0" prefWidth="40.0" style="-fx-text-fill: #e6ccff;" text="T">
+                     <font>
+                        <Font name="Yu Gothic Medium" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="70.0" layoutY="127.0" prefHeight="37.0" prefWidth="40.0" style="-fx-text-fill: #e6e6cc;" text="H">
+                     <font>
+                        <Font name="Yu Gothic Medium" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="90.0" layoutY="127.0" prefHeight="37.0" prefWidth="40.0" style="-fx-text-fill: #ccffff;" text="R">
+                     <font>
+                        <Font name="Yu Gothic Medium" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="110.0" layoutY="127.0" prefHeight="37.0" prefWidth="40.0" style="-fx-text-fill: linear-gradient(to top,   derive(#3980F4, 50%) , derive(#BB8EF5, 50%));" text="E">
+                     <font>
+                        <Font name="Yu Gothic Medium" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="130.0" layoutY="127.0" prefHeight="37.0" prefWidth="40.0" style="-fx-text-fill: linear-gradient(to top,   derive(#BB8EF5, 50%) , derive(#3980F4, 50%));" text="A">
+                     <font>
+                        <Font name="Yu Gothic Medium" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="150.0" layoutY="127.0" prefHeight="37.0" prefWidth="40.0" style="-fx-text-fill: #b380b3;" text="D">
+                     <font>
+                        <Font name="Yu Gothic Medium" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="380.0" layoutY="52.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: black; -fx-border-color: linear-gradient(to top,   derive(#02796b, 50%) , derive(#73e57b, 50%)); -fx-border-width: 5;">
+               <children>
+                  <Label alignment="CENTER" layoutX="14.0" layoutY="41.0" prefHeight="66.0" prefWidth="51.0" style="-fx-text-fill: #ffccff;" text="Y">
+                     <font>
+                        <Font name="Yu Gothic Medium" size="50.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="45.0" layoutY="63.0" prefHeight="37.0" prefWidth="40.0" style="-fx-text-fill: #e6ccff;" text="O">
+                     <font>
+                        <Font name="Yu Gothic Medium" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="72.0" layoutY="63.0" prefHeight="37.0" prefWidth="40.0" style="-fx-text-fill: #cce6ff;" text="U">
+                     <font>
+                        <Font name="Yu Gothic Medium" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="50.0" layoutY="127.0" prefHeight="37.0" prefWidth="40.0" style="-fx-text-fill: #e6ccff;" text="T">
+                     <font>
+                        <Font name="Yu Gothic Medium" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="70.0" layoutY="127.0" prefHeight="37.0" prefWidth="40.0" style="-fx-text-fill: #e6e6cc;" text="H">
+                     <font>
+                        <Font name="Yu Gothic Medium" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="90.0" layoutY="127.0" prefHeight="37.0" prefWidth="40.0" style="-fx-text-fill: #ccffff;" text="R">
+                     <font>
+                        <Font name="Yu Gothic Medium" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="110.0" layoutY="127.0" prefHeight="37.0" prefWidth="40.0" style="-fx-text-fill: linear-gradient(to top,   derive(#3980F4, 50%) , derive(#BB8EF5, 50%));" text="E">
+                     <font>
+                        <Font name="Yu Gothic Medium" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="130.0" layoutY="127.0" prefHeight="37.0" prefWidth="40.0" style="-fx-text-fill: linear-gradient(to top,   derive(#BB8EF5, 50%) , derive(#3980F4, 50%));" text="A">
+                     <font>
+                        <Font name="Yu Gothic Medium" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="150.0" layoutY="127.0" prefHeight="37.0" prefWidth="40.0" style="-fx-text-fill: #b380b3;" text="D">
+                     <font>
+                        <Font name="Yu Gothic Medium" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="606.0" layoutY="132.0" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: black; -fx-border-color: linear-gradient(to top,   derive(#02796b, 50%) , derive(#73e57b, 50%)); -fx-border-width: 3;">
+               <children>
+                  <Label alignment="CENTER" layoutX="9.0" layoutY="5.0" prefHeight="19.0" prefWidth="12.0" style="-fx-text-fill: #ffb3b3;" text="Y" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0">
+                     <font>
+                        <Font name="Yu Gothic Medium" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="19.0" layoutY="15.0" prefHeight="19.0" prefWidth="12.0" style="-fx-text-fill: #e6ccff;" text="T" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0">
+                     <font>
+                        <Font name="Yu Gothic Medium" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="373.0" layoutY="307.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: black; -fx-border-color: linear-gradient(to top,   derive(#2E274D, 50%) , derive(#8478C5, 50%)); -fx-border-width: 5;">
+               <children>
+                  <Label alignment="CENTER" layoutX="24.0" layoutY="40.0" prefHeight="66.0" prefWidth="51.0" style="-fx-text-fill: #ffccff;" text="Y">
+                     <font>
+                        <Font name="Yu Gothic Medium" size="50.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="55.0" layoutY="62.0" prefHeight="37.0" prefWidth="40.0" style="-fx-text-fill: #e6ccff;" text="O">
+                     <font>
+                        <Font name="Yu Gothic Medium" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="82.0" layoutY="62.0" prefHeight="37.0" prefWidth="40.0" style="-fx-text-fill: #cce6ff;" text="U">
+                     <font>
+                        <Font name="Yu Gothic Medium" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="62.0" layoutY="128.0" prefHeight="37.0" prefWidth="40.0" style="-fx-text-fill: #e6ccff;" text="T">
+                     <font>
+                        <Font name="Yu Gothic Medium" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="82.0" layoutY="128.0" prefHeight="37.0" prefWidth="40.0" style="-fx-text-fill: #e6e6cc;" text="a">
+                     <font>
+                        <Font name="Yu Gothic Medium" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="122.0" layoutY="128.0" prefHeight="37.0" prefWidth="40.0" style="-fx-text-fill: #ccffff;" text="k">
+                     <font>
+                        <Font name="Yu Gothic Medium" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="102.0" layoutY="128.0" prefHeight="37.0" prefWidth="40.0" style="-fx-text-fill: #b380b3;" text="c">
+                     <font>
+                        <Font name="Yu Gothic Medium" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="606.0" layoutY="387.0" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: black; -fx-border-color: linear-gradient(to top,   derive(#3980F4, 50%) , derive(#73F7E8, 50%)); -fx-border-width: 3;">
+               <children>
+                  <Label alignment="CENTER" layoutX="9.0" layoutY="5.0" prefHeight="19.0" prefWidth="12.0" style="-fx-text-fill: #ffb3b3;" text="Y" AnchorPane.leftAnchor="1.0" AnchorPane.topAnchor="1.0">
+                     <font>
+                        <Font name="Yu Gothic Medium" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="19.0" layoutY="15.0" prefHeight="19.0" prefWidth="12.0" style="-fx-text-fill: #e6ccff;" text="T" AnchorPane.bottomAnchor="1.0" AnchorPane.rightAnchor="1.0">
+                     <font>
+                        <Font name="Yu Gothic Medium" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label layoutX="21.0" layoutY="518.0" prefHeight="58.0" prefWidth="312.0" style="-fx-text-fill: linear-gradient(to right top, #ff8080, #ff9588, #ffa893, #ffbaa1, #ffccb3);" text="Yu Gothic ">
+               <font>
+                  <Font name="Yu Gothic Medium" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ColorPicker layoutX="924.0" layoutY="39.0" style="-fx-background-color: linear-gradient(to right top, #85ffaf, #89ffc6, #95ffd9, #a6ffe8, #bbfff3);" />
+      <Button layoutX="636.0" layoutY="551.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="413.0" style="-fx-background-color: linear-gradient(to right top, #85ffaf, #89ffc6, #95ffd9, #a6ffe8, #bbfff3);" text=" linear-gradient(to top,   derive(#BB8EF5, 50%) , derive(#3980F4, 50%))" />
+      <AnchorPane layoutX="712.0" layoutY="26.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: black; -fx-border-color: linear-gradient(to top,   derive(#3980F4, 50%) , derive(#BB8EF5, 50%)); -fx-border-width: 5;">
+         <children>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="41.0" prefHeight="66.0" prefWidth="51.0" style="-fx-text-fill: #ffb3b3;" text="Y">
+               <font>
+                  <Font name="Yu Gothic Medium" size="50.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="45.0" layoutY="63.0" prefHeight="37.0" prefWidth="40.0" style="-fx-text-fill: #e6ccff;" text="O">
+               <font>
+                  <Font name="Yu Gothic Medium" size="30.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="72.0" layoutY="63.0" prefHeight="37.0" prefWidth="40.0" style="-fx-text-fill: #cce6ff;" text="U">
+               <font>
+                  <Font name="Yu Gothic Medium" size="30.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="72.0" layoutY="116.0" prefHeight="37.0" prefWidth="40.0" style="-fx-text-fill: #e6ccff;" text="T">
+               <font>
+                  <Font name="Yu Gothic Medium" size="30.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="92.0" layoutY="116.0" prefHeight="37.0" prefWidth="40.0" style="-fx-text-fill: #e6ccff;" text="A">
+               <font>
+                  <Font name="Yu Gothic Medium" size="30.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="112.0" layoutY="116.0" prefHeight="37.0" prefWidth="40.0" style="-fx-text-fill: #e6ccff;" text="C">
+               <font>
+                  <Font name="Yu Gothic Medium" size="30.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="132.0" layoutY="116.0" prefHeight="37.0" prefWidth="40.0" style="-fx-text-fill: #e6ccff;" text="K">
+               <font>
+                  <Font name="Yu Gothic Medium" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="941.0" layoutY="106.0" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: black; -fx-border-color: linear-gradient(to top,   derive(#3980F4, 50%) , derive(#BB8EF5, 50%)); -fx-border-width: 3;">
+         <children>
+            <Label alignment="CENTER" layoutX="9.0" layoutY="5.0" prefHeight="19.0" prefWidth="12.0" style="-fx-text-fill: #ffb3b3;" text="Y" AnchorPane.leftAnchor="3.0" AnchorPane.topAnchor="3.0">
+               <font>
+                  <Font name="Yu Gothic Medium" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="19.0" layoutY="15.0" prefHeight="19.0" prefWidth="12.0" style="-fx-text-fill: #e6ccff;" text="T" AnchorPane.bottomAnchor="3.0" AnchorPane.rightAnchor="3.0">
+               <font>
+                  <Font name="Yu Gothic Medium" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="750.0" layoutY="279.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: black; -fx-border-color: linear-gradient(to top,   derive(#2E274D, 50%) , derive(#8478C5, 50%)); -fx-border-width: 5;">
+         <children>
+            <Label alignment="CENTER" layoutX="24.0" layoutY="40.0" prefHeight="66.0" prefWidth="51.0" style="-fx-text-fill: linear-gradient(to top,   derive(#2E274D, 50%) , derive(#8478C5, 50%));" text="Y">
+               <font>
+                  <Font name="Yu Gothic Medium" size="50.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="55.0" layoutY="62.0" prefHeight="37.0" prefWidth="40.0" style="-fx-text-fill: #e6ccff;" text="O">
+               <font>
+                  <Font name="Yu Gothic Medium" size="30.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="82.0" layoutY="62.0" prefHeight="37.0" prefWidth="40.0" style="-fx-text-fill: #ffb3b3;" text="U">
+               <font>
+                  <Font name="Yu Gothic Medium" size="30.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="62.0" layoutY="128.0" prefHeight="37.0" prefWidth="40.0" style="-fx-text-fill: #e6ccff;" text="T">
+               <font>
+                  <Font name="Yu Gothic Medium" size="30.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="82.0" layoutY="128.0" prefHeight="37.0" prefWidth="40.0" style="-fx-text-fill: #ffccff;" text="a">
+               <font>
+                  <Font name="Yu Gothic Medium" size="30.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="122.0" layoutY="128.0" prefHeight="37.0" prefWidth="40.0" style="-fx-text-fill: linear-gradient(to top,   derive(#02796b, 50%) , derive(#73e57b, 50%));" text="k">
+               <font>
+                  <Font name="Yu Gothic Medium" size="30.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="102.0" layoutY="128.0" prefHeight="37.0" prefWidth="40.0" style="-fx-text-fill: #b380b3;" text="c">
+               <font>
+                  <Font name="Yu Gothic Medium" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="987.0" layoutY="179.0" maxHeight="200.0" maxWidth="200.0" minHeight="200.0" minWidth="200.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: black; -fx-border-color: linear-gradient(to top,   derive(#2E274D, 50%) , derive(#8478C5, 50%)); -fx-border-width: 5;">
+         <children>
+            <Label alignment="CENTER" layoutX="24.0" layoutY="40.0" prefHeight="66.0" prefWidth="51.0" style="-fx-text-fill: #ffccff;" text="Y">
+               <font>
+                  <Font name="Yu Gothic Medium" size="50.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="55.0" layoutY="62.0" prefHeight="37.0" prefWidth="40.0" style="-fx-text-fill: #e6ccff;" text="O">
+               <font>
+                  <Font name="Yu Gothic Medium" size="30.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="82.0" layoutY="62.0" prefHeight="37.0" prefWidth="40.0" style="-fx-text-fill: #ffb3b3;" text="U">
+               <font>
+                  <Font name="Yu Gothic Medium" size="30.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="62.0" layoutY="128.0" prefHeight="37.0" prefWidth="40.0" style="-fx-text-fill: #e6ccff;" text="T">
+               <font>
+                  <Font name="Yu Gothic Medium" size="30.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="82.0" layoutY="128.0" prefHeight="37.0" prefWidth="40.0" style="-fx-text-fill: #ffccff;" text="a">
+               <font>
+                  <Font name="Yu Gothic Medium" size="30.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="122.0" layoutY="128.0" prefHeight="37.0" prefWidth="40.0" style="-fx-text-fill: linear-gradient(to top,   derive(#02796b, 50%) , derive(#73e57b, 50%));" text="k">
+               <font>
+                  <Font name="Yu Gothic Medium" size="30.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="102.0" layoutY="128.0" prefHeight="37.0" prefWidth="40.0" style="-fx-text-fill: #b380b3;" text="c">
+               <font>
+                  <Font name="Yu Gothic Medium" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="1108.0" layoutY="402.0" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: black; -fx-border-color: linear-gradient(to top,   derive(#2E274D, 50%) , derive(#8478C5, 50%)); -fx-border-width: 3;">
+         <children>
+            <Label alignment="CENTER" layoutX="9.0" layoutY="5.0" prefHeight="19.0" prefWidth="12.0" style="-fx-text-fill: #ffccff;" text="Y" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0">
+               <font>
+                  <Font name="Yu Gothic Medium" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="19.0" layoutY="15.0" prefHeight="19.0" prefWidth="12.0" style="-fx-text-fill: #e6ccff;" text="T" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0">
+               <font>
+                  <Font name="Yu Gothic Medium" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

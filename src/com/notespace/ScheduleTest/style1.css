@@ -1,0 +1,6 @@
+.root {
+    -fx-background-image: url("D://grid.png");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 210 210;
+    -fx-background-position: center center;
+}

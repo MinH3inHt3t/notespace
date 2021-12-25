@@ -1,0 +1,41 @@
+.root{
+    -fx-whiteColor: white;
+    -fx-blueColor : #228DFF;
+}
+
+
+.transparentBackground{
+    -fx-background-color: transparent;
+}
+
+.transparentBorder{
+    -fx-border-color: transparent;
+}
+
+
+/* ==== checkbox  */
+.check-box .box {
+
+-fx-background-color: white;
+-fx-border-color:grey;
+-fx-border-radius:3px;
+-fx-background-insets: 0 0 0 0, 0, 0, 0;
+
+}
+
+.check-box:selected .mark {
+
+-fx-background-color: white;
+
+}
+
+.check-box:selected .box {
+
+-fx-background-color: -fx-blueColor;
+}
+/* ==== checkbox  */
+
+
+
+
+

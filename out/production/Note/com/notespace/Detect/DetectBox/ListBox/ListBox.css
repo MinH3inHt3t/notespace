@@ -1,0 +1,9 @@
+.icon-fill{
+    -fx-font-family: 'Material Icons';
+   /* -fx-fill: firebrick;*/
+
+}
+
+.font-20{
+    -fx-font-size: 20;
+}

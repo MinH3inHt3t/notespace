@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="348.0" prefWidth="605.0" styleClass="transparentBg" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane fx:id="cardAppearanceAnchor" layoutX="55.0" layoutY="-32.0" style="-fx-background-color: f2f2f7;" styleClass="border20" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="30.0">
+         <children>
+            <Label fx:id="appearance_Label" layoutX="22.0" layoutY="14.0" prefHeight="44.0" prefWidth="181.0" text="Appearance">
+               <font>
+                  <Font name="Blackadder ITC" size="12.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="fontCorbel" />
+                  <String fx:value="font20" />
+                  <String fx:value="fontbold" />
+               </styleClass>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label fx:id="closeNoteAppearanceLabel" alignment="CENTER" layoutX="562.0" layoutY="-1.0" text="" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="-1.0">
+         <styleClass>
+            <String fx:value="icon-fill" />
+            <String fx:value="font20" />
+            <String fx:value="hover" />
+         </styleClass>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+   </children>
+   <stylesheets>
+      <URL value="@CardAppearance.css" />
+      <URL value="@../../CSS/extra.css" />
+   </stylesheets>
+</AnchorPane>
