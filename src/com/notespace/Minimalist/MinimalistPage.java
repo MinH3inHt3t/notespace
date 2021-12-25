@@ -2283,8 +2283,7 @@ public class MinimalistPage implements Initializable {
         }
 
         public List<String> getWords(String text) {
-            System.out.println("change here");
-            List<String> wordList = new ArrayList<>();
+            List<String> words = new ArrayList<>();
             if (text != null && text.isEmpty() == false) {
                 BreakIterator breakIterator = BreakIterator.getWordInstance();
                 breakIterator.setText(text);
@@ -2293,11 +2292,11 @@ public class MinimalistPage implements Initializable {
                     int firstIndex = lastIndex;
                     lastIndex = breakIterator.next();
                     if (lastIndex != BreakIterator.DONE && Character.isLetterOrDigit(text.charAt(firstIndex))) {
-                        wordList.add(text.substring(firstIndex, lastIndex));
+                        words.add(text.substring(firstIndex, lastIndex));
                     }
                 }
             }
-            return wordList;
+            return words;
         }
 
         public List<String> getLineObjs(String absolutePath) {
@@ -2425,21 +2424,13 @@ public class MinimalistPage implements Initializable {
                     lineNumberLabel.setMinWidth(lineNumberLabel.getWidth());
                     lineNumberLabel.getStyleClass().addAll("fontConsolas", "font11");
 
-                    HBox textLabelContainerHbox = new HBox();
-                    textLabelContainerHbox.setAlignment(Pos.CENTER_LEFT);
-                    textLabelContainerHbox.getChildren().clear();
-                    getWords(e).forEach(text -> {
 
-                        Label textLabel = new Label();
-                        textLabel.setMinWidth(textLabel.getWidth());
-                        textLabel.setText(FontRepair.fixmyanamrfont(text));
-                        textLabel.setWrapText(true);
-                        textLabel.setPadding(new Insets(5));
-                        textLabel.getStyleClass().addAll("fontPyidaungsu", "font12");
-
-                        textLabelContainerHbox.getChildren().add(textLabel);
-                    });
-
+                    Label textLabel = new Label();
+                    textLabel.setMinWidth(textLabel.getWidth());
+                    textLabel.setText(FontRepair.fixmyanamrfont(e));
+                    textLabel.setWrapText(true);
+                    textLabel.setPadding(new Insets(5));
+                    textLabel.getStyleClass().addAll("fontPyidaungsu", "font12");
 
                     Label notiIconLabel = new Label();
                     notiIconLabel.setMinWidth(notiIconLabel.getWidth());
@@ -2448,7 +2439,7 @@ public class MinimalistPage implements Initializable {
                     notiIconLabel.setStyle("-fx-text-fill: #F0A732;");
 
 
-                    HBox hb = new HBox(lineNumberLabel, notiIconLabel, textLabelContainerHbox);
+                    HBox hb = new HBox(lineNumberLabel, notiIconLabel, textLabel);
 //                    hb.setMinWidth(hb.getWidth());
                     hb.setUserData(e.trim());
                     hb.setAlignment(Pos.CENTER_LEFT);
@@ -2472,14 +2463,14 @@ public class MinimalistPage implements Initializable {
                 foundLineNumbers.clear();
 
                 hb.getStyleClass().removeAll(layoutPosition.highlightYellowClickEffectHex(), layoutPosition.highlightYellowTextEffect(), layoutPosition.highlightYellowBorderEffect());
-//                Label getNotiIconLabel = (Label) hb.getChildren().get(1);
-//                Label getTextLabel = (Label) hb.getChildren().get(2);
-//                getNotiIconLabel.setVisible(false);
-//
-//                Arrays.stream(new Label[]{getTextLabel}).forEach(label -> {
-//                    label.getStyleClass().removeAll(layoutPosition.highlightYellowClickEffectHex(), layoutPosition.highlightYellowTextEffect());
-//
-//                });
+                Label getNotiIconLabel = (Label) hb.getChildren().get(1);
+                Label getTextLabel = (Label) hb.getChildren().get(2);
+                getNotiIconLabel.setVisible(false);
+
+                Arrays.stream(new Label[]{getTextLabel}).forEach(label -> {
+                    label.getStyleClass().removeAll(layoutPosition.highlightYellowClickEffectHex(), layoutPosition.highlightYellowTextEffect());
+
+                });
             });
 
             lineCaseArrayList.forEach(hb -> {
@@ -2491,14 +2482,14 @@ public class MinimalistPage implements Initializable {
                     foundLineNumbers.add(minimalistPageLineCase.lineObjReceiveVBox.getChildren().indexOf(hb) + 1); //index change
 
                     hb.getStyleClass().addAll(layoutPosition.highlightYellowClickEffectHex(), layoutPosition.highlightYellowTextEffect(), layoutPosition.highlightYellowBorderEffect());
-//                    Label getNotiIconLabel = (Label) hb.getChildren().get(1);
-//                    Label getTextLabel = (Label) hb.getChildren().get(2);
-//                    getNotiIconLabel.setVisible(true);
-//
-//                    Arrays.stream(new Label[]{getTextLabel}).forEach(label -> {
-//                        label.getStyleClass().addAll(layoutPosition.highlightYellowClickEffectHex(), layoutPosition.highlightYellowTextEffect());
-//
-//                    });
+                    Label getNotiIconLabel = (Label) hb.getChildren().get(1);
+                    Label getTextLabel = (Label) hb.getChildren().get(2);
+                    getNotiIconLabel.setVisible(true);
+
+                    Arrays.stream(new Label[]{getTextLabel}).forEach(label -> {
+                        label.getStyleClass().addAll(layoutPosition.highlightYellowClickEffectHex(), layoutPosition.highlightYellowTextEffect());
+
+                    });
                 }
             });
             minimalistPageLineCase.noOfFoundLabel.setText(foundCount1 + "");
